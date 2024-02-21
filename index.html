@@ -18,6 +18,69 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+
+    <style>
+      body {
+        /* background-position: center; */
+        margin: 0px;
+        padding: 0px;
+        overflow-x: hidden;
+      }
+      .d{
+        height: 100vh;
+        width: 100%;
+        background-image: url(https://static.zarahome.net/8/contentEcom/dto_imagen/worldwide/index.jpg?20240221023204&imformat=chrome&imwidth=1358&impolicy=zarahome-itxmedium);
+        background-size: cover;
+      }
+        
+        #d1 {
+          position: relative;
+          top: 200px;
+          left: 26px;
+          display: flex;
+          flex-direction: column;
+          gap:30px;
+          img {
+            width: 17%;
+        }
+      }
+      .d2{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        height: 30px;
+        gap:20px;
+      }
+    
+    </style>
   </head>
-  <body></body>
-</html>
+  <body>
+    <div class="d">
+
+      <div id="d1">
+        <img src="Images/ourHome Logo/1.png" alt="logo" />
+        
+        <div class="d2">
+          <div>
+            <select class="form-select" aria-label="Default select example">
+              <option selected>Select region</option>
+              <option value="1">India</option>
+              <option value="2">Russia</option>
+              <option value="3">Cananda</option>
+            </select>
+          </div>
+          
+          <div>
+            <select class="form-select" aria-label="Default select example">
+              <option selected>Select language</option>
+              <option value="1">English</option>
+              <option value="2">French</option>
+              <option value="3">Portugues</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </div>
+    </body>
+    </html>
+    
