@@ -1,0 +1,16 @@
+{
+  "users": [
+    {
+      "email": "abhinavtyagi@gmail.com",
+      "password": "$2a$10$D188Gt/lIXxemIS7C.SH5OMonX2pTTN7Iv7vgrmNWY6snhJZQa3My",
+      "id": 1
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "name": "Product1",
+      "price": 500
+    }
+  ]
+}
