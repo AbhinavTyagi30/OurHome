@@ -1,9 +1,25 @@
 {
+  "name": "ourhome",
+  "version": "1.0.0",
+  "description": "This repository houses the collaborative efforts to create a stunning and functional website for OurHome, the premier destination for chic home decor. Our team is dedicated to bringing the elegance and style of OurHome to the digital realm, with a focus on user-friendly design and seamless navigation.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "json-server ./server/db.json "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AbhinavTyagi30/OurHome.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AbhinavTyagi30/OurHome/issues"
+  },
+  "homepage": "https://github.com/AbhinavTyagi30/OurHome#readme",
   "dependencies": {
     "bootstrap": "^5.3.3",
     "json-server": "^1.0.0-alpha.23"
-  },
-  "scripts": {
-    "start": "json-server --watch ./server/db.json"
   }
 }
