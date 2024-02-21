@@ -1,15 +1,10 @@
 {
-    "users":[
-        {"id":1, "username": "admin", "password":"admin", "admin": true}
-    ],
-
     "products" : [
-        {
-            "id": 1, "name":"Bedsheet", "image" : "image Path", "price" : "$120", "category":"Bedroom"
-        },
-
-        {
-            "id": 2, "name":"Dining Table", "image" : "image Path", "price" : "$250", "category":"Dining"
-        }
+        {"id": 1, "name": "BedSheets", "category": "Bedroom", "price": "$69.99"},
+        {"id": 2, "name": "Table", "category": "Dining", "price": "$119.99"}
+    ],
+    "users":[
+        {"id": 1, "userName": "admin", "password": "admin", "isAdmin": true},
+        {"id": 2, "userName": "Abhinav", "password": "pass", "isAdmin": false}
     ]
 }
