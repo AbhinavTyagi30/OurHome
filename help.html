@@ -78,23 +78,65 @@
       }
       #h_tag {
         text-align: center;
-        margin-top: 40px;
-        font-weight: bolder;
+        /* margin-top: 0px; */
+        font-weight: bold;
+        font-size: 18px;
       }
 
       .accordion-item {
         display: flex;
       }
+
+      .container{
+  /* padding-bottom: 70px; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* min-height: 100vh; */
+}
+.container section{
+  width: 600px;
+  margin: 50px;
+}
+.container section details summary{
+  padding: 15px;
+  /* background: #e0ffff; */
+  color: #22232e;
+  position: relative;
+  list-style: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight:600;
+}
+.container section details{
+  margin: 5px;
+}
+.container section details p{
+  font-size: 13px;
+  padding: 10px;
+  color: #333;
+  /* background: #e0ffff; */
+}
+.container section details summary span{
+  font-size: 20px;
+  color: #333;
+  float: right;
+}
+.c1{
+  img{
+    height: 50px;
+  }
+}
+
     </style>
   </head>
   <body>
     <div class="d">
       <div class="Home1">
         <img src="Images/ourHome Logo/3.png" alt="logo" />
-
-        <div>
-          <button>Search</button>
-        </div>
+        
+        <h6 id="h_tag">SHOPPING GUIDE</h6>
 
         <div class="dd">
           <div class="d1">
@@ -242,7 +284,95 @@
           </div>
         </div>
       </div>
-      <h6 id="h_tag">SHOPPING GUIDE</h6>
+    
+      <div class="container">
+        <section>
+          <details>
+            <summary>SHOP AT ZARAHOME.COM<span><i class="fa-solid "></i>+</span></summary>
+            <h6>YOUR ZARA HOME ACCOUNT</h6>
+            <p>At Zara Home you can shop as a guest or registered customer.
+
+              Signing up is easy and your details will be saved in your account for future purchases.
+              
+              If you shop as a guest, you will find your details and the details of your order in your confirmation email.</p>
+              <h6>MODIFYING OR CANCELLING YOUR ORDER</h6>
+              <p>Please remember that you can only modify or cancel your order before it reaches the final stages of preparation for dispatch.</p>
+              <h6>MY WISHLIST</h6>
+              <p>You can save your favourite items in your WISHLIST and always have them to hand.
+
+                To use this option you must be a registered customer.
+                
+                You can save your favourite items in your WISHLIST by clicking the heart icon on each item. You can create different WISHLISTS and modify them.
+                
+                You can make your WISHLIST public and share it as a link by using the "Copy link" option.
+                
+                If you decide to complete the purchase, you will need to add the items to the basket and follow the usual payment process.</p>
+
+          </details>
+          <details>
+            <summary>PAYMENTS<span><i class="fa-solid"></i>+</span></summary>
+            <h6>PAYMENT METHODS</h6>
+            <p>You can use the following payment methods:</p>
+            <div class="c1"><img src="https://static.zarahome.net/8/static4/itxwebstandard/images/payment/web/1.svg?20240222021206" alt="card">
+              <img src="https://static.zarahome.net/8/static4/itxwebstandard/images/payment/web/2.svg?20240222021206" alt="card">
+              <img src="https://static.zarahome.net/8/static4/itxwebstandard/images/payment/web/3.svg?20240222021206" alt="card">
+              <img src="https://static.zarahome.net/8/static4/itxwebstandard/images/payment/web/8.svg?20240222021206" alt="card"></div>
+
+              <p>Your purchase will be charged when your order is shipped out, but if you have paid with PayPal the payment will be charged at the moment of the purchase.
+
+                You can shop with full trust, we take great care in providing resources that guarantee the security of your purchases and your information.</p>
+              <h6>PRICES</h6>
+              <p>The prices online are the same as in stores.
+
+                If there is a difference in the price specified online and the label, the correct price will be the one you accepted at the moment of purchase.</p>
+
+          </details>
+          <details>
+            <summary>TICKETS AND INVOICES<span><i class="fa-solid "></i>+</span></summary>
+            <h6>PURCHASE RECEIPT</h6>
+            <p>Purchases on zarahome.com do not generate paper receipts.
+
+              You will find your purchase receipt available for download in your account.</p>
+            <h6>INVOICE</h6>
+            <p>You can request an invoice for your order as an individual or a business. You will be able to access the invoice on your account once the order has been dispatched.</p>
+            <p>*If you have purchased as a guest, access your order history and download receipts as well as invoices.</p>
+          </details>
+          <details>
+            <summary>SHIPPING AND COSTS<span><i class="fa-solid"></i>+</span></summary>
+            <h6>HOME DELIVERY</h6>
+            <p>Home delivery fees are 45 EUR.<br><br>
+              
+              The estimated delivery time will be between 7-10 working days.<br><br>
+              
+              Please bear in mind that some of our deliveries may be affected by import costs out of our control. We will let you know if these costs are included in the final amount of the purchase or need to be paid when receiving the order. If the second case applies, we suggest that you get in touch with your local Customs Office for further information.<br><br>
+              
+              You will receive email updates about the status of the delivery of your order and if you have purchased as a registered customer you will be able to check its status on your account too.</p>
+            </details>
+
+            <details>
+              <summary>RETURNS<span><i class="fa-solid "></i>+</span></summary>
+              <p>f you made a purchase on our website or app, you do not have to print and send in the receipt for your order with your return.
+
+                These are the options for returning your items:</p>
+              <h6>FROM YOUR HOME</h6>
+              <p>If you have purchased as a registered customer, you should access your order information from your account and request the return.
+
+                If you have placed the order as a guest, request the return through the link included in the confirmation email.
+                
+                Once your return request is registered, you will receive an email with the return instructions and the return labels to prepare your package. Please, follow the instructions to avoid any issues.
+                
+                </p>
+                <p>You have 30 days from the shipping date to return your purchase. Return costs are 45 EUR, and they will be deducted from your refund.
+
+                  The items you return must be in the same condition you received them in.</p>
+              <h6>REFUND</h6>
+              <p>The refund will be made via the same payment method used to make the purchase. If you have used more than one payment method, it will be refunded to both methods proportionally.<br><br>
+
+                You will receive email confirmation of the return once it has been completed. If you have not received a refund in your account after more than 14 days, please show the confirmation to your bank so they can speed up the process.</p>
+            </details>
+        </section>
+      </div>
+
     </div>
   </body>
 </html>
