@@ -3,7 +3,331 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Admin Home</title>
+
+    <!-- Font Awesome Link -->
+
+    <script
+      src="https://kit.fontawesome.com/ce304c3157.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Link to Bootstrap -->
+
+    <link
+      href="../node_modules/bootstrap/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <script
+      src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- link to CSS -->
+
+    <link rel="stylesheet" href="style.css" />
   </head>
-  <body></body>
+
+  <body class="bg-success text-dark bg-opacity-25">
+    <div class="body-container">
+      <!-- Sidebar section begins -->
+
+      <div class="nav-container">
+        <div style="min-height: 100svh">
+          <div id="collapseWidthExample">
+            <nav
+              class="bg-success text-dark bg-opacity-25"
+              style="max-width: 10rem; width: 100%; height: 100vh"
+            >
+              <ul class="nav-items">
+                <li class="current" aria-current="page">
+                  <a href="home.html">Home</a>
+                </li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="users.html">Users</a></li>
+                <li><a href="profile.html">Profile</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sidebar section ends -->
+
+      <!-- Card Container Section Begins -->
+
+      <div class="card-container">
+        <!-- This will display a featured product card and house a button to view all products -->
+        <!-- Featured Product -->
+        <div
+          id="display-item-1"
+          class="bg-success bg-opacity-75 d-flex justify-content-around p-2"
+          style="border-radius: 10px"
+        >
+          <div id="products-card">
+            <div
+              class="title"
+              style="
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial,
+                  sans-serif;
+                font-size: 2rem;
+                text-align: center;
+              "
+            >
+              <p>BEST SELLER</p>
+            </div>
+
+            <div class="card" style="width: 18rem">
+              <img
+                src="https://static.zarahome.net/8/photos4/2024/V/4/1/p/2187/122/712/2187122712_7_1_2.jpg?t=1708014503924&imformat=chrome&imwidth=768"
+                class="card-img-top"
+                alt="feautured-product"
+              />
+              <div class="card-body">
+                <h5 class="card-title">COTTON JERSEY PLAYSUIT</h5>
+                <p class="card-text">€39.99</p>
+                <a href="#" class="btn btn-outline-danger">View All Products</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- This will display a table containing 5 users and house a view all and view user details button -->
+        <!-- User Table -->
+        <div
+          id="display-item-2"
+          class="bg-success bg-opacity-75 d-flex flex-column justify-content-start p-2"
+          style="border-radius: 10px"
+        >
+          <div
+            id="users-table"
+            class="title d-flex flex-column justify-content-center"
+            style="
+              font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial,
+                sans-serif;
+              font-size: 2rem;
+              text-align: center;
+            "
+          >
+            USERS
+          </div>
+          <table class="table mt-3">
+            <thead class="table table-success">
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Name</th>
+                <th scope="col">Country</th>
+                <th scope="col">
+                  <a
+                    type="button"
+                    class="btn btn-outline-danger"
+                    href="allUsers.html"
+                  >
+                    View All
+                  </a>
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">2</th>
+                <td>Jacob</td>
+                <td>Thornton</td>
+                <td>
+                  <a
+                    type="button"
+                    class="btn btn-outline-dark"
+                    href="oneUser.html"
+                  >
+                    View User
+                  </a>
+                </td>
+              </tr>
+
+              <tr>
+                <th scope="row">2</th>
+                <td>Jacob</td>
+                <td>Thornton</td>
+                <td>
+                  <a
+                    type="button"
+                    class="btn btn-outline-dark"
+                    href="oneUser.html"
+                  >
+                    View User
+                  </a>
+                </td>
+              </tr>
+
+              <tr>
+                <th scope="row">2</th>
+                <td>Jacob</td>
+                <td>Thornton</td>
+                <td>
+                  <a
+                    type="button"
+                    class="btn btn-outline-dark"
+                    href="oneUser.html"
+                  >
+                    View User
+                  </a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div
+          id="display-item-3"
+          class="bg-success bg-opacity-75 d-flex flex-column justify-content-start p-2"
+          style="border-radius: 10px"
+        >
+          <div
+            id="orders-table"
+            class="title d-flex flex-column justify-content-center"
+            style="
+              font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial,
+                sans-serif;
+              font-size: 2rem;
+              text-align: center;
+            "
+          >
+            ORDERS
+          </div>
+          <div class="orders-table">
+            <table class="table mt-3">
+              <thead class="table table-success">
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">Name</th>
+                  <th scope="col">Country</th>
+                  <th scope="col">
+                    <a
+                      type="button"
+                      class="btn btn-outline-danger"
+                      href="allUsers.html"
+                    >
+                      View All
+                    </a>
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">2</th>
+                  <td>Jacob</td>
+                  <td>Thornton</td>
+                  <td>
+                    <a
+                      type="button"
+                      class="btn btn-outline-dark"
+                      href="oneUser.html"
+                    >
+                      View Order
+                    </a>
+                  </td>
+                </tr>
+
+                <tr>
+                  <th scope="row">2</th>
+                  <td>Jacob</td>
+                  <td>Thornton</td>
+                  <td>
+                    <a
+                      type="button"
+                      class="btn btn-outline-dark"
+                      href="oneUser.html"
+                    >
+                      View Order
+                    </a>
+                  </td>
+                </tr>
+
+                <tr>
+                  <th scope="row">2</th>
+                  <td>Jacob</td>
+                  <td>Thornton</td>
+                  <td>
+                    <a
+                      type="button"
+                      class="btn btn-outline-dark"
+                      href="oneUser.html"
+                    >
+                      View Order
+                    </a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div
+          id="display-item-4"
+          class="bg-success bg-opacity-75 d-flex flex-column justify-content-center p-2"
+          style="border-radius: 10px"
+        >
+          <div id="data-container">
+            <div
+              id="money-card"
+              class="d-flex justify-content-around align-items-center"
+              style="
+                box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+                background-color: #c5e0d4;
+                border-radius: 10px;
+                font-size: 2rem;
+              "
+            >
+              <i class="fa-solid fa-money-bill" style="font-size: 5rem"></i>
+              <p>€ 500</p>
+            </div>
+            <div
+              id="money-year-card"
+              class="d-flex justify-content-around align-items-center"
+              style="
+                box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+                background-color: #c5e0d4;
+                border-radius: 10px;
+                font-size: 2rem;
+              "
+            >
+              <i
+                class="fa-solid fa-money-bill-trend-up"
+                style="font-size: 4rem"
+              ></i>
+              <p>€ 500</p>
+            </div>
+            <div
+              id="total-sales-card"
+              class="d-flex justify-content-around align-items-center"
+              style="
+                box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+                background-color: #c5e0d4;
+                border-radius: 10px;
+                font-size: 2rem;
+              "
+            >
+              <i class="fa-solid fa-boxes-stacked" style="font-size: 4rem"></i>
+              <p>€ 500</p>
+            </div>
+            <div
+              id="sales-year-card"
+              class="d-flex justify-content-around align-items-center"
+              style="
+                box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+                background-color: #c5e0d4;
+                border-radius: 10px;
+                font-size: 2rem;
+              "
+            >
+              <i class="fa-solid fa-calendar-check" style="font-size: 4rem"></i>
+              <p>€ 500</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card Container Section Ends -->
+    </div>
+  </body>
 </html>
