@@ -6,12 +6,19 @@
     <title>Document</title>
 
     <!-- LINK TO BOOTSTRAP -->
-
+    <script
+      src="https://kit.fontawesome.com/8e882b740a.js"
+      crossorigin="anonymous"
+    ></script>
     <link
       href="./node_modules/bootstrap/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
     />
     <script
       src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
@@ -19,39 +26,125 @@
       crossorigin="anonymous"
     ></script>
     <style>
-      #cont{
+      #cont {
         display: flex;
-position: relative;
-
-      }
-      img{
         position: relative;
       }
-      
+      img {
+        position: relative;
+      }
+      a {
+        display: block;
+        color: black;
+        text-decoration: none;
+        font-size: 14px;
+      }
     </style>
   </head>
   <body>
     <div class="container-fluid d-flex" id="cont">
-    <div class="card" style="width: 50rem">
-      
-      <img
-        src="https://static.zarahome.net/8/contentEcom/dto_imagen/distribuidoras/mixta/desktop/1020264590/1020368011.jpg?20240221023204&imformat=chrome&imwidth=768&impolicy=zarahome-itxmediumhigh"
-        class="card-img-top"
-        alt="..."
-      />
-      
-      <a href="https://www.zarahome.com/ww/living-room-cushions-n994" style="margin-top: 900px; text-decoration: none;margin-top: -10px;">CUSHION</a>
-    </div>
+      <div class="card" style="width: 50rem">
+        <img
+          src="https://static.zarahome.net/8/contentEcom/dto_imagen/distribuidoras/mixta/desktop/1020264590/1020368011.jpg?20240221023204&imformat=chrome&imwidth=768&impolicy=zarahome-itxmediumhigh"
+          class="card-img-top"
+          alt="..."
+        />
+      </div>
 
-    <div class="card" style="width: 18rem">
-      <img
-        src="https://static.zarahome.net/8/contentEcom/dto_imagen/distribuidoras/mixta/desktop/1020264590/1020264595.jpg?20240221023204&imformat=chrome&imwidth=768&impolicy=zarahome-itxmediumhigh"
-        class="card-img-top"
-        alt="..."
-      />
-      
+      <div class="card" style="width: 18rem">
+        <img
+          src="https://static.zarahome.net/8/contentEcom/dto_imagen/distribuidoras/mixta/desktop/1020264590/1020264595.jpg?20240221023204&imformat=chrome&imwidth=768&impolicy=zarahome-itxmediumhigh"
+          class="card-img-top"
+          alt="..."
+        />
+      </div>
     </div>
+    <form class="search-form" action="/search" method="get">
+      <input
+        type="text"
+        name="q"
+        class="search-input"
+        placeholder="Enter your email address"
+        style="border: none; margin-left: 500px; margin-top: 100px"
+      />
+    </form>
+    <hr style="width: 600px; margin-top: 10px" />
+    <div class="container-fluid" style="display: flex" id="soc">
+      <div style="margin-left: 500px; text-align: center">
+        <p>Follow us on</p>
+        <div
+          style="
+            width: 45%;
+            height: 40px;
+            display: flex;
+            gap: 25px;
+            justify-content: center;
+            align-items: center;
+            margin-top: 10px;
+            margin-left: -300px;
+            position: absolute;
+            font-size: 20px;
+          "
+        >
+          <div class="boxes"><i class="fa-brands fa-facebook-f"></i></div>
+          <div class="boxes"><i class="fa-brands fa-instagram"></i></div>
+          <div class="boxes"><i class="fa-brands fa-pinterest-p"></i></div>
+          <div class="boxes"><i class="fa-brands fa-youtube"></i></div>
 
-   
+          <div class="boxes"><i class="fa-brands fa-twitter"></i></div>
+
+          <div class="boxes"><i class="fa-brands fa-tiktok"></i></div>
+        </div>
+      </div>
+      <div style="margin-left: 200px; text-align: center">
+        <p>Download our app</p>
+        <img
+          src="https://static.zarahome.net/8/static4/itxwebstandard/images/qr_app/footer/qr.png?20240222021206"
+          alt=""
+          style="height: 100px; width: 100px"
+        />
+      </div>
+    </div>
+    <div
+      id="socia"
+      style="display: flex; justify-content: space-evenly; margin-top: 20px"
+    >
+      <div
+        style="
+          justify-content: space-evenly;
+          margin-top: 20px;
+          margin-left: 50px;
+        "
+      >
+        <a href="" style="font-weight: bold">POLICIES</a>
+        <a href="">TERMS AND CONDITIONS</a>
+        <a href="">PRIVACY POLICY</a>
+        <a href="">COOKIES POLICY</a>
+        <a href="">COOKIES SETTINGS</a>
+        <a href="">LEGAL MENTIONS</a>
+      </div>
+      <div
+        style="
+          justify-content: space-evenly;
+          margin-top: 20px;
+          margin-left: -400px;
+        "
+      >
+        <a href="" style="font-weight: bold">COMPANY</a>
+        <a href="">WORK WITH US</a>
+        <a href="">PRESS</a>
+      </div>
+      <div
+        style="
+          justify-content: space-evenly;
+          margin-top: 20px;
+          margin-left: -400px;
+        "
+      >
+        <a href="" style="font-weight: bold">CONTACT</a>
+        <a href="">CONTACT US</a>
+        <a href="">HELP</a>
+      </div>
+    </div>
   </body>
 </html>
