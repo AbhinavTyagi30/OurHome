@@ -26,7 +26,7 @@
 
     <style>
       * {
-        /* background-position: center; */
+
         margin: 0px;
         padding: 0px;
         overflow-x: hidden;
@@ -38,8 +38,13 @@
         margin: 30px 0px 0px 50px;
         flex-wrap: wrap;
 
-        img {
+        .anchor{
+          /* border: 1px solid; */
           width: 20%;
+          height: 50px;
+        }
+        img {
+          width: 100%;
         }
         button {
           background-color: transparent;
@@ -54,7 +59,7 @@
         flex-wrap: wrap;
         gap: 10px;
         font-size: 20px;
-        color: black;
+        /* color: black; */
       }
       .dd {
         display: flex;
@@ -62,20 +67,21 @@
         margin-right: 20px;
       }
       .form {
-        background: rgb(193, 148, 155);
-        background: linear-gradient(
-          270deg,
-          rgba(193, 148, 155, 0.7931547619047619) 0%,
-          rgba(83, 37, 69, 1) 77%
-        );
+        background-image: url(https://i.pinimg.com/originals/04/15/95/041595beadc8c220768399637f204621.gif);
+        background-size: cover;
+        background-position: center;
         transition: background 2s linear; /* Increased duration */
       }
-
+      
       .form:hover {
         cursor: pointer;
-        background: #5c573e;
+        background-image: url(https://i.pinimg.com/originals/3f/c3/2b/3fc32b3699a73c4a172720cc51b24e19.gif);
+        background-size: cover;
+        background-position: center;
         /* background: linear-gradient(270deg, rgba(83, 37, 69, 1) 50%, rgba(193, 148, 155, 0.7931547619047619) 93%); */
+        
       }
+
       #h_tag {
         text-align: center;
         /* margin-top: 0px; */
@@ -99,8 +105,8 @@
   margin: 50px;
 }
 .container section details summary{
-  padding: 15px;
-  /* background: #e0ffff; */
+  padding: 20px;
+  background:#b09c79 ;
   color: #22232e;
   position: relative;
   list-style: none;
@@ -134,7 +140,11 @@
   <body>
     <div class="d">
       <div class="Home1">
-        <img src="Images/ourHome Logo/3.png" alt="logo" />
+        <a class="anchor" href="./home.html">
+
+          <img src="Images/ourHome Logo/3.png" alt="logo" />
+          
+         </a>
         
         <h6 id="h_tag">SHOPPING GUIDE</h6>
 
@@ -270,7 +280,7 @@
             </div>
             <div class="d1">
               <i class="fa-solid fa-cart-shopping"></i
-                ><button
+                ><a
                 style="
                 font-weight: bold;
                 font-size: 13px;
@@ -278,9 +288,9 @@
                 transform: translateY(-2px);
                 text-decoration: none;
               "
-            >
+           href="./basket.html">
               BASKET
-            </button>
+              </a>
           </div>
         </div>
       </div>
