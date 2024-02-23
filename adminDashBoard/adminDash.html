@@ -64,32 +64,190 @@
         <!-- Featured Product -->
         <div
           id="display-item-1"
-          class="bg-success bg-opacity-75 d-flex justify-content-around p-2"
+          class="bg-success bg-opacity-75 d-flex flex-column justify-content-start p-2"
           style="border-radius: 10px"
         >
-          <div id="products-card">
+          <div id="featured-product">
             <div
-              class="title"
-              style="
-                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial,
-                  sans-serif;
-                font-size: 2rem;
-                text-align: center;
-              "
+              class="container-fluid d-flex justify-content-between mt-2 mb-2"
             >
-              <p>BEST SELLER</p>
-            </div>
+              <!--two divs: left contains headline, tagline; right div contains the carousel-->
+              <div>
+                <!--Contains headline and tagline-->
+                BEST
+                <h1>SELLERS</h1>
+                <a class="btn btn-outline-dark">VIEW ALL PRODUCTS</a>
+              </div>
+              <div>
+                <!--Carousel with two slides, each slide containing three product cards-->
 
-            <div class="card" style="width: 18rem">
-              <img
-                src="https://static.zarahome.net/8/photos4/2024/V/4/1/p/2187/122/712/2187122712_7_1_2.jpg?t=1708014503924&imformat=chrome&imwidth=768"
-                class="card-img-top"
-                alt="feautured-product"
-              />
-              <div class="card-body">
-                <h5 class="card-title">COTTON JERSEY PLAYSUIT</h5>
-                <p class="card-text">€39.99</p>
-                <a href="#" class="btn btn-outline-danger">View All Products</a>
+                <div
+                  id="featured-product-carousel"
+                  class="carousel carousel-dark slide carousel-fade"
+                >
+                  <div class="carousel-inner">
+                    <!--SLIDE 1-->
+                    <div class="carousel-item">
+                      <div
+                        class="container d-flex justify-content-center align-items-center gap-5"
+                      >
+                        <div
+                          class="product-card card align-items-center text-center"
+                          style="width: 12rem; border: none"
+                        >
+                          <img
+                            src="https://static1.lenskart.com/media/desktop/img/Sep21/blend.jpg"
+                            class="card-img-top"
+                            alt="round.png"
+                            style="width: 100%; height: 94px"
+                          />
+                          <div class="card-body">
+                            <h5 class="card-title">Blend Edit</h5>
+                            <a
+                              href="#"
+                              class="btn btn-primary"
+                              style="background-color: #56b7c3; border: none"
+                              >View Product</a
+                            >
+                          </div>
+                        </div>
+                        <div
+                          class="product-card card align-items-center text-center"
+                          style="width: 12rem; border: none"
+                        >
+                          <img
+                            src="https://static1.lenskart.com/media/desktop/img/Sep21/clipon.jpg"
+                            class="card-img-top"
+                            alt="round.png"
+                            style="width: 100%; height: 94px"
+                          />
+                          <div class="card-body">
+                            <h5 class="card-title">Air Clip On</h5>
+                            <a
+                              href="#"
+                              class="btn btn-primary"
+                              style="background-color: #56b7c3; border: none"
+                              >View Product</a
+                            >
+                          </div>
+                        </div>
+
+                        <div
+                          class="product-card card text-center"
+                          style="width: 12rem; border: none"
+                        >
+                          <img
+                            src="https://static1.lenskart.com/media/desktop/img/Sep21/aviator.jpg"
+                            class="card-img-top"
+                            alt="round.png"
+                            style="width: 100%; height: 94px"
+                          />
+                          <div class="card-body">
+                            <h5 class="card-title">Retro Aviator</h5>
+                            <a
+                              href="#"
+                              class="btn btn-primary"
+                              style="background-color: #56b7c3; border: none"
+                              >View Product</a
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!--SLIDE 2-->
+                    <div class="carousel-item active">
+                      <div
+                        class="container d-flex justify-content-center align-items-center gap-5"
+                      >
+                        <div
+                          class="product-card card text-center"
+                          style="width: 12rem; border: none"
+                        >
+                          <img
+                            src="https://static1.lenskart.com/media/desktop/img/Sep21/cateeye.jpg"
+                            class="card-img-top"
+                            alt="round.png"
+                            style="width: 100%; height: 94px"
+                          />
+                          <div class="card-body">
+                            <h5 class="card-title">Cat-Eye</h5>
+                            <a
+                              href="#"
+                              class="btn btn-primary"
+                              style="background-color: #56b7c3; border: none"
+                              >View Product</a
+                            >
+                          </div>
+                        </div>
+                        <div
+                          class="product-card card text-center"
+                          style="width: 12rem; border: none"
+                        >
+                          <img
+                            src="https://static1.lenskart.com/media/desktop/img/Sep21/clubmaster.jpg"
+                            class="card-img-top"
+                            alt="round.png"
+                            style="width: 100%; height: 94px"
+                          />
+                          <div class="card-body">
+                            <h5 class="card-title">Club Master</h5>
+                            <a
+                              href="#"
+                              class="btn btn-primary"
+                              style="background-color: #56b7c3; border: none"
+                              >View Product</a
+                            >
+                          </div>
+                        </div>
+                        <div
+                          class="product-card card text-center"
+                          style="width: 12rem; border: none"
+                        >
+                          <img
+                            src="https://static1.lenskart.com/media/desktop/img/Sep21/trans.jpg"
+                            class="card-img-top"
+                            alt="round.png"
+                            style="width: 100%; height: 94px"
+                          />
+                          <div class="card-body">
+                            <h5 class="card-title">Transparent</h5>
+                            <a
+                              href="#"
+                              class="btn btn-primary"
+                              style="background-color: #56b7c3; border: none"
+                              >View Product</a
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <button
+                    class="carousel-control-prev"
+                    type="button"
+                    data-bs-target="#featured-product-carousel"
+                    data-bs-slide="prev"
+                  >
+                    <span
+                      class="carousel-control-prev-icon"
+                      aria-hidden="true"
+                    ></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button
+                    class="carousel-control-next"
+                    type="button"
+                    data-bs-target="#featured-product-carousel"
+                    data-bs-slide="next"
+                  >
+                    <span
+                      class="carousel-control-next-icon"
+                      aria-hidden="true"
+                    ></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
               </div>
             </div>
           </div>
@@ -331,3 +489,5 @@
     </div>
   </body>
 </html>
+
+<script src="adminDash.js" type="module"></script>

@@ -6,6 +6,15 @@
       "id": 1
     }
   ],
+  "saleNumbers":{
+    "totalSales": 175000,
+    "salesThisYear": 24500,
+    "totalOrders": 127,
+    "ordersThisYear": 32
+  },
+  "orders":[
+
+  ],
   "products": [
     {
       "image": "https://static.zarahome.net/8/photos4/2024/V/4/1/p/2187/122/712/2187122712_7_1_2.jpg?t=1708014503924&imformat=chrome&imwidth=768",
