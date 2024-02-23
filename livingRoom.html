@@ -6,6 +6,10 @@
     <title>Document</title>
 
     <!-- LINK TO BOOTSTRAP -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
     <script
       src="https://kit.fontawesome.com/8e882b740a.js"
       crossorigin="anonymous"
@@ -26,6 +30,64 @@
       crossorigin="anonymous"
     ></script>
     <style>
+      * {
+
+margin: 0px;
+padding: 0px;
+overflow-x: hidden;
+}
+.Home1 {
+display: flex;
+justify-content: space-between;
+align-items: center;
+margin: 30px 0px 0px 50px;
+flex-wrap: wrap;
+position:relative;
+z-index: 1px;
+
+.anchor{
+  /* border: 1px solid; */
+  width: 20%;
+  height: 50px;
+}
+img {
+  width: 100%;
+}
+button {
+  background-color: transparent;
+  border: 0px;
+  font-size: 25px;
+  color: black;
+  text-decoration: underline;
+}
+}
+.d1 {
+display: flex;
+flex-wrap: wrap;
+gap: 10px;
+font-size: 20px;
+/* color: black; */
+}
+.dd {
+display: flex;
+gap: 30px;
+margin-right: 20px;
+}
+.form {
+background-image: url(https://i.pinimg.com/originals/04/15/95/041595beadc8c220768399637f204621.gif);
+background-size: cover;
+background-position: center;
+transition: background 2s linear; /* Increased duration */
+}
+
+.form:hover {
+cursor: pointer;
+background-image: url(https://i.pinimg.com/originals/3f/c3/2b/3fc32b3699a73c4a172720cc51b24e19.gif);
+background-size: cover;
+background-position: center;
+/* background: linear-gradient(270deg, rgba(83, 37, 69, 1) 50%, rgba(193, 148, 155, 0.7931547619047619) 93%); */
+
+}
       #cont {
         display: flex;
         position: relative;
@@ -33,45 +95,289 @@
       img {
         position: relative;
       }
-      a {
+      #socia > div > a {
         display: block;
         color: black;
         text-decoration: none;
         font-size: 14px;
       }
+     
+      #b {
+        width: 100%;
+        position: relative;
+        display: flex;
+        img {
+          width: 100%;
+          height: 100vh;
+         
+        }
+      }
+      .inner2 > a {
+        position: absolute;
+        font-size: 18px;
+
+        text-decoration: none;
+        color: white;
+
+        top: 45%;
+        left: 25%;
+      }
+
+      #socia > div > a {
+        display: block;
+        color: black;
+        text-decoration: none;
+        font-size: 12px;
+      }
+      #hamburger {
+        width: 30px;
+        height: 30px;
+        color: rgb(21, 20, 20);
+        /* border: 1px solid; */
+        margin-left: 10px;
+      }
+      .offcanvas-body {
+        ul > a {
+          text-decoration: none;
+          color: black;
+        }
+      }
     </style>
   </head>
   <body>
-    <div class="container-fluid d-flex" id="cont">
-      <div class="card" style="width: 50rem">
+    <!-- hamburger Menu -->
+    <button
+      style="border: 0px"
+      type="button"
+      data-bs-toggle="offcanvas"
+      data-bs-target="#offcanvasScrolling"
+      aria-controls="offcanvasScrolling"
+    >
+      <span class="material-symbols-outlined" id="hamburger"> menu </span>
+    </button>
+
+    <div
+      class="offcanvas offcanvas-start"
+      data-bs-scroll="true"
+      data-bs-backdrop="false"
+      tabindex="-1"
+      id="offcanvasScrolling"
+      aria-labelledby="offcanvasScrollingLabel"
+    >
+      <div class="offcanvas-header">
+        <!-- <h5 class="offcanvas-title" id="offcanvasScrollingLabel"></h5> -->
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul>
+          <a href="#"><li>BED ROOM</li></a>
+          <a href="#"><li>CLOTHING_&_FOOTWEAR</li></a>
+          <a href="#"><li>LIVING ROOM</li></a>
+          <a href="#"><li>DINING</li></a>
+          <a href="#"><li>BATHROOM</li></a>
+        </ul>
+      </div>
+    </div>
+    <!-- navbar -->
+    <div class="d">
+      <div class="Home1">
+        <a class="anchor" href="./home.html">
+
+          <img src="./Images/ourHome Logo/3.png" alt="logo" />
+          
+         </a>
+        
+        <h6 id="h_tag">SHOPPING GUIDE</h6>
+
+        <div class="dd">
+          <div class="d1">
+            <i class="fa-regular fa-user"></i
+            ><button
+              style="
+                text-decoration: none;
+                font-size: 13px;
+                transform: translateY(-2px);
+                font-weight: bold;
+              "
+              class="login_btn"
+              data-bs-toggle="modal"
+              data-bs-target="#ModalForm"
+            >
+              LOG IN
+            </button>
+
+            <div
+              class="modal fade"
+              id="ModalForm"
+              tabindex="-1"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <!-- Login Form -->
+                  <form action="" class="form">
+                    <div class="modal-header">
+                      <h5 class="modal-title" style="font-size: 16px">
+                        REGISTERED CUSTOMERS
+                      </h5>
+                      <button
+                        type="button"
+                        style="font-size: medium"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div class="modal-body" style="color: white">
+                      <div class="mb-3">
+                        <label for="Username" style="font-size: medium"
+                          >Username<span class="text-danger">*</span></label
+                        >
+                        <input
+                          type="text"
+                          name="username"
+                          class="form-control"
+                          id="Username"
+                          placeholder="Enter Username"
+                        />
+                      </div>
+
+                      <div class="mb-3">
+                        <label for="Password" style="font-size: medium"
+                          >Password<span class="text-danger">*</span></label
+                        >
+                        <input
+                          type="password"
+                          name="password"
+                          class="form-control"
+                          id="Password"
+                          placeholder="Enter Password"
+                        />
+                      </div>
+                      <div class="mb-3">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value=""
+                          id="remember"
+                          required
+                        />
+                        <label
+                          class="form-check-label"
+                          style="font-size: medium"
+                          for="remember"
+                          >Remember Me</label
+                        >
+                        <a
+                          href="#"
+                          class="float-end"
+                          style="
+                            text-decoration: none;
+                            color: white;
+                            font-size: medium;
+                          "
+                          >Forgot Password</a
+                        >
+                      </div>
+                    </div>
+                    <div class="modal-footer pt-4">
+                      <button
+                        type="button"
+                        class="btn mx-auto btn-dark"
+                        style="
+                          color: white;
+                          text-decoration: none;
+                          font-size: medium;
+                        "
+                      >
+                        LOG IN
+                      </button>
+                    </div>
+                    <p
+                      class="text-center"
+                      style="color: white; font-size: medium"
+                    >
+                      Not yet account, <a href="#">SIGN UP</a>
+                    </p>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="d1">
+            <i class="fa-solid fa-question"></i
+              
+            ><a
+              style="
+                font-size: 13px;
+                color: black;
+                transform: translateY(-2px);
+                text-decoration: none;
+                font-weight: bold;
+                "
+              href="./help.html"
+              >HELP</a
+              >
+            </div>
+            <div class="d1">
+              <i class="fa-solid fa-cart-shopping"></i
+                ><a
+                style="
+                font-weight: bold;
+                font-size: 13px;
+                color: black;
+                transform: translateY(-2px);
+                text-decoration: none;
+              "
+           href="./basket.html">
+              BASKET
+              </a>
+          </div>
+        </div>
+      </div>
+      <!-- livingRoom -->
+    <div id="b">
+      <div class="inner" style="width: 50%">
         <img
           src="https://static.zarahome.net/8/contentEcom/dto_imagen/distribuidoras/mixta/desktop/1020264590/1020368011.jpg?20240221023204&imformat=chrome&imwidth=768&impolicy=zarahome-itxmediumhigh"
-          class="card-img-top"
           alt="..."
         />
       </div>
 
-      <div class="card" style="width: 18rem">
+      <div class="inner2">
+        <a href="#">CUSHIONS</a>
+      </div>
+      <div class="inner" style="width: 50%">
         <img
           src="https://static.zarahome.net/8/contentEcom/dto_imagen/distribuidoras/mixta/desktop/1020264590/1020264595.jpg?20240221023204&imformat=chrome&imwidth=768&impolicy=zarahome-itxmediumhigh"
-          class="card-img-top"
           alt="..."
         />
       </div>
+
+      <div class="inner2">
+        <a href="#" style="left: 70%">BLANKETS AND THROW</a>
+      </div>
     </div>
+
     <form class="search-form" action="/search" method="get">
       <input
         type="text"
         name="q"
         class="search-input"
         placeholder="Enter your email address"
-        style="border: none; margin-left: 500px; margin-top: 100px"
+        style="border: none; margin-left: 500px; margin-top: 50px"
       />
     </form>
-    <hr style="width: 600px; margin-top: 10px" />
+
+    <hr style="width: 600px; margin-top: 10px; margin-left: 400px" />
     <div class="container-fluid" style="display: flex" id="soc">
       <div style="margin-left: 500px; text-align: center">
-        <p>Follow us on</p>
+        <p style="margin-left: 70px">Follow us on</p>
         <div
           style="
             width: 45%;
@@ -80,8 +386,8 @@
             gap: 25px;
             justify-content: center;
             align-items: center;
-            margin-top: 10px;
-            margin-left: -300px;
+            margin-top: 1px;
+            margin-left: -230px;
             position: absolute;
             font-size: 20px;
           "
@@ -92,11 +398,12 @@
           <div class="boxes"><i class="fa-brands fa-youtube"></i></div>
 
           <div class="boxes"><i class="fa-brands fa-twitter"></i></div>
+          <div class="boxes"><i class="fa-brands fa-spotify"></i></div>
 
           <div class="boxes"><i class="fa-brands fa-tiktok"></i></div>
         </div>
       </div>
-      <div style="margin-left: 200px; text-align: center">
+      <div style="margin-left: 100px; text-align: center">
         <p>Download our app</p>
         <img
           src="https://static.zarahome.net/8/static4/itxwebstandard/images/qr_app/footer/qr.png?20240222021206"
@@ -105,6 +412,7 @@
         />
       </div>
     </div>
+   
     <div
       id="socia"
       style="display: flex; justify-content: space-evenly; margin-top: 20px"
@@ -114,14 +422,15 @@
           justify-content: space-evenly;
           margin-top: 20px;
           margin-left: 50px;
+         
         "
       >
-        <a href="" style="font-weight: bold">POLICIES</a>
-        <a href="">TERMS AND CONDITIONS</a>
-        <a href="">PRIVACY POLICY</a>
-        <a href="">COOKIES POLICY</a>
-        <a href="">COOKIES SETTINGS</a>
-        <a href="">LEGAL MENTIONS</a>
+        <h6 style=" overflow-y: hidden;">POLICIES</h6>
+        <a href="#">TERMS AND CONDITIONS</a>
+        <a href="#">PRIVACY POLICY</a>
+        <a href="#">COOKIES POLICY</a>
+        <a href="#">COOKIES SETTINGS</a>
+        <a href="#">LEGAL MENTIONS</a>
       </div>
       <div
         style="
@@ -130,9 +439,10 @@
           margin-left: -400px;
         "
       >
-        <a href="" style="font-weight: bold">COMPANY</a>
-        <a href="">WORK WITH US</a>
-        <a href="">PRESS</a>
+        <h6 style=" overflow-y: hidden;">COMPANY</h6>
+        <!-- <a href="" style="font-weight: bold">COMPANY</a> -->
+        <a href="#">WORK WITH US</a>
+        <a href="#">PRESS</a>
       </div>
       <div
         style="
@@ -141,10 +451,23 @@
           margin-left: -400px;
         "
       >
-        <a href="" style="font-weight: bold">CONTACT</a>
-        <a href="">CONTACT US</a>
-        <a href="">HELP</a>
+        <h6 style=" overflow-y: hidden;">CONTACT</h6>
+        <!-- <a href="" style="font-weight: bold">CONTACT</a> -->
+        <a href="#">CONTACT US</a>
+        <a href="#">HELP</a>
+        <a href="">GUEST PURCHASE</a>
       </div>
+    </div>
+    <div
+      style="
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+        gap: 10px;
+      "
+    >
+      <span class="material-symbols-outlined"> language </span>
+      <p>INDIA/ENGLISH</p>
     </div>
   </body>
 </html>
