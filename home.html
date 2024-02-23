@@ -42,9 +42,13 @@
         align-items: center;
         margin: 30px 0px 0px 50px;
         flex-wrap: wrap;
-
-        img {
+        .anchor{
+          /* border: 1px solid; */
           width: 20%;
+          height: 50px;
+        }
+        img {
+          width: 100%;
         }
         button {
           background-color: transparent;
@@ -77,19 +81,32 @@
       .form:hover {
         cursor: pointer;
         /* background: #737b96; */
-        background-image: url(https://cdn.pixabay.com/animation/2022/12/05/10/47/10-47-58-930_512.gif);
+        background-image: url(https://i.pinimg.com/originals/3f/c3/2b/3fc32b3699a73c4a172720cc51b24e19.gif);
         /* background: linear-gradient(270deg, rgba(83, 37, 69, 1) 50%, rgba(193, 148, 155, 0.7931547619047619) 93%); */
+      }
+      .input-group{
+        width: 30%;
+
+        span{
+          background-color:#bc741a;
+          color: white;
+        }
       }
     </style>
   </head>
   <body>
     <div class="d">
       <div class="Home1">
-        <img src="Images/ourHome Logo/3.png" alt="logo" />
+       
+       <a class="anchor" href="./home.html">
 
-        <div>
-          <button>Search</button>
-        </div>
+         <img src="Images/ourHome Logo/3.png" alt="logo" />
+         
+        </a>
+          <div class="input-group ">
+            <span class="input-group-text ">Search</span>
+            <input type="text" class="form-control bg-twhite" placeholder="search" aria-label="search" aria-describedby="addon-wrapping">
+          </div>
 
         <div class="dd">
           <div class="d1">
@@ -200,6 +217,7 @@
                       style="color: white; font-size: medium"
                     >
                       Not yet account, <a href="#">SIGN UP</a>
+                      
                     </p>
                   </form>
                 </div>
@@ -222,7 +240,7 @@
           </div>
           <div class="d1">
             <i class="fa-solid fa-cart-shopping"></i
-            ><button
+            ><a
               style="
                 font-size: 13px;
                 color: white;
@@ -230,9 +248,9 @@
                 text-decoration: none;
                 font-weight: bold;
               "
-            >
+            href="./basket.html">
               BASKET
-            </button>
+            </a>
           </div>
         </div>
       </div>
