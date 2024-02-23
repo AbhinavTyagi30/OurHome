@@ -16,6 +16,8 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <script
       src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
@@ -40,12 +42,12 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        margin: 30px 0px 0px 50px;
+        margin: 30px 15px 0px 5px;
         flex-wrap: wrap;
-        .anchor{
+        .anchor {
           /* border: 1px solid; */
           width: 20%;
-          height: 50px;
+          /* height: 50px; */
         }
         img {
           width: 100%;
@@ -84,12 +86,32 @@
         background-image: url(https://i.pinimg.com/originals/3f/c3/2b/3fc32b3699a73c4a172720cc51b24e19.gif);
         /* background: linear-gradient(270deg, rgba(83, 37, 69, 1) 50%, rgba(193, 148, 155, 0.7931547619047619) 93%); */
       }
-      .input-group{
+      .input-group {
         width: 30%;
 
-        span{
-          background-color:#bc741a;
+        span {
+          background-color: #bc741a;
           color: white;
+        }
+      }
+
+      #socia >div>a{
+        display: block;
+        color: black;
+        text-decoration: none;
+        font-size: 12px;
+      }
+      #hamburger{
+        width: 30px;
+        height: 30px;
+        color: white;
+        /* border: 1px solid; */
+        margin-left: 10px;
+      }
+      .offcanvas-body{
+        ul>a{
+          text-decoration: none;
+          color: black;
         }
       }
     </style>
@@ -97,16 +119,39 @@
   <body>
     <div class="d">
       <div class="Home1">
-       
-       <a class="anchor" href="./home.html">
-
-         <img src="Images/ourHome Logo/3.png" alt="logo" />
-         
+        <button style="border: 0px;" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling"><span class="material-symbols-outlined" id="hamburger">
+          menu
+          </span></button>
+    
+    <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+      <div class="offcanvas-header">
+        <!-- <h5 class="offcanvas-title" id="offcanvasScrollingLabel"></h5> -->
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close" style="font-size: 15px;"></button>
+      </div>
+      <div class="offcanvas-body">
+       <ul>
+          <a href="#"><li>BED ROOM</li></a>
+          <a href="#"><li>CLOTHING_&_FOOTWEAR</li></a>
+          <a href="#"><li>LIVING ROOM</li></a>
+          <a href="#"><li>DINING</li></a>
+          <a href="#"><li>BATHROOM</li></a>
+        </ul>
+      </div>
+    </div>
+        <a class="anchor" href="./home.html">
+          
+          <img src="./Images/ourHome Logo/3.png" alt="logo" />
         </a>
-          <div class="input-group ">
-            <span class="input-group-text ">Search</span>
-            <input type="text" class="form-control bg-twhite" placeholder="search" aria-label="search" aria-describedby="addon-wrapping">
-          </div>
+        <div class="input-group">
+          <span class="input-group-text">Search</span>
+          <input
+            type="text"
+            class="form-control bg-twhite"
+            placeholder="search"
+            aria-label="search"
+            aria-describedby="addon-wrapping"
+          />
+        </div>
 
         <div class="dd">
           <div class="d1">
@@ -217,7 +262,6 @@
                       style="color: white; font-size: medium"
                     >
                       Not yet account, <a href="#">SIGN UP</a>
-                      
                     </p>
                   </form>
                 </div>
@@ -248,12 +292,122 @@
                 text-decoration: none;
                 font-weight: bold;
               "
-            href="./basket.html">
+              href="./basket.html"
+            >
               BASKET
             </a>
           </div>
         </div>
       </div>
     </div>
+
+    <form class="search-form" action="/search" method="get">
+      <input
+        type="text"
+        name="q"
+        class="search-input"
+        placeholder="Enter your email address"
+        style="border: none; margin-left: 500px; margin-top: 50px"
+      />
+    </form>
+
+    <hr style="width: 600px; margin-top: 10px; margin-left: 400px" />
+    <div class="container-fluid" style="display: flex" id="soc">
+      <div style="margin-left: 500px; text-align: center">
+        <p style="margin-left: 70px">Follow us on</p>
+        <div
+          style="
+            width: 45%;
+            height: 40px;
+            display: flex;
+            gap: 25px;
+            justify-content: center;
+            align-items: center;
+            margin-top: 1px;
+            margin-left: -230px;
+            position: absolute;
+            font-size: 20px;
+          "
+        >
+          <div class="boxes"><i class="fa-brands fa-facebook-f"></i></div>
+          <div class="boxes"><i class="fa-brands fa-instagram"></i></div>
+          <div class="boxes"><i class="fa-brands fa-pinterest-p"></i></div>
+          <div class="boxes"><i class="fa-brands fa-youtube"></i></div>
+
+          <div class="boxes"><i class="fa-brands fa-twitter"></i></div>
+
+          <div class="boxes"><i class="fa-brands fa-spotify"></i></div>
+
+          <div class="boxes"><i class="fa-brands fa-tiktok"></i></div>
+        </div>
+      </div>
+      <div style="margin-left: 100px; text-align: center">
+        <p>Download our app</p>
+        <img
+          src="https://static.zarahome.net/8/static4/itxwebstandard/images/qr_app/footer/qr.png?20240222021206"
+          alt=""
+          style="height: 100px; width: 100px"
+        />
+      </div>
+    </div>
+
+    <div
+      id="socia"
+      style="display: flex; justify-content: space-evenly; margin-top: 20px"
+    >
+      <div
+        style="
+          justify-content: space-evenly;
+          margin-top: 20px;
+          margin-left: 50px;
+        "
+      >
+        <h6 style="overflow-y: hidden">POLICIES</h6>
+        <a href="#">TERMS AND CONDITIONS</a>
+        <a href="#">PRIVACY POLICY</a>
+        <a href="#">COOKIES POLICY</a>
+        <a href="#">COOKIES SETTINGS</a>
+        <a href="#">LEGAL MENTIONS</a>
+      </div>
+      <div
+        style="
+          justify-content: space-evenly;
+          margin-top: 20px;
+          margin-left: -400px;
+        "
+      >
+        <h6 style="overflow-y: hidden">COMPANY</h6>
+        <!-- <a href="" style="font-weight: bold">COMPANY</a> -->
+        <a href="#">WORK WITH US</a>
+        <a href="#">PRESS</a>
+      </div>
+      <div
+        style="
+          justify-content: space-evenly;
+          margin-top: 20px;
+          margin-left: -400px;
+        "
+      >
+        <h6 style="overflow-y: hidden">CONTACT</h6>
+        <!-- <a href="" style="font-weight: bold">CONTACT</a> -->
+        <a href="#">CONTACT US</a>
+        <a href="#">HELP</a>
+        <a href="">GUEST PURCHASE</a>
+      </div>
+    </div>
+    <div
+      style="
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+        gap: 10px;
+      "
+    >
+      <span class="material-symbols-outlined"> language </span>
+      <p>INDIA/ENGLISH</p>
+    </div>
+
+   
+
   </body>
 </html>
