@@ -26,33 +26,6 @@ body {
   border-radius: 10px;
 }
 
-.nav-items {
-  text-decoration: none;
-  list-style: none;
-  display: grid;
-  gap: 4rem;
-  padding-block: 2rem;
-  font-size: 2rem;
-  position: sticky;
-  top: 0%;
-}
-
-.nav-items li {
-  border-radius: 100vw 0 0 100vw;
-  padding: 2rem 2rem;
-  /* margin-left: 1rem; */
-}
-
-.nav-items li.current {
-  background-color: #c5e0d4;
-}
-
-.nav-items a {
-  text-decoration: none;
-  color: black;
-  font-size: 1.2rem;
-}
-
 #data-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
