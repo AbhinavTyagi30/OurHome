@@ -12,13 +12,21 @@
       crossorigin="anonymous"
     />
     <style>
+      /* */
+      .search-input{
+        width: 500px;
+        text-align: center;
+        font-size: 14px;
+        font: menu;
+        
+      }
       a {
         display: block;
         color: black;
         text-decoration: none;
         font: message-box;
         font-size: 14px;
-        font-weight: 400px;
+        font-weight: 100px;
       }
       body{
         margin: 0px;
@@ -63,20 +71,23 @@
       <img src="https://static.zarahome.net/8/contentEcom/dto_imagen/distribuidoras/mixta/desktop/1020116640/1020116662.jpg?20240222021204&imformat=chrome&imwidth=768&impolicy=zarahome-itxmediumhigh" style="height: 100vh;width: 50%;" alt="...">
       <img src = "https://static.zarahome.net/8/contentEcom/dto_imagen/distribuidoras/mixta/desktop/1020116640/1020116655.jpg?20240222021204&imformat=chrome&imwidth=768&impolicy=zarahome-itxmediumhigh" style="height: 100vh;width: 50%;" alt="...">
     </div>
+    <div id="topText">
+
+    </div>
     <div id="footer">
     <form class="search-form" action="/search" method="get">
       <input
         type="text"
         name="q"
         class="search-input"
-        placeholder="JOIN OUT NEWSLETTER-ENTER YOUR EMAIL ADDRESS *"
-        style="border: none; margin-left: 500px; margin-top: 100px"
+        placeholder="JOIN OUR NEWSLETTER- ENTER YOUR EMAIL ADDRESS *"
+        style="border: none; margin-left: 500px; margin-top: 200px"
       />
     </form>
     <hr style="width: 600px; margin-top: 10px" />
     <div class="container-fluid" style="display: flex" id="soc">
-      <div style="margin-left: 500px; text-align: center">
-        <p>Follow us on</p>
+      <div style="margin-left: 500px; margin-top: 50px;text-align: center">
+        <h3 style="font:menu;font-size: 14px;margin-left:30px;">Follow us on</h3>
         <div
           style="
             width: 45%;
@@ -86,7 +97,7 @@
             justify-content: center;
             align-items: center;
             margin-top: 10px;
-            margin-left: -300px;
+            margin-left: -250px;
             position: absolute;
             font-size: 20px;
           "
@@ -101,8 +112,8 @@
           <div class="boxes"><i class="fa-brands fa-tiktok"></i></div>
         </div>
       </div>
-      <div style="margin-left: 200px; text-align: center">
-        <p>Download our app</p>
+      <div style="margin-left: 200px; margin-top: 50px;text-align: center">
+        <h3 style="font: menu;font-size: 14px;">Download our app</h3>
         <img
           src="https://static.zarahome.net/8/static4/itxwebstandard/images/qr_app/footer/qr.png?20240222021206"
           alt=""
@@ -119,9 +130,10 @@
           justify-content: space-evenly;
           margin-top: 20px;
           margin-left: 50px;
+          gap: 5px;
         "
       >
-        <a href="" style="font-weight: bold;">POLICIES</a>
+        <a href="" style="font-weight:600px;font-size: 14px;">POLICIES</a>
         <a href="">TERMS AND CONDITIONS</a>
         <a href="">PRIVACY POLICY</a>
         <a href="">COOKIES POLICY</a>
@@ -130,7 +142,6 @@
       </div>
       <div
         style="
-          justify-content: space-evenly;
           margin-top: 20px;
           margin-left: -400px;
         "
@@ -141,7 +152,6 @@
       </div>
       <div
         style="
-          justify-content: space-evenly;
           margin-top: 20px;
           margin-left: -400px;
         "
