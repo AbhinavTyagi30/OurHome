@@ -13,6 +13,16 @@
     />
     <style>
       /* */
+    
+      .card{
+        background-image: url("https://static.zarahome.net/8/contentEcom/dto_imagen/distribuidoras/mixta/desktop/1020116640/1020116858.jpg?20240222021204&imformat=chrome&imwidth=1536&impolicy=zarahome-itxmediumhigh");
+        background-position: center;
+        background-size: cover;
+        width: 100%;
+        height: 100vh;
+        padding: 0px;
+        margin: 0px;
+      }
       .search-input{
         width: 500px;
         text-align: center;
@@ -21,31 +31,46 @@
         
       }
       a {
-        display: block;
-        color: black;
         text-decoration: none;
-        font: message-box;
-        font-size: 14px;
-        font-weight: 100px;
+        font: menu;
+        color: grey;
       }
       body{
         margin: 0px;
         border: 0px;
         border-collapse: collapse;
+        overflow-y: auto;
+      
       }
       .img-fluid{
         height: 100vh;
         width: 100%;
         margin: 0px;
-        
+      }
+      #footer{
+        height: 100vh;
       }
       #centerBlock{
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 100%;
-        height: 100vh;
+        /* width: 100%;
+        height: 100vh; */
         border-collapse: collapse;
+      }
+      #firstPic{
+        background-image: url("https://static.zarahome.net/8/contentEcom/dto_imagen/distribuidoras/mixta/desktop/1020116640/1020116662.jpg?20240222021204&imformat=chrome&imwidth=768&impolicy=zarahome-itxmediumhigh");
+        width: 50%;
+        height: 100vh;
+        background-size: cover;
+        background-position: center;
+      }
+      #second{
+        background-image: url("https://static.zarahome.net/8/contentEcom/dto_imagen/distribuidoras/mixta/desktop/1020116640/1020116655.jpg?20240222021204&imformat=chrome&imwidth=768&impolicy=zarahome-itxmediumhigh");
+        background-size: cover;
+        width: 50%;
+        height: 100vh;
+        background-position: center;
       }
     </style>
     <script
@@ -58,35 +83,32 @@
   />
   </head>
   <body>
-    <div id="cont">
       <div class="card">
-        <img
-          src="https://static.zarahome.net/8/contentEcom/dto_imagen/distribuidoras/mixta/desktop/1020116640/1020116858.jpg?20240222021204&imformat=chrome&imwidth=1536&impolicy=zarahome-itxmediumhigh"
-          class="img-fluid"
-          alt="..."
-        />
+        <a href=""><p style="position: absolute; left: 47%;top: 41%; color: white;font-size: 20px;">BED LINEN</p></a>
       </div>
-    </div>
-    <div id="centerBlock">
-      <img src="https://static.zarahome.net/8/contentEcom/dto_imagen/distribuidoras/mixta/desktop/1020116640/1020116662.jpg?20240222021204&imformat=chrome&imwidth=768&impolicy=zarahome-itxmediumhigh" style="height: 100vh;width: 50%;" alt="...">
-      <img src = "https://static.zarahome.net/8/contentEcom/dto_imagen/distribuidoras/mixta/desktop/1020116640/1020116655.jpg?20240222021204&imformat=chrome&imwidth=768&impolicy=zarahome-itxmediumhigh" style="height: 100vh;width: 50%;" alt="...">
-    </div>
-    <div id="topText">
-
+    <div id="centerBlock" style="margin-top: 0px;padding: 0px; position: relative;">
+    
+     <div id="firstPic"><a href="" style="color: white; font-size: 20px; position: absolute; left: 18%;top: 45%;">FILLING AND PROTECTORS</a></div>
+      <div id="second"><a href="" style="color: white;font-size:20px ;position: absolute; left: 68%; top: 45%;">BLANKETS AND THROWS</a></div>
+     
     </div>
     <div id="footer">
+      <h3 style="font: menu;font-size: 14px; text-align: center;color: grey;">BEDROOM</h3>
+      <p style="text-align: center;font-size: 12px;color: grey;">
+        The most intimate room in the home is the bedroom. Quilts, blankets and accessories are essential when designing a pleasant space to relax in. The bed is undoubtedly the main feature of the bedroom. Dress yours with the latest in sheets, cushions and duvet covers: designs in neutral colours, with plant prints or original geometric patterns. The right colour combination is the key to achieving a comfortable and relaxing space. Choose a delicate colour range or create an original counterpoint with lots of personality by combining different textile items such as bedroom curtains or rugs.
+        </p>
     <form class="search-form" action="/search" method="get">
       <input
         type="text"
         name="q"
         class="search-input"
         placeholder="JOIN OUR NEWSLETTER- ENTER YOUR EMAIL ADDRESS *"
-        style="border: none; margin-left: 500px; margin-top: 200px"
+        style="border: none; margin-left: 500px; margin-top: 90px"
       />
     </form>
-    <hr style="width: 600px; margin-top: 10px" />
+    <hr style="width: 500px; margin-top: 10px" />
     <div class="container-fluid" style="display: flex" id="soc">
-      <div style="margin-left: 500px; margin-top: 50px;text-align: center">
+      <div style="margin-left: 550px; margin-top: 50px;text-align: center">
         <h3 style="font:menu;font-size: 14px;margin-left:30px;">Follow us on</h3>
         <div
           style="
@@ -106,7 +128,6 @@
           <div class="boxes"><i class="fa-brands fa-instagram"></i></div>
           <div class="boxes"><i class="fa-brands fa-pinterest-p"></i></div>
           <div class="boxes"><i class="fa-brands fa-youtube"></i></div>
-
           <div class="boxes"><i class="fa-brands fa-twitter"></i></div>
           <div class="boxes"><i class="fa-brands fa-spotify fa-xs"></i></div>
           <div class="boxes"><i class="fa-brands fa-tiktok"></i></div>
@@ -122,18 +143,19 @@
       </div>
     </div>
     <div
-      id="socia"
-      style="display: flex; justify-content: space-evenly; margin-top: 20px"
-    >
+      id="social"
+      style="display: flex; justify-content: space-evenly; margin-top: 50px;margin-left: 0px;">
       <div
-        style="
+        style=" display: flex;
+        flex-direction: column;
           justify-content: space-evenly;
+          align-items: center;
           margin-top: 20px;
-          margin-left: 50px;
+          margin-left: 0px;
           gap: 5px;
         "
       >
-        <a href="" style="font-weight:600px;font-size: 14px;">POLICIES</a>
+        <a href="" style="font:menu;text-decoration: underline;"><strong>POLICIES</strong></a>
         <a href="">TERMS AND CONDITIONS</a>
         <a href="">PRIVACY POLICY</a>
         <a href="">COOKIES POLICY</a>
@@ -142,25 +164,35 @@
       </div>
       <div
         style="
-          margin-top: 20px;
-          margin-left: -400px;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        align-items: center;
+        margin-top: 20px;
+        margin-left: -400px;
         "
       >
-        <a href="" style="font-weight: bold">COMPANY</a>
-        <a href="">WORK WITH US</a>
-        <a href="">PRESS</a>
+        <a href="" style="font:menu; text-decoration: underline;"><strong>COMPANY</strong></a>
+        <a href="" style="font: menu;;">WORK WITH US</a>
+        <a href="" style="font: menu;">PRESS</a>
       </div>
       <div
-        style="
+        style=" display: flex;
+        flex-direction: column;
+        gap: 5px;
           margin-top: 20px;
           margin-left: -400px;
+          align-items: center;
         "
       >
-        <a href="" style="font-weight: bold">CONTACT</a>
+        <a href="" style="font:menu; text-decoration: underline;"><strong>CONTACT</strong></a>
         <a href="">CONTACT US</a>
         <a href="">HELP</a>
       </div>
     </div>
-  </div>
+      <div class="languageChange" style="margin-top: 100px; margin-left: 49%;">
+      <a href="#" style="color: grey; font: menu;"><i class="fa-solid fa-globe"></i> INDIA/ENGLISH</a> 
+      </div>
+    </div>
   </body>
 </html>
