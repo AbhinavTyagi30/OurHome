@@ -1,5 +1,4 @@
 /* Fire these functions on load to get all the data and append it to DOM */
-localStorage.setItem(`currUser`,JSON.stringify({"name": "Abhinav"}))
 getOrdersData();
 addProfileData();
 
@@ -72,7 +71,7 @@ function addOrdersData(data){
 	saleNumber.classList.toggle("placeholder-glow");
 
 	let lastMonthProfit = document.getElementById("last-month-per");
-	lastMonthProfit.innerHTML = `9%`;
+	lastMonthProfit.innerHTML = `+9%`;
 }
 
 /* Append profile data to the DOM */

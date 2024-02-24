@@ -13,9 +13,6 @@ async function handleLogin(){
 
         let obj = {"email" : `${email}` , "password" : `${password}`};
 
-        console.log(obj);
-
-
         let response = await fetch(`https://ourhomeserver.onrender.com/login`,{
             method : "POST",
             headers : {
@@ -24,8 +21,16 @@ async function handleLogin(){
             body : JSON.stringify(obj)
         });
 
-        let data = response.json();
-        console.log(data);
+        let data = await response.json();
+        localStorage.setItem(`currUser`,JSON.stringify(data.user));
+
+        if(data.user.isAdmin){
+            window.location.href = "./adminDashBoard/adminDash.html";
+        }
+        else{
+            /* addLoginCreds(); */
+        }
+
     } catch (error) {
         console.log(error);
     }
