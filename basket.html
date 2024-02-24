@@ -27,6 +27,17 @@
     ></script>
     <style>
       * {
+        margin: 0px;
+        padding: 0px;
+        overflow-x: hidden;
+      }
+      .Home1 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 30px 0px 0px 50px;
+        flex-wrap: wrap;
+
 
 margin: 0px;
 padding: 0px;
@@ -47,39 +58,32 @@ flex-wrap: wrap;
         img {
           width: 100%;
         }
-button {
-  background-color: transparent;
-  border: 0px;
-  font-size: 25px;
-  color: black;
-  text-decoration: underline;
-}
-}
-.d1 {
-display: flex;
-flex-wrap: wrap;
-gap: 10px;
-font-size: 20px;
-color: black;
-}
-.dd {
-display: flex;
-gap: 30px;
-margin-right: 20px;
-}
-.form {
-background-image: url(https://i.pinimg.com/originals/04/15/95/041595beadc8c220768399637f204621.gif);
-background-size: cover;
-background-position: center;
-transition: background 2s linear; /* Increased duration */
-}
-
-.form:hover {
-cursor: pointer;
-background-image: url(https://i.pinimg.com/originals/3f/c3/2b/3fc32b3699a73c4a172720cc51b24e19.gif);
-background-size: cover;
-background-position: center;
-/* background: linear-gradient(270deg, rgba(83, 37, 69, 1) 50%, rgba(193, 148, 155, 0.7931547619047619) 93%); */
+        button {
+          background-color: transparent;
+          border: 0px;
+          font-size: 25px;
+          color: black;
+          text-decoration: underline;
+        }
+      }
+      .d1 {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        font-size: 20px;
+        color: black;
+      }
+      .dd {
+        display: flex;
+        gap: 30px;
+        margin-right: 20px;
+      }
+      .form {
+        background-image: url(https://i.pinimg.com/originals/04/15/95/041595beadc8c220768399637f204621.gif);
+        background-size: cover;
+        background-position: center;
+        transition: background 2s linear; /* Increased duration */
+      }
 
 }
 .cart{
@@ -153,12 +157,15 @@ a{
     </div>
 
         <a class="anchor" href="./home.html">
+          <img src="./Images/OurHomeLogo/3.png" alt="logo" />
+        </a>
 
           <img src="./Images/ourHome Logo/3.png" alt="logo" />
           
          </a>
 
           <h5 style="margin: 0; overflow-y: hidden;">BASKET</h5>
+
 
         <div class="dd">
           <div class="d1">
@@ -269,7 +276,6 @@ a{
                       style="color: white; font-size: medium"
                     >
                       Not yet account, <a href="#">SIGN UP</a>
-                      
                     </p>
                   </form>
                 </div>
@@ -300,7 +306,8 @@ a{
                 text-decoration: none;
                 font-weight: bold;
               "
-            href="./basket.html">
+              href="./basket.html"
+            >
               BASKET
             </a>
           </div>
@@ -309,8 +316,7 @@ a{
       <div class="cart">
         <a href="#">SHOPPING BASKET(0)</a>
         <a href="#">BUY LATER(0)</a>
-        
-      </div> 
+      </div>
       <div class="under"></div>
       <div class="emp"><h5 style="overflow-y: hidden;">Your shopping basket is empty</h5></div>
     </div>

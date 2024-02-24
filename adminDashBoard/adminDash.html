@@ -1,583 +1,190 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-bs-theme="light">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Admin Home</title>
-
-    <!-- Font Awesome Link -->
-
-    <script
-      src="https://kit.fontawesome.com/ce304c3157.js"
-      crossorigin="anonymous"
-    ></script>
+    <title>OurHome Admin Dashboard</title>
 
     <!-- Link to Bootstrap -->
 
     <link
-      href="../node_modules/bootstrap/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-      crossorigin="anonymous"
+      href="../node_modules/bootstrap/dist/css/bootstrap.min.css"
     />
+
+    <!-- Link to FontAwesome -->
     <script
-      src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      src="https://kit.fontawesome.com/ae360af17e.js"
       crossorigin="anonymous"
     ></script>
 
-    <!-- link to CSS -->
-
-    <link rel="stylesheet" href="style.css" />
+    <!-- Link to CSS -->
+    <link rel="stylesheet" href="./style.css" />
   </head>
 
-  <body class="bg-success text-dark bg-opacity-25">
-    <div class="body-container">
-      <!-- Sidebar section begins -->
-
-      <div class="nav-container">
-        <div style="min-height: 100svh">
-          <div id="collapseWidthExample">
-            <nav
-              class="bg-success text-dark bg-opacity-25"
-              style="max-width: 10rem; width: 100%; height: 100vh"
-            >
-              <ul class="nav-items">
-                <li class="current" aria-current="page">
-                  <a href="./adminDash.html">Home</a>
-                </li>
-                <li><a href="./products.html">Products</a></li>
-                <li><a href="./allUsers.html">Users</a></li>
-                <li><a href="profile.html">Profile</a></li>
-              </ul>
-            </nav>
+  <body>
+    <div class="wrapper">
+      <aside id="sidebar" class="js-sidebar">
+        <!-- Content For Sidebar -->
+        <div class="h-100">
+          <div class="sidebar-logo">
+            <a href="#"><img src="../Images/OurHomeLogo/1.png" alt="logo" /></a>
           </div>
+          <ul class="sidebar-nav">
+            <li class="sidebar-item">
+              <a href="#" class="sidebar-link"> Products </a>
+            </li>
+
+            <li class="sidebar-item">
+              <a href="#" class="sidebar-link collapsed"> Orders </a>
+            </li>
+
+            <li class="sidebar-item">
+              <a href="#" class="sidebar-link collapsed"> Users </a>
+            </li>
+            <li class="sidebar-item">
+              <a href="#" class="sidebar-link" id="logout"> Logout </a>
+            </li>
+          </ul>
         </div>
-      </div>
-
-      <!-- Sidebar section ends -->
-
-      <!-- Card Container Section Begins -->
-
-      <div class="card-container">
-        <!-- This will display a featured product card and house a button to view all products -->
-        <!-- Featured Product -->
-        <div
-          id="display-item-1"
-          class="bg-success bg-opacity-75 d-flex flex-column justify-content-start p-2"
-          style="border-radius: 10px"
-        >
-          <div id="featured-product">
-            <div
-              class="container-fluid d-flex justify-content-between mt-2 mb-2"
-            >
-              <!--two divs: left contains headline, tagline; right div contains the carousel-->
-              <div>
-                <!--Contains headline and tagline-->
-                BEST
-                <h1>SELLERS</h1>
-                <a class="btn btn-outline-dark">VIEW ALL PRODUCTS</a>
-              </div>
-              <div>
-                <!--Carousel with two slides, each slide containing three product cards-->
-
-                <div
-                  id="featured-product-carousel"
-                  class="carousel carousel-dark slide carousel-fade"
-                >
-                  <div class="carousel-inner">
-                    <!--SLIDE 1-->
-                    <div class="carousel-item">
-                      <div
-                        class="container d-flex justify-content-center align-items-center gap-5"
-                      >
-                        <div
-                          class="product-card card align-items-center text-center"
-                          style="width: 12rem; border: none"
-                        >
-                          <img
-                            src="https://upload.wikimedia.org/wikipedia/commons/7/71/Black.png"
-                            class="card-img-top"
-                            alt="..."
-                            style="width: 100%; height: 94px"
-                          />
-                          <div class="card-body">
-                            <h5 class="card-title placeholder-glow">
-                              <span class="placeholder col-6"></span>
-                            </h5>
-                            <a
-                              href="#"
-                              class="btn btn-primary disabled placeholder col-6"
-                              style="background-color: #56b7c3; border: none"
-                              >View Product</a
-                            >
-                          </div>
-                        </div>
-                        <div
-                          class="product-card card align-items-center text-center"
-                          style="width: 12rem; border: none"
-                        >
-                          <img
-                            src="https://upload.wikimedia.org/wikipedia/commons/7/71/Black.png"
-                            class="card-img-top"
-                            alt="..."
-                            style="width: 100%; height: 94px"
-                          />
-                          <div class="card-body">
-                            <h5 class="card-title placeholder-glow">
-                              <span class="placeholder col-6"></span>
-                            </h5>
-                            <a
-                              href="#"
-                              class="btn btn-primary disabled placeholder col-6"
-                              style="background-color: #56b7c3; border: none"
-                              >View Product</a
-                            >
-                          </div>
-                        </div>
-
-                        <div
-                          class="product-card card align-items-center text-center"
-                          style="width: 12rem; border: none"
-                        >
-                          <img
-                            src="https://upload.wikimedia.org/wikipedia/commons/7/71/Black.png"
-                            class="card-img-top"
-                            alt="..."
-                            style="width: 100%; height: 94px"
-                          />
-                          <div class="card-body">
-                            <h5 class="card-title placeholder-glow">
-                              <span class="placeholder col-6"></span>
-                            </h5>
-                            <a
-                              href="#"
-                              class="btn btn-primary disabled placeholder col-6"
-                              style="background-color: #56b7c3; border: none"
-                              >View Product</a
-                            >
-                          </div>
+      </aside>
+      <div class="main">
+        <nav class="navbar navbar-expand px-3 border-bottom">
+          <button class="btn" id="sidebar-toggle" type="button">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="navbar-collapse navbar">
+            <ul class="navbar-nav">
+              <li class="nav-item dropdown">
+                <a href="#" data-bs-toggle="dropdown" class="nav-icon pe-md-0">
+                  <img
+                    src="../Images/userTemplate/user.png"
+                    class="avatar img-fluid rounded"
+                    alt="userProfilePicture"
+                  />
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <main class="content px-3 py-2">
+          <div class="container-fluid">
+            <div class="mb-3">
+              <h4>Admin Dashboard</h4>
+            </div>
+            <div class="row">
+              <div class="col-12 col-md-6 d-flex">
+                <div class="card flex-fill border-0 illustration">
+                  <div class="card-body p-0 d-flex flex-fill">
+                    <div class="row g-0 w-100">
+                      <div class="col-6">
+                        <div class="p-3 m-1">
+                          <h4 id="admin-name" class="placeholder-glow">
+                            <span class="placeholder col-6"></span>
+                          </h4>
+                          <p class="mb-0">Admin Dashboard, OurHome</p>
                         </div>
                       </div>
+                      <div class="col-6 align-self-end text-end">
+                        <img
+                          src="../Images/userTemplate/user.png"
+                          class="img-fluid illustration-img"
+                          alt="userProfilePicture"
+                        />
+                      </div>
                     </div>
-
-                    <!--SLIDE 2-->
-                    <div class="carousel-item active">
-                      <div
-                        class="container d-flex justify-content-center align-items-center gap-5"
-                      >
-                        <div
-                          class="product-card card align-items-center text-center"
-                          style="width: 12rem; border: none"
-                        >
-                          <img
-                            src="https://upload.wikimedia.org/wikipedia/commons/7/71/Black.png"
-                            class="card-img-top"
-                            alt="..."
-                            style="width: 100%; height: 94px"
-                          />
-                          <div class="card-body">
-                            <h5 class="card-title placeholder-glow">
-                              <span class="placeholder col-6"></span>
-                            </h5>
-                            <a
-                              href="#"
-                              class="btn btn-primary disabled placeholder col-6"
-                              style="background-color: #56b7c3; border: none"
-                              >View Product</a
-                            >
-                          </div>
-                        </div>
-                        <div
-                          class="product-card card align-items-center text-center"
-                          style="width: 12rem; border: none"
-                        >
-                          <img
-                            src="https://upload.wikimedia.org/wikipedia/commons/7/71/Black.png"
-                            class="card-img-top"
-                            alt="..."
-                            style="width: 100%; height: 94px"
-                          />
-                          <div class="card-body">
-                            <h5 class="card-title placeholder-glow">
-                              <span class="placeholder col-6"></span>
-                            </h5>
-                            <a
-                              href="#"
-                              class="btn btn-primary disabled placeholder col-6"
-                              style="background-color: #56b7c3; border: none"
-                              >View Product</a
-                            >
-                          </div>
-                        </div>
-                        <div
-                          class="product-card card align-items-center text-center"
-                          style="width: 12rem; border: none"
-                        >
-                          <img
-                            src="https://upload.wikimedia.org/wikipedia/commons/7/71/Black.png"
-                            class="card-img-top"
-                            alt="..."
-                            style="width: 100%; height: 94px"
-                          />
-                          <div class="card-body">
-                            <h5 class="card-title placeholder-glow">
-                              <span class="placeholder col-6"></span>
-                            </h5>
-                            <a
-                              href="#"
-                              class="btn btn-primary disabled placeholder col-6"
-                              style="background-color: #56b7c3; border: none"
-                              >View Product</a
-                            >
-                          </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 d-flex">
+                <div class="card flex-fill border-0">
+                  <div class="card-body py-4">
+                    <div class="d-flex align-items-start">
+                      <div class="flex-grow-1">
+                        <h4 class="mb-2 placeholder-glow" id="total-earnings">
+                          <span class="placeholder col-2"></span>
+                        </h4>
+                        <p class="mb-2">Total Earnings</p>
+                        <div class="mb-0">
+                          <span
+                            class="badge text-success me-2"
+                            id="last-month-per"
+                          >
+                            <span class="placeholder col-2"></span
+                          ></span>
+                          <span class="text-muted"> Since Last Month </span>
                         </div>
                       </div>
                     </div>
                   </div>
-                  <button
-                    class="carousel-control-prev"
-                    type="button"
-                    data-bs-target="#featured-product-carousel"
-                    data-bs-slide="prev"
-                  >
-                    <span
-                      class="carousel-control-prev-icon"
-                      aria-hidden="true"
-                    ></span>
-                    <span class="visually-hidden">Previous</span>
-                  </button>
-                  <button
-                    class="carousel-control-next"
-                    type="button"
-                    data-bs-target="#featured-product-carousel"
-                    data-bs-slide="next"
-                  >
-                    <span
-                      class="carousel-control-next-icon"
-                      aria-hidden="true"
-                    ></span>
-                    <span class="visually-hidden">Next</span>
-                  </button>
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-
-        <!-- This will display a table containing 5 users and house a view all and view user details button -->
-        <!-- User Table -->
-        <div
-          id="display-item-2"
-          class="bg-success bg-opacity-75 d-flex flex-column justify-content-start p-2"
-          style="border-radius: 10px"
-        >
-          <div
-            class="title d-flex flex-column justify-content-center"
-            style="
-              font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial,
-                sans-serif;
-              font-size: 2rem;
-              text-align: center;
-            "
-          >
-            USERS
-          </div>
-          <table id="user-table" class="table mt-3">
-            <thead class="table table-success">
-              <tr>
-                <th scope="col">#</th>
-                <th scope="col">Name</th>
-                <th scope="col">Country</th>
-                <th scope="col">Email</th>
-                <th scope="col">
-                  <a
-                    type="button"
-                    class="btn btn-outline-danger"
-                    href="allUsers.html"
-                  >
-                    View All
-                  </a>
-                </th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <th scope="row">1</th>
-                <td class="user-name">
-                  <h5 class="card-title placeholder-glow">
-                    <span class="placeholder col-6"></span>
-                  </h5>
-                </td>
-                <td class="user-country">
-                  <h5 class="card-title placeholder-glow">
-                    <span class="placeholder col-6"></span>
-                  </h5>
-                </td>
-                <td class="user-email">
-                  <h5 class="card-title placeholder-glow">
-                    <span class="placeholder col-12"></span>
-                  </h5>
-                </td>
-                <td>
-                  <a
-                    type="button"
-                    class="btn btn-outline-dark"
-                    href="oneUser.html"
-                  >
-                    View User
-                  </a>
-                </td>
-              </tr>
-
-              <tr>
-                <th scope="row">2</th>
-                <td class="user-name">
-                  <h5 class="card-title placeholder-glow">
-                    <span class="placeholder col-6"></span>
-                  </h5>
-                </td>
-                <td class="user-country">
-                  <h5 class="card-title placeholder-glow">
-                    <span class="placeholder col-6"></span>
-                  </h5>
-                </td>
-                <td class="user-email">
-                  <h5 class="card-title placeholder-glow">
-                    <span class="placeholder col-12"></span>
-                  </h5>
-                </td>
-                <td>
-                  <a
-                    type="button"
-                    class="btn btn-outline-dark"
-                    href="oneUser.html"
-                  >
-                    View User
-                  </a>
-                </td>
-              </tr>
-
-              <tr>
-                <th scope="row">3</th>
-                <td class="user-name">
-                  <h5 class="card-title placeholder-glow">
-                    <span class="placeholder col-6"></span>
-                  </h5>
-                </td>
-                <td class="user-country">
-                  <h5 class="card-title placeholder-glow">
-                    <span class="placeholder col-6"></span>
-                  </h5>
-                </td>
-                <td class="user-email">
-                  <h5 class="card-title placeholder-glow">
-                    <span class="placeholder col-12"></span>
-                  </h5>
-                </td>
-                <td>
-                  <a
-                    type="button"
-                    class="btn btn-outline-dark"
-                    href="oneUser.html"
-                  >
-                    View User
-                  </a>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-        <div
-          id="display-item-3"
-          class="bg-success bg-opacity-75 d-flex flex-column justify-content-start p-2"
-          style="border-radius: 10px"
-        >
-          <div
-            class="title d-flex flex-column justify-content-center"
-            style="
-              font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial,
-                sans-serif;
-              font-size: 2rem;
-              text-align: center;
-            "
-          >
-            ORDERS
-          </div>
-
-          <table id="orders-table" class="table mt-3">
-            <thead class="table table-success">
-              <tr>
-                <th scope="col">#</th>
-                <th scope="col">OrderID</th>
-                <th scope="col">UserID</th>
-                <th scope="col">Total Price</th>
-                <th scope="col">
-                  <a
-                    type="button"
-                    class="btn btn-outline-danger"
-                    href="allUsers.html"
-                  >
-                    View All
-                  </a>
-                </th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <th scope="row">1</th>
-                <td class="order-id">
-                  <h5 class="card-title placeholder-glow">
-                    <span class="placeholder col-6"></span>
-                  </h5>
-                </td>
-                <td class="order-user-id">
-                  <h5 class="card-title placeholder-glow">
-                    <span class="placeholder col-6"></span>
-                  </h5>
-                </td>
-                <td class="order-country">
-                  <h5 class="card-title placeholder-glow">
-                    <span class="placeholder col-12"></span>
-                  </h5>
-                </td>
-                <td>
-                  <a
-                    type="button"
-                    class="btn btn-outline-dark"
-                    href="oneUser.html"
-                  >
-                    View User
-                  </a>
-                </td>
-              </tr>
-
-              <tr>
-                <th scope="row">2</th>
-                <td class="order-id">
-                  <h5 class="card-title placeholder-glow">
-                    <span class="placeholder col-6"></span>
-                  </h5>
-                </td>
-                <td class="order-user-id">
-                  <h5 class="card-title placeholder-glow">
-                    <span class="placeholder col-6"></span>
-                  </h5>
-                </td>
-                <td class="order-country">
-                  <h5 class="card-title placeholder-glow">
-                    <span class="placeholder col-12"></span>
-                  </h5>
-                </td>
-                <td>
-                  <a
-                    type="button"
-                    class="btn btn-outline-dark"
-                    href="oneUser.html"
-                  >
-                    View User
-                  </a>
-                </td>
-              </tr>
-
-              <tr>
-                <th scope="row">3</th>
-                <td class="user-name">
-                  <h5 class="card-title placeholder-glow">
-                    <span class="placeholder col-6"></span>
-                  </h5>
-                </td>
-                <td class="user-country">
-                  <h5 class="card-title placeholder-glow">
-                    <span class="placeholder col-6"></span>
-                  </h5>
-                </td>
-                <td class="user-email">
-                  <h5 class="card-title placeholder-glow">
-                    <span class="placeholder col-12"></span>
-                  </h5>
-                </td>
-                <td>
-                  <a
-                    type="button"
-                    class="btn btn-outline-dark"
-                    href="oneUser.html"
-                  >
-                    View User
-                  </a>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-        <div
-          id="display-item-4"
-          class="bg-success bg-opacity-75 d-flex flex-column justify-content-center p-2"
-          style="border-radius: 10px"
-        >
-          <div id="data-container">
-            <div
-              id="money-card"
-              class="d-flex justify-content-around align-items-center"
-              style="
-                box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
-                background-color: #c5e0d4;
-                border-radius: 10px;
-                font-size: 2rem;
-              "
-            >
-              <i class="fa-solid fa-money-bill" style="font-size: 5rem"></i>
-              <p>€ 500</p>
-            </div>
-            <div
-              id="money-year-card"
-              class="d-flex justify-content-around align-items-center"
-              style="
-                box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
-                background-color: #c5e0d4;
-                border-radius: 10px;
-                font-size: 2rem;
-              "
-            >
-              <i
-                class="fa-solid fa-money-bill-trend-up"
-                style="font-size: 4rem"
-              ></i>
-              <p>€ 500</p>
-            </div>
-            <div
-              id="total-sales-card"
-              class="d-flex justify-content-around align-items-center"
-              style="
-                box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
-                background-color: #c5e0d4;
-                border-radius: 10px;
-                font-size: 2rem;
-              "
-            >
-              <i class="fa-solid fa-boxes-stacked" style="font-size: 4rem"></i>
-              <p>€ 500</p>
-            </div>
-            <div
-              id="sales-year-card"
-              class="d-flex justify-content-around align-items-center"
-              style="
-                box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
-                background-color: #c5e0d4;
-                border-radius: 10px;
-                font-size: 2rem;
-              "
-            >
-              <i class="fa-solid fa-calendar-check" style="font-size: 4rem"></i>
-              <p>€ 500</p>
+            <!-- Table Element -->
+            <div class="card border-0">
+              <div class="card-header">
+                <h5 class="card-title">Orders This Month</h5>
+                <h6 class="card-subtitle text-muted">
+                  List of all the orders placed this month.
+                </h6>
+              </div>
+              <div class="card-body">
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th scope="col">#</th>
+                      <th scope="col">OrderId</th>
+                      <th scope="col">UserId</th>
+                      <th scope="col">Name</th>
+                      <th scope="col">Price</th>
+                    </tr>
+                  </thead>
+                  <tbody id="orders-table-body">
+                    <tr>
+                      <td class="placeholder-glow">
+                        <span class="placeholder col-12"></span>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
             </div>
           </div>
-        </div>
+        </main>
+        <footer class="footer">
+          <div class="container-fluid">
+            <div class="row text-muted">
+              <div class="col-6 text-start">
+                <p class="mb-0">
+                  <a href="#" class="text-muted">
+                    <strong>CodzSwod</strong>
+                  </a>
+                </p>
+              </div>
+              <div class="col-6 text-end">
+                <ul class="list-inline">
+                  <li class="list-inline-item">
+                    <a href="#" class="text-muted">Contact</a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a href="#" class="text-muted">About Us</a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a href="#" class="text-muted">Terms</a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a href="#" class="text-muted">Booking</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </footer>
       </div>
-
-      <!-- Card Container Section Ends -->
     </div>
   </body>
-</html>
 
-<script src="adminDash.js" type="module"></script>
+  <!-- Link to js file -->
+  <script src="./script.js"></script>
+</html>

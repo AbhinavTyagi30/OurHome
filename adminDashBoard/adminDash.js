@@ -4,6 +4,7 @@ let baseUrl = "http://ourhomeserver.onrender.com"
 getProductData();
 getUserData();
 getOrdersData();
+getSalesNumbers();
 
 
 
@@ -57,7 +58,7 @@ function addUserTable(users){
         tableRow[i].children[2].innerText = `${users[i].country}`;
         tableRow[i].children[3].innerText = `${users[i].email}`;
     }
-    console.log(tableRow);
+    
 }
 
 //Function to fetch order data from the server
@@ -66,7 +67,7 @@ async function getOrdersData(){
     try {
         let response = await fetch(`https://ourhomeserver.onrender.com/orders?_page=1&_limit=3`);
         let orders = await response.json();
-        addUserTable(orders);
+        addOrderTable(orders);
     } catch (error) {
         console.log(error);
     }
@@ -74,13 +75,53 @@ async function getOrdersData(){
 
 //function to append order data to DOM
 
-function getOrdersData(orders){
-    console.log(orders);
-    let tableRow = document.querySelectorAll(`#order-table>tbody>tr`);
+function addOrderTable(orders){
+    let tableRow = document.querySelectorAll(`#orders-table>tbody>tr`);
     for(var i=0; i<3; i++){
         tableRow[i].children[1].innerText = `${orders[i].id}`;
         tableRow[i].children[2].innerText = `${orders[i].userId}`;
-        tableRow[i].children[3].innerText = `${orders[i].country}`;
+        tableRow[i].children[3].innerText = `${orders[i].totalPrice}`;
+    }
+}
+
+//function to fetch the sales numbers
+
+async function getSalesNumbers(){
+    try {
+        let response = await fetch(`https://ourhomeserver.onrender.com/saleNumbers`);
+        let data = await response.json();
+        addSalesData(data);
+    } catch (error) {
+        console.log(error);
+    }
+}
+
+//function to append sales data to DOM
+
+function addSalesData(data){
+    let salesNumber = document.querySelectorAll(`.sales-numbers`);
+    console.log(salesNumber);
+
+    for(var i=0; i<4; i++){
+        salesNumber[i].classList.toggle("placeholder-glow");
+        
+        switch(i){
+            case 0:
+                salesNumber[i].innerHTML = `€${data.totalSales}`;
+                break;
+
+            case 1:
+                salesNumber[i].innerHTML = `€${data.salesThisYear}`;
+                break;
+
+            case 2:
+                salesNumber[i].innerHTML = `${data.totalOrders} Units`;
+                break;
+
+            case 3:
+                salesNumber[i].innerHTML = `${data.ordersThisYear} Units`;
+                break;
+        }
     }
 }
 
