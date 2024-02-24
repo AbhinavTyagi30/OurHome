@@ -44,10 +44,10 @@
             >
               <ul class="nav-items">
                 <li class="current" aria-current="page">
-                  <a href="home.html">Home</a>
+                  <a href="./adminDash.html">Home</a>
                 </li>
-                <li><a href="products.html">Products</a></li>
-                <li><a href="users.html">Users</a></li>
+                <li><a href="./products.html">Products</a></li>
+                <li><a href="./allUsers.html">Users</a></li>
                 <li><a href="profile.html">Profile</a></li>
               </ul>
             </nav>
@@ -394,7 +394,6 @@
           style="border-radius: 10px"
         >
           <div
-            id="orders-table"
             class="title d-flex flex-column justify-content-center"
             style="
               font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial,
@@ -405,72 +404,111 @@
           >
             ORDERS
           </div>
-          <div class="orders-table">
-            <table class="table mt-3">
-              <thead class="table table-success">
-                <tr>
-                  <th scope="col">#</th>
-                  <th scope="col">Name</th>
-                  <th scope="col">Country</th>
-                  <th scope="col">
-                    <a
-                      type="button"
-                      class="btn btn-outline-danger"
-                      href="allUsers.html"
-                    >
-                      View All
-                    </a>
-                  </th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <th scope="row">2</th>
-                  <td>Jacob</td>
-                  <td>Thornton</td>
-                  <td>
-                    <a
-                      type="button"
-                      class="btn btn-outline-dark"
-                      href="oneUser.html"
-                    >
-                      View Order
-                    </a>
-                  </td>
-                </tr>
 
-                <tr>
-                  <th scope="row">2</th>
-                  <td>Jacob</td>
-                  <td>Thornton</td>
-                  <td>
-                    <a
-                      type="button"
-                      class="btn btn-outline-dark"
-                      href="oneUser.html"
-                    >
-                      View Order
-                    </a>
-                  </td>
-                </tr>
+          <table id="orders-table" class="table mt-3">
+            <thead class="table table-success">
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">OrderID</th>
+                <th scope="col">UserID</th>
+                <th scope="col">Total Price</th>
+                <th scope="col">
+                  <a
+                    type="button"
+                    class="btn btn-outline-danger"
+                    href="allUsers.html"
+                  >
+                    View All
+                  </a>
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td class="order-id">
+                  <h5 class="card-title placeholder-glow">
+                    <span class="placeholder col-6"></span>
+                  </h5>
+                </td>
+                <td class="order-user-id">
+                  <h5 class="card-title placeholder-glow">
+                    <span class="placeholder col-6"></span>
+                  </h5>
+                </td>
+                <td class="order-country">
+                  <h5 class="card-title placeholder-glow">
+                    <span class="placeholder col-12"></span>
+                  </h5>
+                </td>
+                <td>
+                  <a
+                    type="button"
+                    class="btn btn-outline-dark"
+                    href="oneUser.html"
+                  >
+                    View User
+                  </a>
+                </td>
+              </tr>
 
-                <tr>
-                  <th scope="row">2</th>
-                  <td>Jacob</td>
-                  <td>Thornton</td>
-                  <td>
-                    <a
-                      type="button"
-                      class="btn btn-outline-dark"
-                      href="oneUser.html"
-                    >
-                      View Order
-                    </a>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
+              <tr>
+                <th scope="row">2</th>
+                <td class="order-id">
+                  <h5 class="card-title placeholder-glow">
+                    <span class="placeholder col-6"></span>
+                  </h5>
+                </td>
+                <td class="order-user-id">
+                  <h5 class="card-title placeholder-glow">
+                    <span class="placeholder col-6"></span>
+                  </h5>
+                </td>
+                <td class="order-country">
+                  <h5 class="card-title placeholder-glow">
+                    <span class="placeholder col-12"></span>
+                  </h5>
+                </td>
+                <td>
+                  <a
+                    type="button"
+                    class="btn btn-outline-dark"
+                    href="oneUser.html"
+                  >
+                    View User
+                  </a>
+                </td>
+              </tr>
+
+              <tr>
+                <th scope="row">3</th>
+                <td class="user-name">
+                  <h5 class="card-title placeholder-glow">
+                    <span class="placeholder col-6"></span>
+                  </h5>
+                </td>
+                <td class="user-country">
+                  <h5 class="card-title placeholder-glow">
+                    <span class="placeholder col-6"></span>
+                  </h5>
+                </td>
+                <td class="user-email">
+                  <h5 class="card-title placeholder-glow">
+                    <span class="placeholder col-12"></span>
+                  </h5>
+                </td>
+                <td>
+                  <a
+                    type="button"
+                    class="btn btn-outline-dark"
+                    href="oneUser.html"
+                  >
+                    View User
+                  </a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
         </div>
         <div
           id="display-item-4"

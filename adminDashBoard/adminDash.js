@@ -49,7 +49,7 @@ async function getUserData(){
 //function to append user data to DOM
 
 function addUserTable(users){
-    console.log(users);
+  
     let tableRow = document.querySelectorAll(`#user-table>tbody>tr`);
     for(var i=0; i<3; i++){
         tableRow[i].children[1].innerText = `${users[i].name}`;
@@ -57,5 +57,29 @@ function addUserTable(users){
         tableRow[i].children[3].innerText = `${users[i].email}`;
     }
     console.log(tableRow);
+}
+
+//Function to fetch order data from the server
+
+async function getUserData(){
+    try {
+        let response = await fetch(`https://ourhomeserver.onrender.com/orders?_page=1&_limit=3`);
+        let orders = await response.json();
+        addUserTable(orders);
+    } catch (error) {
+        console.log(error);
+    }
+}
+
+//function to append order data to DOM
+
+function addUserTable(orders){
+    console.log(orders);
+    let tableRow = document.querySelectorAll(`#order-table>tbody>tr`);
+    for(var i=0; i<3; i++){
+        tableRow[i].children[1].innerText = `${orders[i].id}`;
+        tableRow[i].children[2].innerText = `${orders[i].userId}`;
+        tableRow[i].children[3].innerText = `${orders[i].country}`;
+    }
 }
 
