@@ -3,6 +3,7 @@ let baseUrl = "http://ourhomeserver.onrender.com"
 //These functions will fire off on page load adding all the data to the page dynamically
 getProductData();
 getUserData();
+getOrdersData();
 
 
 
@@ -61,7 +62,7 @@ function addUserTable(users){
 
 //Function to fetch order data from the server
 
-async function getUserData(){
+async function getOrdersData(){
     try {
         let response = await fetch(`https://ourhomeserver.onrender.com/orders?_page=1&_limit=3`);
         let orders = await response.json();
@@ -73,7 +74,7 @@ async function getUserData(){
 
 //function to append order data to DOM
 
-function addUserTable(orders){
+function getOrdersData(orders){
     console.log(orders);
     let tableRow = document.querySelectorAll(`#order-table>tbody>tr`);
     for(var i=0; i<3; i++){

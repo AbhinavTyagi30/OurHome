@@ -32,7 +32,35 @@
     "ordersThisYear": 32
   },
   "orders":[
-    
+    {
+      "id": 1,
+      "userId" : 2,
+      "userName": "User1",
+      "products": [
+        {"productId": 2, "productName": "LONG SLEEVE COTTON JERSEY T-SHIRT", "price": 45.99},
+        {"productId": 4, "productName": "LONG SHIRT WITH GATHERING", "price": 35.99}
+      ],
+      "totalPrice": 81.98
+    },
+    {
+      "id": 2,
+      "userId" : 3,
+      "userName" : "User2",
+      "products": [
+        {"productId": 27, "productName": "BRAIDED LEATHER MULES", "price": 59.99}
+      ],
+      "totalPrice": 59.99
+    },
+    {
+      "id": 3,
+      "userId" : 2,
+      "userName" : "User1",
+      "products": [
+        {"productId": 54, "productName": "SMALL TECHNICAL FABRIC TOILETRY BAG", "price": 17.99},
+        {"productId": 113, "productName": "STRIPED COTTON PILLOWCASE", "price": 17.99}
+      ],
+      "totalPrice": 35.98
+    }
   ],
   "products": [
     {
