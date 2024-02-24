@@ -13,6 +13,9 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
     <script
       src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
@@ -34,13 +37,14 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        margin: 30px 0px 0px 50px;
+        margin: 30px 15px 0px 5px;
         flex-wrap: wrap;
 
         .anchor {
           /* border: 1px solid; */
           width: 20%;
-          height: 50px;
+          /* height: 50px; */
+          margin-right: 50px;
         }
         img {
           width: 100%;
@@ -81,65 +85,117 @@
       }
 
       #h_tag {
-        text-align: center;
+        /* text-align: center; */
         /* margin-top: 0px; */
         font-weight: bold;
         font-size: 18px;
+        /* padding: 0px; */
+        margin: 0px;
       }
 
       .accordion-item {
         display: flex;
       }
 
-      .container {
-        /* padding-bottom: 70px; */
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        /* min-height: 100vh; */
+      .container{
+  /* padding-bottom: 70px; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* min-height: 100vh; */
+}
+.container section{
+  width: 600px;
+  margin: 50px;
+}
+.container section details summary{
+  padding: 20px;
+  background:#b09c79 ;
+  color: #22232e;
+  position: relative;
+  list-style: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight:600;
+}
+.container section details{
+  margin: 5px;
+}
+.container section details p{
+  font-size: 13px;
+  padding: 10px;
+  color: #333;
+  /* background: #e0ffff; */
+}
+.container section details summary span{
+  font-size: 20px;
+  color: #333;
+  float: right;
+}
+.c1{
+  img{
+    height: 50px;
+  }
+}
+
+#socia >div>a{
+        display: block;
+        color: black;
+        text-decoration: none;
+        font-size: 12px;
       }
-      .container section {
-        width: 600px;
-        margin: 50px;
+
+      #hamburger{
+        width: 30px;
+        height: 30px;
+        color: black;
+        /* border: 1px solid; */
+        margin-left: 10px;
       }
-      .container section details summary {
-        padding: 20px;
-        background: #b09c79;
-        color: #22232e;
-        position: relative;
-        list-style: none;
-        outline: none;
-        cursor: pointer;
-        font-size: 14px;
-        font-weight: 600;
-      }
-      .container section details {
-        margin: 5px;
-      }
-      .container section details p {
-        font-size: 13px;
-        padding: 10px;
-        color: #333;
-        /* background: #e0ffff; */
-      }
-      .container section details summary span {
-        font-size: 20px;
-        color: #333;
-        float: right;
-      }
-      .c1 {
-        img {
-          height: 50px;
+      .offcanvas-body{
+        ul>a{
+          text-decoration: none;
+          color: black;
         }
       }
+
+
     </style>
   </head>
   <body>
     <div class="d">
       <div class="Home1">
+
+        <button style="border: 0px;" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling"><span class="material-symbols-outlined" id="hamburger">
+          menu
+          </span></button>
+    
+    <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+      <div class="offcanvas-header">
+        <!-- <h5 class="offcanvas-title" id="offcanvasScrollingLabel"></h5> -->
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close" style="font-size: 15px;"></button>
+      </div>
+      <div class="offcanvas-body">
+       <ul>
+          <a href="#"><li>BED ROOM</li></a>
+          <a href="#"><li>CLOTHING_&_FOOTWEAR</li></a>
+          <a href="#"><li>LIVING ROOM</li></a>
+          <a href="#"><li>DINING</li></a>
+          <a href="#"><li>BATHROOM</li></a>
+        </ul>
+      </div>
+    </div>
+
         <a class="anchor" href="./home.html">
           <img src="./Images/OurHomeLogo/3.png" alt="logo" />
         </a>
+
+
+          <img src="./Images/ourHome Logo/3.png" alt="logo" />
+          
+         </a>
+        
 
         <h6 id="h_tag">SHOPPING GUIDE</h6>
 
@@ -293,57 +349,43 @@
       <div class="container">
         <section>
           <details>
-            <summary>
-              SHOP AT ZARAHOME.COM<span><i class="fa-solid"></i>+</span>
-            </summary>
-            <h6>YOUR ZARA HOME ACCOUNT</h6>
-            <p>
-              At Zara Home you can shop as a guest or registered customer.
-              Signing up is easy and your details will be saved in your account
-              for future purchases. If you shop as a guest, you will find your
-              details and the details of your order in your confirmation email.
-            </p>
-            <h6>MODIFYING OR CANCELLING YOUR ORDER</h6>
-            <p>
-              Please remember that you can only modify or cancel your order
-              before it reaches the final stages of preparation for dispatch.
-            </p>
-            <h6>MY WISHLIST</h6>
-            <p>
-              You can save your favourite items in your WISHLIST and always have
-              them to hand. To use this option you must be a registered
-              customer. You can save your favourite items in your WISHLIST by
-              clicking the heart icon on each item. You can create different
-              WISHLISTS and modify them. You can make your WISHLIST public and
-              share it as a link by using the "Copy link" option. If you decide
-              to complete the purchase, you will need to add the items to the
-              basket and follow the usual payment process.
-            </p>
+            <summary>SHOP AT OURHOME.COM<span><i class="fa-solid "></i>+</span></summary>
+            <h6 style="overflow-y: hidden;">YOUR Our HOME ACCOUNT</h6>
+            <p>At Our Home you can shop as a guest or registered customer.
+
+              Signing up is easy and your details will be saved in your account for future purchases.
+              
+              If you shop as a guest, you will find your details and the details of your order in your confirmation email.</p>
+              <h6 style="overflow-y: hidden;">MODIFYING OR CANCELLING YOUR ORDER</h6>
+              <p>Please remember that you can only modify or cancel your order before it reaches the final stages of preparation for dispatch.</p>
+              <h6 style="overflow-y: hidden;">MY WISHLIST</h6>
+              <p>You can save your favourite items in your WISHLIST and always have them to hand.
+
+                To use this option you must be a registered customer.
+                
+                You can save your favourite items in your WISHLIST by clicking the heart icon on each item. You can create different WISHLISTS and modify them.
+                
+                You can make your WISHLIST public and share it as a link by using the "Copy link" option.
+                
+                If you decide to complete the purchase, you will need to add the items to the basket and follow the usual payment process.</p>
+
           </details>
           <details>
-            <summary>
-              PAYMENTS<span><i class="fa-solid"></i>+</span>
-            </summary>
-            <h6>PAYMENT METHODS</h6>
+            <summary>PAYMENTS<span><i class="fa-solid"></i>+</span></summary>
+            <h6 style="overflow-y: hidden;">PAYMENT METHODS</h6>
             <p>You can use the following payment methods:</p>
-            <div class="c1">
-              <img
-                src="https://static.zarahome.net/8/static4/itxwebstandard/images/payment/web/1.svg?20240222021206"
-                alt="card"
-              />
-              <img
-                src="https://static.zarahome.net/8/static4/itxwebstandard/images/payment/web/2.svg?20240222021206"
-                alt="card"
-              />
-              <img
-                src="https://static.zarahome.net/8/static4/itxwebstandard/images/payment/web/3.svg?20240222021206"
-                alt="card"
-              />
-              <img
-                src="https://static.zarahome.net/8/static4/itxwebstandard/images/payment/web/8.svg?20240222021206"
-                alt="card"
-              />
-            </div>
+            <div class="c1"><img src="https://static.zarahome.net/8/static4/itxwebstandard/images/payment/web/1.svg?20240222021206" alt="card">
+              <img src="https://static.zarahome.net/8/static4/itxwebstandard/images/payment/web/2.svg?20240222021206" alt="card">
+              <img src="https://static.zarahome.net/8/static4/itxwebstandard/images/payment/web/3.svg?20240222021206" alt="card">
+              <img src="https://static.zarahome.net/8/static4/itxwebstandard/images/payment/web/8.svg?20240222021206" alt="card"></div>
+
+              <p>Your purchase will be charged when your order is shipped out, but if you have paid with PayPal the payment will be charged at the moment of the purchase.
+
+                You can shop with full trust, we take great care in providing resources that guarantee the security of your purchases and your information.</p>
+              <h6 style="overflow-y: hidden;">PRICES</h6>
+              <p>The prices online are the same as in stores.
+
+                If there is a difference in the price specified online and the label, the correct price will be the one you accepted at the moment of purchase.</p>
 
             <p>
               Your purchase will be charged when your order is shipped out, but
@@ -361,32 +403,26 @@
             </p>
           </details>
           <details>
-            <summary>
-              TICKETS AND INVOICES<span><i class="fa-solid"></i>+</span>
-            </summary>
-            <h6>PURCHASE RECEIPT</h6>
-            <p>
-              Purchases on zarahome.com do not generate paper receipts. You will
-              find your purchase receipt available for download in your account.
-            </p>
-            <h6>INVOICE</h6>
-            <p>
-              You can request an invoice for your order as an individual or a
-              business. You will be able to access the invoice on your account
-              once the order has been dispatched.
-            </p>
-            <p>
-              *If you have purchased as a guest, access your order history and
-              download receipts as well as invoices.
-            </p>
+            <summary>TICKETS AND INVOICES<span><i class="fa-solid "></i>+</span></summary>
+            <h6 style="overflow-y: hidden;">PURCHASE RECEIPT</h6>
+            <p>Purchases on zarahome.com do not generate paper receipts.
+
+              You will find your purchase receipt available for download in your account.</p>
+            <h6 style="overflow-y: hidden;">INVOICE</h6>
+            <p>You can request an invoice for your order as an individual or a business. You will be able to access the invoice on your account once the order has been dispatched.</p>
+            <p>*If you have purchased as a guest, access your order history and download receipts as well as invoices.</p>
           </details>
           <details>
-            <summary>
-              SHIPPING AND COSTS<span><i class="fa-solid"></i>+</span>
-            </summary>
-            <h6>HOME DELIVERY</h6>
-            <p>
-              Home delivery fees are 45 EUR.<br /><br />
+            <summary>SHIPPING AND COSTS<span><i class="fa-solid"></i>+</span></summary>
+            <h6 style="overflow-y: hidden;">HOME DELIVERY</h6>
+            <p>Home delivery fees are 45 EUR.<br><br>
+              
+              The estimated delivery time will be between 7-10 working days.<br><br>
+              
+              Please bear in mind that some of our deliveries may be affected by import costs out of our control. We will let you know if these costs are included in the final amount of the purchase or need to be paid when receiving the order. If the second case applies, we suggest that you get in touch with your local Customs Office for further information.<br><br>
+              
+              You will receive email updates about the status of the delivery of your order and if you have purchased as a registered customer you will be able to check its status on your account too.</p>
+            </details>
 
               The estimated delivery time will be between 7-10 working days.<br /><br />
 
@@ -397,42 +433,20 @@
               suggest that you get in touch with your local Customs Office for
               further information.<br /><br />
 
+                These are the options for returning your items:</p>
+              <h6 style="overflow-y: hidden;">FROM YOUR HOME</h6>
+              <p>If you have purchased as a registered customer, you should access your order information from your account and request the return.
+
               You will receive email updates about the status of the delivery of
               your order and if you have purchased as a registered customer you
               will be able to check its status on your account too.
             </p>
           </details>
 
-          <details>
-            <summary>
-              RETURNS<span><i class="fa-solid"></i>+</span>
-            </summary>
-            <p>
-              f you made a purchase on our website or app, you do not have to
-              print and send in the receipt for your order with your return.
-              These are the options for returning your items:
-            </p>
-            <h6>FROM YOUR HOME</h6>
-            <p>
-              If you have purchased as a registered customer, you should access
-              your order information from your account and request the return.
-              If you have placed the order as a guest, request the return
-              through the link included in the confirmation email. Once your
-              return request is registered, you will receive an email with the
-              return instructions and the return labels to prepare your package.
-              Please, follow the instructions to avoid any issues.
-            </p>
-            <p>
-              You have 30 days from the shipping date to return your purchase.
-              Return costs are 45 EUR, and they will be deducted from your
-              refund. The items you return must be in the same condition you
-              received them in.
-            </p>
-            <h6>REFUND</h6>
-            <p>
-              The refund will be made via the same payment method used to make
-              the purchase. If you have used more than one payment method, it
-              will be refunded to both methods proportionally.<br /><br />
+                  The items you return must be in the same condition you received them in.</p>
+              <h6 style="overflow-y: hidden;">REFUND</h6>
+              <p>The refund will be made via the same payment method used to make the purchase. If you have used more than one payment method, it will be refunded to both methods proportionally.<br><br>
+
 
               You will receive email confirmation of the return once it has been
               completed. If you have not received a refund in your account after
@@ -443,5 +457,112 @@
         </section>
       </div>
     </div>
+
+    <form class="search-form" action="/search" method="get">
+      <input
+        type="text"
+        name="q"
+        class="search-input"
+        placeholder="Enter your email address"
+        style="border: none; margin-left: 500px; margin-top: 50px"
+      />
+    </form>
+
+    <hr style="width: 600px; margin-top: 10px; margin-left: 400px" />
+    <div class="container-fluid" style="display: flex" id="soc">
+      <div style="margin-left: 500px; text-align: center">
+        <p style="margin-left: 70px">Follow us on</p>
+        <div
+          style="
+            width: 45%;
+            height: 40px;
+            display: flex;
+            gap: 25px;
+            justify-content: center;
+            align-items: center;
+            margin-top: 1px;
+            margin-left: -230px;
+            position: absolute;
+            font-size: 20px;
+          "
+        >
+          <div class="boxes"><i class="fa-brands fa-facebook-f"></i></div>
+          <div class="boxes"><i class="fa-brands fa-instagram"></i></div>
+          <div class="boxes"><i class="fa-brands fa-pinterest-p"></i></div>
+          <div class="boxes"><i class="fa-brands fa-youtube"></i></div>
+
+          <div class="boxes"><i class="fa-brands fa-twitter"></i></div>
+
+          <div class="boxes"><i class="fa-brands fa-spotify"></i></div>
+
+          <div class="boxes"><i class="fa-brands fa-tiktok"></i></div>
+        </div>
+      </div>
+      <div style="margin-left: 100px; text-align: center">
+        <p>Download our app</p>
+        <img
+          src="https://static.zarahome.net/8/static4/itxwebstandard/images/qr_app/footer/qr.png?20240222021206"
+          alt=""
+          style="height: 100px; width: 100px"
+        />
+      </div>
+    </div>
+
+    <div
+      id="socia"
+      style="display: flex; justify-content: space-evenly; margin-top: 20px"
+    >
+      <div
+        style="
+          justify-content: space-evenly;
+          margin-top: 20px;
+          margin-left: 50px;
+        "
+      >
+        <h6 style="overflow-y: hidden">POLICIES</h6>
+        <a href="#">TERMS AND CONDITIONS</a>
+        <a href="#">PRIVACY POLICY</a>
+        <a href="#">COOKIES POLICY</a>
+        <a href="#">COOKIES SETTINGS</a>
+        <a href="#">LEGAL MENTIONS</a>
+      </div>
+      <div
+        style="
+          justify-content: space-evenly;
+          margin-top: 20px;
+          margin-left: -400px;
+        "
+      >
+        <h6 style="overflow-y: hidden">COMPANY</h6>
+        <!-- <a href="" style="font-weight: bold">COMPANY</a> -->
+        <a href="#">WORK WITH US</a>
+        <a href="#">PRESS</a>
+      </div>
+      <div
+        style="
+          justify-content: space-evenly;
+          margin-top: 20px;
+          margin-left: -400px;
+        "
+      >
+        <h6 style="overflow-y: hidden">CONTACT</h6>
+        <!-- <a href="" style="font-weight: bold">CONTACT</a> -->
+        <a href="#">CONTACT US</a>
+        <a href="#">HELP</a>
+        <a href="">GUEST PURCHASE</a>
+      </div>
+    </div>
+    <div
+      style="
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+        gap: 10px;
+      "
+    >
+      <span class="material-symbols-outlined"> language </span>
+      <p>INDIA/ENGLISH</p>
+    </div>
+
   </body>
 </html>
