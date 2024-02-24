@@ -4,8 +4,207 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Products</title>
+    <!-- Font Awesome Link -->
+
+    <script
+      src="https://kit.fontawesome.com/ce304c3157.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Link to Bootstrap -->
+
+    <link
+      href="../node_modules/bootstrap/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <script
+      src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- link to CSS -->
+
+    <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
-    <div style="height: 100px; width: 100px; background-color: pink"></div>
+  <body class="bg-success text-dark bg-opacity-25">
+    <div class="body-container">
+      <!-- Sidebar section begins -->
+
+      <div class="nav-container">
+        <div style="min-height: 100svh">
+          <div id="collapseWidthExample">
+            <nav
+              class="bg-success text-dark bg-opacity-25"
+              style="max-width: 10rem; width: 100%; height: 100vh"
+            >
+              <ul class="nav-items">
+                <li class="current" aria-current="page">
+                  <a href="./adminDash.html">Home</a>
+                </li>
+                <li><a href="./products.html">Products</a></li>
+                <li><a href="./allUsers.html">Users</a></li>
+                <li><a href="profile.html">Profile</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sidebar section ends -->
+
+      <!-- Product Section begins -->
+
+      <div class="card-container">
+        <!-- add product section begins -->
+
+        <div
+          class="p-2"
+          style="box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px"
+        >
+          <form>
+            <div class="mb-3">
+              <label for="Name" class="form-label">Product Name</label>
+              <input
+                type="text"
+                class="form-control"
+                id="Name"
+                aria-describedby="productName"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <label for="Image" class="form-label">Image</label>
+              <input type="text" class="form-control" id="Image" required />
+            </div>
+            <div class="mb-3">
+              <label for="price" class="form-label">Price</label>
+              <input
+                type="number"
+                class="form-control"
+                id="price"
+                aria-describedby="price"
+                required
+              />
+            </div>
+            <div class="d-flex justify-content-between">
+              <div class="mb-3">
+                <label for="category" class="form-label">Category</label>
+                <select
+                  name="category"
+                  id="category"
+                  class="form-select"
+                  required
+                >
+                  <option value="">--Select Category--</option>
+                  <option value="clothing and footwear">
+                    Clothing and Footwear
+                  </option>
+                  <option value="bedroom">Bedroom</option>
+                  <option value="living room">Living Room</option>
+                  <option value="dining">Dining</option>
+                  <option value="bathroom">Bathroom</option>
+                </select>
+              </div>
+              <div class="mb-3">
+                <label for="subCategory" class="form-label">Sub-Category</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="subCategory"
+                  aria-describedby="subCategory"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="type" class="form-label">Type</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="type"
+                  aria-describedby="productType"
+                />
+              </div>
+            </div>
+            <button type="submit" class="btn btn-outline-success">
+              Add Product
+            </button>
+          </form>
+        </div>
+
+        <!-- Add Product section ends -->
+
+        <!-- Product Filter Section begins -->
+
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Dropdown
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Another action</a>
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                </li>
+              </ul>
+              <form class="d-flex" role="search">
+                <input
+                  class="form-control me-2"
+                  type="search"
+                  placeholder="Search"
+                  aria-label="Search"
+                />
+                <button class="btn btn-outline-success" type="submit">
+                  Search
+                </button>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <!-- Product Filter Section Ends -->
+      </div>
+
+      <!-- Product Section Ends -->
+    </div>
   </body>
 </html>

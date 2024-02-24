@@ -26,15 +26,11 @@
   </head>
   <body>
     <div class="container-fluid">
-    <div
+      <div
         class="card"
         style="width: 40rem; margin-top: 30px; margin-left: 20px; border: none"
       >
-        <img
-          src=".."
-          class="card-img-top"
-          alt="..."
-        />
+        <img src=".." class="card-img-top" alt="..." />
         <div id="bag" style="background-color: bisque; display: none">
           ADD TO BASKET
         </div>
@@ -47,28 +43,23 @@
         </div>
       </div>
     </div>
-   </div>
   </body>
 </html>
 <script>
-async function fetchData(url){
-  try{
-    let res=await fetch(url)
-  //pagination
-   let TotalData = res.headers.get("X-Total-Count");
-  //  let  limit = 5;
-  //  let TotalPages = Math.ceil(TotalData/limit);
-  //  createBtn(TotalPages,queryParamString);
-  //  console.log(TotalPages);
-   let data=await res.json();
-   console.log(data);
-  //  appendData(data);
-
-    
+  async function fetchData(url) {
+    try {
+      let res = await fetch(url);
+      //pagination
+      let TotalData = res.headers.get("X-Total-Count");
+      //  let  limit = 5;
+      //  let TotalPages = Math.ceil(TotalData/limit);
+      //  createBtn(TotalPages,queryParamString);
+      //  console.log(TotalPages);
+      let data = await res.json();
+      console.log(data);
+      //  appendData(data);
+    } catch (err) {
+      console.log(err);
+    }
   }
-  catch(err){
-    console.log(err);
-  }
-}
-
 </script>
