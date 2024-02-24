@@ -44,10 +44,10 @@
             >
               <ul class="nav-items">
                 <li class="current" aria-current="page">
-                  <a href="home.html">Home</a>
+                  <a href="./adminDash.html">Home</a>
                 </li>
-                <li><a href="products.html">Products</a></li>
-                <li><a href="users.html">Users</a></li>
+                <li><a href="./products.html">Products</a></li>
+                <li><a href="./allUsers.html">Users</a></li>
                 <li><a href="profile.html">Profile</a></li>
               </ul>
             </nav>
@@ -64,36 +64,207 @@
         <!-- Featured Product -->
         <div
           id="display-item-1"
-          class="bg-success bg-opacity-75 d-flex justify-content-around p-2"
+          class="bg-success bg-opacity-75 d-flex flex-column justify-content-start p-2"
           style="border-radius: 10px"
         >
-          <div id="products-card">
+          <div id="featured-product">
             <div
-              class="title"
-              style="
-                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial,
-                  sans-serif;
-                font-size: 2rem;
-                text-align: center;
-              "
+              class="container-fluid d-flex justify-content-between mt-2 mb-2"
             >
-              <p>BEST SELLER</p>
-            </div>
+              <!--two divs: left contains headline, tagline; right div contains the carousel-->
+              <div>
+                <!--Contains headline and tagline-->
+                BEST
+                <h1>SELLERS</h1>
+                <a class="btn btn-outline-dark">VIEW ALL PRODUCTS</a>
+              </div>
+              <div>
+                <!--Carousel with two slides, each slide containing three product cards-->
 
-            <div class="card" style="width: 18rem">
-              <img
-                src="https://static.zarahome.net/8/photos4/2024/V/4/1/p/2187/122/712/2187122712_7_1_2.jpg?t=1708014503924&imformat=chrome&imwidth=768"
-                class="card-img-top"
-                alt="feautured-product"
-              />
-              <div class="card-body">
-                <h5 class="card-title">COTTON JERSEY PLAYSUIT</h5>
-                <p class="card-text">€39.99</p>
-                <a href="#" class="btn btn-outline-danger">View All Products</a>
+                <div
+                  id="featured-product-carousel"
+                  class="carousel carousel-dark slide carousel-fade"
+                >
+                  <div class="carousel-inner">
+                    <!--SLIDE 1-->
+                    <div class="carousel-item">
+                      <div
+                        class="container d-flex justify-content-center align-items-center gap-5"
+                      >
+                        <div
+                          class="product-card card align-items-center text-center"
+                          style="width: 12rem; border: none"
+                        >
+                          <img
+                            src="https://upload.wikimedia.org/wikipedia/commons/7/71/Black.png"
+                            class="card-img-top"
+                            alt="..."
+                            style="width: 100%; height: 94px"
+                          />
+                          <div class="card-body">
+                            <h5 class="card-title placeholder-glow">
+                              <span class="placeholder col-6"></span>
+                            </h5>
+                            <a
+                              href="#"
+                              class="btn btn-primary disabled placeholder col-6"
+                              style="background-color: #56b7c3; border: none"
+                              >View Product</a
+                            >
+                          </div>
+                        </div>
+                        <div
+                          class="product-card card align-items-center text-center"
+                          style="width: 12rem; border: none"
+                        >
+                          <img
+                            src="https://upload.wikimedia.org/wikipedia/commons/7/71/Black.png"
+                            class="card-img-top"
+                            alt="..."
+                            style="width: 100%; height: 94px"
+                          />
+                          <div class="card-body">
+                            <h5 class="card-title placeholder-glow">
+                              <span class="placeholder col-6"></span>
+                            </h5>
+                            <a
+                              href="#"
+                              class="btn btn-primary disabled placeholder col-6"
+                              style="background-color: #56b7c3; border: none"
+                              >View Product</a
+                            >
+                          </div>
+                        </div>
+
+                        <div
+                          class="product-card card align-items-center text-center"
+                          style="width: 12rem; border: none"
+                        >
+                          <img
+                            src="https://upload.wikimedia.org/wikipedia/commons/7/71/Black.png"
+                            class="card-img-top"
+                            alt="..."
+                            style="width: 100%; height: 94px"
+                          />
+                          <div class="card-body">
+                            <h5 class="card-title placeholder-glow">
+                              <span class="placeholder col-6"></span>
+                            </h5>
+                            <a
+                              href="#"
+                              class="btn btn-primary disabled placeholder col-6"
+                              style="background-color: #56b7c3; border: none"
+                              >View Product</a
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!--SLIDE 2-->
+                    <div class="carousel-item active">
+                      <div
+                        class="container d-flex justify-content-center align-items-center gap-5"
+                      >
+                        <div
+                          class="product-card card align-items-center text-center"
+                          style="width: 12rem; border: none"
+                        >
+                          <img
+                            src="https://upload.wikimedia.org/wikipedia/commons/7/71/Black.png"
+                            class="card-img-top"
+                            alt="..."
+                            style="width: 100%; height: 94px"
+                          />
+                          <div class="card-body">
+                            <h5 class="card-title placeholder-glow">
+                              <span class="placeholder col-6"></span>
+                            </h5>
+                            <a
+                              href="#"
+                              class="btn btn-primary disabled placeholder col-6"
+                              style="background-color: #56b7c3; border: none"
+                              >View Product</a
+                            >
+                          </div>
+                        </div>
+                        <div
+                          class="product-card card align-items-center text-center"
+                          style="width: 12rem; border: none"
+                        >
+                          <img
+                            src="https://upload.wikimedia.org/wikipedia/commons/7/71/Black.png"
+                            class="card-img-top"
+                            alt="..."
+                            style="width: 100%; height: 94px"
+                          />
+                          <div class="card-body">
+                            <h5 class="card-title placeholder-glow">
+                              <span class="placeholder col-6"></span>
+                            </h5>
+                            <a
+                              href="#"
+                              class="btn btn-primary disabled placeholder col-6"
+                              style="background-color: #56b7c3; border: none"
+                              >View Product</a
+                            >
+                          </div>
+                        </div>
+                        <div
+                          class="product-card card align-items-center text-center"
+                          style="width: 12rem; border: none"
+                        >
+                          <img
+                            src="https://upload.wikimedia.org/wikipedia/commons/7/71/Black.png"
+                            class="card-img-top"
+                            alt="..."
+                            style="width: 100%; height: 94px"
+                          />
+                          <div class="card-body">
+                            <h5 class="card-title placeholder-glow">
+                              <span class="placeholder col-6"></span>
+                            </h5>
+                            <a
+                              href="#"
+                              class="btn btn-primary disabled placeholder col-6"
+                              style="background-color: #56b7c3; border: none"
+                              >View Product</a
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <button
+                    class="carousel-control-prev"
+                    type="button"
+                    data-bs-target="#featured-product-carousel"
+                    data-bs-slide="prev"
+                  >
+                    <span
+                      class="carousel-control-prev-icon"
+                      aria-hidden="true"
+                    ></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button
+                    class="carousel-control-next"
+                    type="button"
+                    data-bs-target="#featured-product-carousel"
+                    data-bs-slide="next"
+                  >
+                    <span
+                      class="carousel-control-next-icon"
+                      aria-hidden="true"
+                    ></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
               </div>
             </div>
           </div>
         </div>
+
         <!-- This will display a table containing 5 users and house a view all and view user details button -->
         <!-- User Table -->
         <div
@@ -102,7 +273,6 @@
           style="border-radius: 10px"
         >
           <div
-            id="users-table"
             class="title d-flex flex-column justify-content-center"
             style="
               font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial,
@@ -113,12 +283,13 @@
           >
             USERS
           </div>
-          <table class="table mt-3">
+          <table id="user-table" class="table mt-3">
             <thead class="table table-success">
               <tr>
                 <th scope="col">#</th>
                 <th scope="col">Name</th>
                 <th scope="col">Country</th>
+                <th scope="col">Email</th>
                 <th scope="col">
                   <a
                     type="button"
@@ -132,9 +303,22 @@
             </thead>
             <tbody>
               <tr>
-                <th scope="row">2</th>
-                <td>Jacob</td>
-                <td>Thornton</td>
+                <th scope="row">1</th>
+                <td class="user-name">
+                  <h5 class="card-title placeholder-glow">
+                    <span class="placeholder col-6"></span>
+                  </h5>
+                </td>
+                <td class="user-country">
+                  <h5 class="card-title placeholder-glow">
+                    <span class="placeholder col-6"></span>
+                  </h5>
+                </td>
+                <td class="user-email">
+                  <h5 class="card-title placeholder-glow">
+                    <span class="placeholder col-12"></span>
+                  </h5>
+                </td>
                 <td>
                   <a
                     type="button"
@@ -148,8 +332,21 @@
 
               <tr>
                 <th scope="row">2</th>
-                <td>Jacob</td>
-                <td>Thornton</td>
+                <td class="user-name">
+                  <h5 class="card-title placeholder-glow">
+                    <span class="placeholder col-6"></span>
+                  </h5>
+                </td>
+                <td class="user-country">
+                  <h5 class="card-title placeholder-glow">
+                    <span class="placeholder col-6"></span>
+                  </h5>
+                </td>
+                <td class="user-email">
+                  <h5 class="card-title placeholder-glow">
+                    <span class="placeholder col-12"></span>
+                  </h5>
+                </td>
                 <td>
                   <a
                     type="button"
@@ -162,9 +359,22 @@
               </tr>
 
               <tr>
-                <th scope="row">2</th>
-                <td>Jacob</td>
-                <td>Thornton</td>
+                <th scope="row">3</th>
+                <td class="user-name">
+                  <h5 class="card-title placeholder-glow">
+                    <span class="placeholder col-6"></span>
+                  </h5>
+                </td>
+                <td class="user-country">
+                  <h5 class="card-title placeholder-glow">
+                    <span class="placeholder col-6"></span>
+                  </h5>
+                </td>
+                <td class="user-email">
+                  <h5 class="card-title placeholder-glow">
+                    <span class="placeholder col-12"></span>
+                  </h5>
+                </td>
                 <td>
                   <a
                     type="button"
@@ -184,7 +394,6 @@
           style="border-radius: 10px"
         >
           <div
-            id="orders-table"
             class="title d-flex flex-column justify-content-center"
             style="
               font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial,
@@ -195,72 +404,111 @@
           >
             ORDERS
           </div>
-          <div class="orders-table">
-            <table class="table mt-3">
-              <thead class="table table-success">
-                <tr>
-                  <th scope="col">#</th>
-                  <th scope="col">Name</th>
-                  <th scope="col">Country</th>
-                  <th scope="col">
-                    <a
-                      type="button"
-                      class="btn btn-outline-danger"
-                      href="allUsers.html"
-                    >
-                      View All
-                    </a>
-                  </th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <th scope="row">2</th>
-                  <td>Jacob</td>
-                  <td>Thornton</td>
-                  <td>
-                    <a
-                      type="button"
-                      class="btn btn-outline-dark"
-                      href="oneUser.html"
-                    >
-                      View Order
-                    </a>
-                  </td>
-                </tr>
 
-                <tr>
-                  <th scope="row">2</th>
-                  <td>Jacob</td>
-                  <td>Thornton</td>
-                  <td>
-                    <a
-                      type="button"
-                      class="btn btn-outline-dark"
-                      href="oneUser.html"
-                    >
-                      View Order
-                    </a>
-                  </td>
-                </tr>
+          <table id="orders-table" class="table mt-3">
+            <thead class="table table-success">
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">OrderID</th>
+                <th scope="col">UserID</th>
+                <th scope="col">Total Price</th>
+                <th scope="col">
+                  <a
+                    type="button"
+                    class="btn btn-outline-danger"
+                    href="allUsers.html"
+                  >
+                    View All
+                  </a>
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td class="order-id">
+                  <h5 class="card-title placeholder-glow">
+                    <span class="placeholder col-6"></span>
+                  </h5>
+                </td>
+                <td class="order-user-id">
+                  <h5 class="card-title placeholder-glow">
+                    <span class="placeholder col-6"></span>
+                  </h5>
+                </td>
+                <td class="order-country">
+                  <h5 class="card-title placeholder-glow">
+                    <span class="placeholder col-12"></span>
+                  </h5>
+                </td>
+                <td>
+                  <a
+                    type="button"
+                    class="btn btn-outline-dark"
+                    href="oneUser.html"
+                  >
+                    View User
+                  </a>
+                </td>
+              </tr>
 
-                <tr>
-                  <th scope="row">2</th>
-                  <td>Jacob</td>
-                  <td>Thornton</td>
-                  <td>
-                    <a
-                      type="button"
-                      class="btn btn-outline-dark"
-                      href="oneUser.html"
-                    >
-                      View Order
-                    </a>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
+              <tr>
+                <th scope="row">2</th>
+                <td class="order-id">
+                  <h5 class="card-title placeholder-glow">
+                    <span class="placeholder col-6"></span>
+                  </h5>
+                </td>
+                <td class="order-user-id">
+                  <h5 class="card-title placeholder-glow">
+                    <span class="placeholder col-6"></span>
+                  </h5>
+                </td>
+                <td class="order-country">
+                  <h5 class="card-title placeholder-glow">
+                    <span class="placeholder col-12"></span>
+                  </h5>
+                </td>
+                <td>
+                  <a
+                    type="button"
+                    class="btn btn-outline-dark"
+                    href="oneUser.html"
+                  >
+                    View User
+                  </a>
+                </td>
+              </tr>
+
+              <tr>
+                <th scope="row">3</th>
+                <td class="user-name">
+                  <h5 class="card-title placeholder-glow">
+                    <span class="placeholder col-6"></span>
+                  </h5>
+                </td>
+                <td class="user-country">
+                  <h5 class="card-title placeholder-glow">
+                    <span class="placeholder col-6"></span>
+                  </h5>
+                </td>
+                <td class="user-email">
+                  <h5 class="card-title placeholder-glow">
+                    <span class="placeholder col-12"></span>
+                  </h5>
+                </td>
+                <td>
+                  <a
+                    type="button"
+                    class="btn btn-outline-dark"
+                    href="oneUser.html"
+                  >
+                    View User
+                  </a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
         </div>
         <div
           id="display-item-4"
@@ -331,3 +579,5 @@
     </div>
   </body>
 </html>
+
+<script src="adminDash.js" type="module"></script>

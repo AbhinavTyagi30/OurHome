@@ -17,7 +17,7 @@ body {
 
 .card-container {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+
   gap: 2rem;
   padding: 2rem;
 }
@@ -26,33 +26,50 @@ body {
   border-radius: 10px;
 }
 
-.nav-items {
-  text-decoration: none;
-  list-style: none;
-  display: grid;
-  gap: 4rem;
-  padding-block: 2rem;
-  font-size: 2rem;
-}
-
-.nav-items li {
-  border-radius: 100vw 0 0 100vw;
-  padding: 2rem 2rem;
-  /* margin-left: 1rem; */
-}
-
-.nav-items li.current {
-  background-color: #c5e0d4;
-}
-
-.nav-items a {
-  text-decoration: none;
-  color: black;
-  font-size: 1.2rem;
-}
-
 #data-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 2rem;
+}
+
+/* Styling for featured-product carousel */
+
+#featured-product > div > div:nth-of-type(1) {
+  width: 221px;
+  height: 172px;
+  box-sizing: border-box;
+  font-family: "Rajdhani";
+  font-size: 50px;
+  /* padding-left: 30px; */
+  padding-top: 25px;
+}
+
+#featured-product > div > div:nth-of-type(1) > h1 {
+  margin-top: -19px;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 700;
+  font-size: 65px;
+}
+
+#featured-product > div > div:nth-of-type(1) > p {
+  margin-top: -14px;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+#featured-product > div > div:nth-of-type(2) {
+  width: 75%;
+}
+
+#featured-product .card-body h5 {
+  font-weight: 400;
+  font-size: 18px;
+  margin-top: 15px;
+}
+
+#featured-product .card-body a {
+  width: 140px;
+  height: 42px;
+  padding: 10px 0px 10px 0px;
+  margin-top: 22px;
 }
