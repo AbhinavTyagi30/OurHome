@@ -11,55 +11,55 @@ The project is mainly a front-end project with added dynamic capabilities using 
 ## Deployed App
 Both the front-end and the mock server have been deployed using render.com. The deployed links can be accessed below.
 
--Frontend: https://ourhome.onrender.com/ 
--Backend: https://ourhomeserver.onrender.com
+*Frontend: [https://ourhome.onrender.com/] 
+*Backend: [https://ourhomeserver.onrender.com]
 
 ## Directory Structure
 
-OurHome/
+`OurHome/
 |--Images/
 |      |--OurHomeLogo/
 |      |--userTemplate/
 |
 |--adminDashBoard/
 |--backend/
-|--scripts/
+|--scripts/`
 
 ## Video Walkthrough of the Project
 
-- A youtube video explaining the entire project and showcasing the features and functionalities can be accessed here : https://youtu.be/Go52nz3dPXQ
-- A youtube video answering some of the questions related to the project can be found here : https://youtu.be/S9GNdBrzEjc
++ A YouTube video explaining the entire project and showcasing the features and functionalities can be accessed here: [https://youtu.be/Go52nz3dPXQ]
++ A YouTube video answering some of the questions related to the project can be found here: [https://youtu.be/S9GNdBrzEjc]
 
 ## Video Walkthrough of the CodeBase
 
-- A walkthrough of the codebase and the folder structure can be found accessed here on youtube : 
+- A walkthrough of the codebase and the folder structure can be accessed here on YouTube: 
 
 ## Features
 
 - Dynamically added elements using a mock server
 - JWT authentication and password hashing
 - Responsive and dynamic website
-- Dynamic elements added using Bootstrap 5.3 framework
+- Dynamic elements added using the Bootstrap 5.3 framework
 
 ## Installation and Getting Started
 
-- After downloading the project, follow these steps to get the project up and running :
-  - npm install on the main directory to install all the dependencies(Bootstrap 5.3)
-  - move into the backend directory
-  - npm install on the backend directory to install all the dependencies(json-server, json-server-auth, cors)
++ After downloading the project, follow these steps to get the project up and running :
+  + `npm install` while on the main directory to install all the dependencies(Bootstrap 5.3)
+  + move into the backend directory using `cs ./backend`
+  + `npm install` while on the backend directory to install all the dependencies(json-server, json-server-auth, cors)
     
-- A mock server has been deployed for the backend and can be found here: https://ourhomeserver.onrender.com/
-  - If you would like to deploy the server on the local system, you can use the following command while in the backend directory: npx json-server db.json -m ./node_modules/json-server-auth/
++ A mock server has been deployed for the backend and can be found here: [https://ourhomeserver.onrender.com/]
+  * If you would like to deploy the server on the local system, you can use the following command while in the backend directory: `npx json-server db.json -m ./node_modules/json-server-auth/`
 
-- Admin Dashboard and related functionalities can only be accessed using the admin credentials. Currently, there is no way to access these elements without using the login credentials provided.
++ Admin Dashboard and related functionalities can only be accessed using the admin credentials. Currently, there is no way to access these elements without using the login credentials provided.
 
 ## Credentials
 
 - for admin :
-  - email: abhinavtyagi@gmail.com
-  - password: 123456789
+   `email: abhinavtyagi@gmail.com
+    password: 123456789`
 
-- Admin Dashboard can only be accessed by using the above-given credentials. Login by clicking the login button on the navbar in the home page.
+- Admin Dashboard **can only be accessed** by using the above-given credentials. Login by clicking the login button on the navbar on the home page.
   
 - Regular users can register using the signup page on the deployed website. Ensure you are using the correct email format and the password is at least 8 characters in length.
 - The SignUp page can be accessed by clicking the SignUp button on the login popup.
