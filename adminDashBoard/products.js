@@ -1,6 +1,13 @@
+let userData = JSON.parse(localStorage.getItem("currUser")) || null;
+
+let baseURL = `https://ourhomeserver.onrender.com/products`;
+let queryParam = null;
+let filterParam = null;
+let searchQuery = null;
+
 /* add products on load */
 
-getProductsData(`https://ourhomeserver.onrender.com/products?_page=1&_limit=10`);
+getProductsData(`https://ourhomeserver.onrender.com/products`,queryParam,filterParam,searchQuery);
 
 /* Toggle the sidebar */
 const sidebarToggle = document.querySelector("#sidebar-toggle");
@@ -15,12 +22,9 @@ let searchButton = document.getElementById("search-button")
 
 searchButton.addEventListener("click", (e)=>{
     e.preventDefault();
-    let searchQuery = searchInput.value;
-    getProductsData(`https://ourhomeserver.onrender.com/products?q=${searchQuery}&_page=1&_limit=10`,queryParam);
+    searchQuery = `q=${searchInput.value}`;
+    getProductsData(baseURL,queryParam,filterParam,searchQuery);
 });
-
-let queryParam = null;
-
 
 /* update item variables */
 
@@ -82,11 +86,100 @@ editProduct.addEventListener("click",(e)=>{
     editQuantity.value = "";
 });
 
+
+/* Filter Products */
+
+let filterInput = document.getElementById("filter-input");
+
+filterInput.addEventListener("click",()=>{
+    let input = filterInput.value;
+
+    if(input == "bedroom"){
+        filterParam = "category=bedroom";
+        getProductsData(baseURL,queryParam,filterParam,searchQuery);
+    }
+    else if(input == "bathroom"){
+        filterParam = "category=bathroom";
+        getProductsData(baseURL,queryParam,filterParam,searchQuery);
+    }
+    else if(input == "clothing"){
+        filterParam = "category=clothing and footwear";
+        getProductsData(baseURL,queryParam,filterParam,searchQuery);
+    }
+    else if(input == "dining"){
+        filterParam = "category=dining";
+        getProductsData(baseURL,queryParam,filterParam,searchQuery);
+    }
+    else if(input == "living"){
+        filterParam = "category=living room";
+        getProductsData(baseURL,queryParam,filterParam,searchQuery);
+    }
+    else{
+        filterParam = null;
+        getProductsData(baseURL,queryParam,filterParam,searchQuery);
+    }
+});
+
+/* Sort Products */
+
+let asc = document.getElementById("ascending");
+let desc = document.getElementById("descending");
+
+asc.addEventListener("click", ()=>{
+
+    if(asc.classList.contains("sort")){
+        asc.classList.remove("sort");
+        asc.classList.remove("btn-secondary");
+        asc.classList.add("btn-outline-secondary");
+        queryParam = null;
+    }
+    else{
+        asc.classList.add("sort","btn-secondary");
+        asc.classList.remove("btn-outline-secondary");
+        queryParam = "_sort=price&_order=asc";
+
+        if(desc.classList.contains("sort")){
+            desc.classList.remove("sort");
+            desc.classList.remove("btn-secondary");
+            desc.classList.add("btn-outline-secondary");
+        }
+    }
+
+    getProductsData(baseURL,queryParam,filterParam,searchQuery);
+
+});
+
+desc.addEventListener("click", ()=>{
+
+    if(desc.classList.contains("sort")){
+        desc.classList.remove("sort");
+        desc.classList.remove("btn-secondary");
+        desc.classList.add("btn-outline-secondary");
+        queryParam = null;
+    }
+    else{
+        desc.classList.add("sort");
+        desc.classList.add("btn-secondary");
+        desc.classList.remove("btn-outline-secondary");
+        queryParam = "_sort=price&_order=desc";
+
+        if(asc.classList.contains("sort")){
+            asc.classList.remove("sort");
+            asc.classList.remove("btn-secondary");
+            asc.classList.add("btn-outline-secondary");
+        }
+    }
+
+    getProductsData(baseURL,queryParam,filterParam,searchQuery);
+
+});
+
+
 /* Fetch Products Data from server */
 
-async function getProductsData(url,queryParam){
+async function getProductsData(url,queryParam,filterParam,searchQuery,page=1){
     try {
-        let response = await fetch(`${url}&${queryParam}`);
+        let response = await fetch(`${url}?${searchQuery}&${filterParam}&${queryParam}&_page=${page}&_limit=10`);
         let data = await response.json();
         
         let totalCount = response.headers.get(`X-Total-Count`);
@@ -191,7 +284,7 @@ function paginate(totalPages){
         pagWrapper.append(pagBtn);
 
         pagBtn.addEventListener("click",()=>{
-            getProductsData(`https://ourhomeserver.onrender.com/products?_page=${i}&_limit=10`,queryParam);
+            getProductsData(`https://ourhomeserver.onrender.com/products`,queryParam,filterParam,searchQuery,i);
         })
     }
 
@@ -205,9 +298,7 @@ async function deleteData(id){
             method: "DELETE", 
         });
 
-        let data = await response.json();
-        console.log(data);
-        getProductsData(`https://ourhomeserver.onrender.com/products?_page=1&_limit=10`,queryParam);
+        getProductsData(baseURL,queryParam,filterParam,searchQuery);
 
     } catch (error) {
         console.log(error);
@@ -227,9 +318,8 @@ async function addNewProduct(obj){
         });
 
         let data = await response.json();
-        console.log(data);
 
-        getProductsData(`https://ourhomeserver.onrender.com/products?_page=1&_limit=10`,queryParam);
+        getProductsData(baseURL,queryParam,filterParam,searchQuery);
 
     } catch (error) {
         console.log(error);
@@ -248,9 +338,21 @@ async function editProductFunc(obj,id){
             body: JSON.stringify(obj),
         });
         
-        getProductsData(`https://ourhomeserver.onrender.com/products?_page=1&_limit=10`,queryParam);
+        getProductsData(baseURL,queryParam,filterParam,searchQuery);
     } catch (error) {
         console.log(error);
     }
 }
+
+/* Allow user to logout */
+
+let logout = document.getElementById("logout");
+logout.addEventListener("click",()=>{
+	localStorage.removeItem(`currUser`);
+	window.location.href = "../index.html";
+})
+
+
+
+
 

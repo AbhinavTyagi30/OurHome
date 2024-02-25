@@ -302,6 +302,30 @@
                     <div class="d-flex align-items-start">
                       <div class="flex-grow-1">
                         <!-- Filter -->
+                        <select
+                          id="filter-input"
+                          class="form-select"
+                          aria-label="Default select example"
+                        >
+                          <option selected>Select category</option>
+                          <option value="bedroom">Bedroom</option>
+                          <option value="bathroom">Bathroom</option>
+                          <option value="clothing">Clothing</option>
+                          <option value="dining">Dining</option>
+                          <option value="living">Living Room</option>
+                        </select>
+
+                        <div class="mt-4 d-flex justify-content-center gap-4">
+                          <div id="ascending" class="btn btn-outline-secondary">
+                            Price : Asc
+                          </div>
+                          <div
+                            id="descending"
+                            class="btn btn-outline-secondary"
+                          >
+                            Price : Desc
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -391,5 +415,5 @@
   </body>
 
   <!-- Link to js file -->
-  <script src="./products.js"></script>
+  <script type="module" src="./products.js"></script>
 </html>
