@@ -1,6 +1,25 @@
-/* add data to products table */
+/* add products on load */
+
+getProductsData(`https://ourhomeserver.onrender.com/products?_page=1&_limit=10`);
+
+/* Toggle the sidebar */
+const sidebarToggle = document.querySelector("#sidebar-toggle");
+sidebarToggle.addEventListener("click",function(){
+    document.querySelector("#sidebar").classList.toggle("collapsed");
+});
+
+/* Search products */
+
+let searchInput = document.getElementById("search-input");
+let searchButton = document.getElementById("search-button")
+
+searchButton.addEventListener("click", ()=>{
+    let searchQuery = searchInput.value;
+    getProductsData(`https://ourhomeserver.onrender.com/products?q=${searchQuery}&_page=1&_limit=10`,queryParam);
+});
 
 let queryParam = null;
+
 
 /* update item variables */
 
@@ -60,16 +79,6 @@ editProduct.addEventListener("click",(e)=>{
     editCategory.value = "";
     editPrice.value = "";
     editQuantity.value = "";
-});
-
-/* add products on load */
-
-getProductsData(`https://ourhomeserver.onrender.com/products?_page=1&_limit=10`);
-
-/* Toggle the sidebar */
-const sidebarToggle = document.querySelector("#sidebar-toggle");
-sidebarToggle.addEventListener("click",function(){
-    document.querySelector("#sidebar").classList.toggle("collapsed");
 });
 
 /* Fetch Products Data from server */

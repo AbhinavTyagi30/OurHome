@@ -1,4 +1,8 @@
 let loginButton = document.getElementById("login-button");
+let logoutBtn = document.getElementById("profile");
+
+logoutBtn.addEventListener("click",handleLogout);
+
 
 loginButton.addEventListener("click",()=>{
     handleLogin();
@@ -28,10 +32,18 @@ async function handleLogin(){
             window.location.href = "./adminDashBoard/adminDash.html";
         }
         else{
-            /* addLoginCreds(); */
+            window.location.href = "./home.html"
         }
 
     } catch (error) {
-        console.log(error);
+        let modal = document.getElementById("exampleModal");
+        modal.classList.toggle("fade");
     }
+}
+
+/* Allow User to logout */
+
+function handleLogout(){
+    localStorage.removeItem(`currUser`);
+    window.location.href = "./home.html";
 }
