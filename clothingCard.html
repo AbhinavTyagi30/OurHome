@@ -23,7 +23,23 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+
+  
     <style>
+
+        /*Hide Login Button when user is logged in and display profile pic*/
+        .profilePic {
+        display: inline-block;
+        max-width: 30px;
+      }
+      .hideLogin {
+        display: none;
+      }
+
+      .profilePic:hover {
+        cursor: pointer;
+      }
+
       * {
         /* background-position: center; */
         margin: 0px;
@@ -152,20 +168,21 @@ overflow-y: hidden;
 
       <div class="dd">
         <div class="d1">
-          <i class="fa-regular fa-user"></i
-          ><button
-            style="
-              text-decoration: none;
-              font-size: 13px;
-              transform: translateY(-2px);
-              font-weight: bold;
-            "
-            class="login_btn"
-            data-bs-toggle="modal"
-            data-bs-target="#ModalForm"
-          >
-            LOG IN
-          </button>
+          <i id="profileIcon" class="fa-regular fa-user hideLogin"></i
+            ><button
+              style="
+                text-decoration: none;
+                font-size: 13px;
+                transform: translateY(-2px);
+                font-weight: bold;
+              "
+              id="loginBtn"
+              class="login_btn hideLogin"
+              data-bs-toggle="modal"
+              data-bs-target="#ModalForm"
+            >
+              LOG IN
+            </button>
 
           <div
             class="modal fade"
@@ -265,6 +282,9 @@ overflow-y: hidden;
             </div>
           </div>
         </div>
+        <div id="profile" class="profilePic">
+          <img src="./Images/userTemplate/user.png" alt="userProfile" />
+        </div>
         <div class="d1">
           <i class="fa-solid fa-question"></i
             
@@ -317,3 +337,4 @@ overflow-y: hidden;
 </html>
 
 <script src="./scripts/clothing.js"></script>
+<script src="./scripts/front.js"></script>
