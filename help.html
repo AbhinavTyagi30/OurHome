@@ -14,7 +14,10 @@
       crossorigin="anonymous"
     />
 
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
 
     <script
       src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
@@ -98,95 +101,111 @@
         display: flex;
       }
 
-      .container{
-  /* padding-bottom: 70px; */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  /* min-height: 100vh; */
-}
-.container section{
-  width: 600px;
-  margin: 50px;
-}
-.container section details summary{
-  padding: 20px;
-  background:#b09c79 ;
-  color: #22232e;
-  position: relative;
-  list-style: none;
-  outline: none;
-  cursor: pointer;
-  font-size: 14px;
-  font-weight:600;
-}
-.container section details{
-  margin: 5px;
-}
-.container section details p{
-  font-size: 13px;
-  padding: 10px;
-  color: #333;
-  /* background: #e0ffff; */
-}
-.container section details summary span{
-  font-size: 20px;
-  color: #333;
-  float: right;
-}
-.c1{
-  img{
-    height: 50px;
-  }
-}
+      .container {
+        /* padding-bottom: 70px; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /* min-height: 100vh; */
+      }
+      .container section {
+        width: 600px;
+        margin: 50px;
+      }
+      .container section details summary {
+        padding: 20px;
+        background: #b09c79;
+        color: #22232e;
+        position: relative;
+        list-style: none;
+        outline: none;
+        cursor: pointer;
+        font-size: 14px;
+        font-weight: 600;
+      }
+      .container section details {
+        margin: 5px;
+      }
+      .container section details p {
+        font-size: 13px;
+        padding: 10px;
+        color: #333;
+        /* background: #e0ffff; */
+      }
+      .container section details summary span {
+        font-size: 20px;
+        color: #333;
+        float: right;
+      }
+      .c1 {
+        img {
+          height: 50px;
+        }
+      }
 
-#socia >div>a{
+      #socia > div > a {
         display: block;
         color: black;
         text-decoration: none;
-        font-size: 12px;
+        font-size: 12px;
       }
 
-      #hamburger{
+      #hamburger {
         width: 30px;
         height: 30px;
         color: black;
         /* border: 1px solid; */
         margin-left: 10px;
       }
-      .offcanvas-body{
-        ul>a{
+      .offcanvas-body {
+        ul > a {
           text-decoration: none;
           color: black;
         }
       }
-
-
     </style>
   </head>
   <body>
     <div class="d">
       <div class="Home1">
+        <button
+          style="border: 0px"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasScrolling"
+          aria-controls="offcanvasScrolling"
+        >
+          <span class="material-symbols-outlined" id="hamburger"> menu </span>
+        </button>
 
-        <button style="border: 0px;" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling"><span class="material-symbols-outlined" id="hamburger">
-          menu
-          </span></button>
-    
-    <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
-      <div class="offcanvas-header">
-        <!-- <h5 class="offcanvas-title" id="offcanvasScrollingLabel"></h5> -->
-        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close" style="font-size: 15px;"></button>
-      </div>
-      <div class="offcanvas-body">
-       <ul>
-        <a href="./bedRoom.html"><li>BED ROOM</li></a>
-        <a href="./clothing.html"><li>CLOTHING_&_FOOTWEAR</li></a>
-        <a href="./livingRoom.html"><li>LIVING ROOM</li></a>
-        <a href="./dining.html"><li>DINING</li></a>
-        <a href="./bathroom.html"><li>BATHROOM</li></a>
-        </ul>
-      </div>
-    </div>
+        <div
+          class="offcanvas offcanvas-start"
+          data-bs-scroll="true"
+          data-bs-backdrop="false"
+          tabindex="-1"
+          id="offcanvasScrolling"
+          aria-labelledby="offcanvasScrollingLabel"
+        >
+          <div class="offcanvas-header">
+            <!-- <h5 class="offcanvas-title" id="offcanvasScrollingLabel"></h5> -->
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+              style="font-size: 15px"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul>
+              <a href="./bedRoom.html"><li>BED ROOM</li></a>
+              <a href="./clothing.html"><li>CLOTHING_&_FOOTWEAR</li></a>
+              <a href="./livingRoom.html"><li>LIVING ROOM</li></a>
+              <a href="./dining.html"><li>DINING</li></a>
+              <a href="./bathroom.html"><li>BATHROOM</li></a>
+            </ul>
+          </div>
+        </div>
 
         <a class="anchor" href="./home.html">
           <img src="./Images/OurHomeLogo/3.png" alt="logo" />
@@ -344,43 +363,74 @@
       <div class="container">
         <section>
           <details>
-            <summary>SHOP AT OURHOME.COM<span><i class="fa-solid "></i>+</span></summary>
-            <h6 style="overflow-y: hidden;">YOUR Our HOME ACCOUNT</h6>
-            <p>At Our Home you can shop as a guest or registered customer.
-
-              Signing up is easy and your details will be saved in your account for future purchases.
-              
-              If you shop as a guest, you will find your details and the details of your order in your confirmation email.</p>
-              <h6 style="overflow-y: hidden;">MODIFYING OR CANCELLING YOUR ORDER</h6>
-              <p>Please remember that you can only modify or cancel your order before it reaches the final stages of preparation for dispatch.</p>
-              <h6 style="overflow-y: hidden;">MY WISHLIST</h6>
-              <p>You can save your favourite items in your WISHLIST and always have them to hand.
-
-                To use this option you must be a registered customer.
-                
-                You can save your favourite items in your WISHLIST by clicking the heart icon on each item. You can create different WISHLISTS and modify them.
-                
-                You can make your WISHLIST public and share it as a link by using the "Copy link" option.
-                
-                If you decide to complete the purchase, you will need to add the items to the basket and follow the usual payment process.</p>
-
+            <summary>
+              SHOP AT OURHOME.COM<span><i class="fa-solid"></i>+</span>
+            </summary>
+            <h6 style="overflow-y: hidden">YOUR Our HOME ACCOUNT</h6>
+            <p>
+              At Our Home you can shop as a guest or registered customer.
+              Signing up is easy and your details will be saved in your account
+              for future purchases. If you shop as a guest, you will find your
+              details and the details of your order in your confirmation email.
+            </p>
+            <h6 style="overflow-y: hidden">
+              MODIFYING OR CANCELLING YOUR ORDER
+            </h6>
+            <p>
+              Please remember that you can only modify or cancel your order
+              before it reaches the final stages of preparation for dispatch.
+            </p>
+            <h6 style="overflow-y: hidden">MY WISHLIST</h6>
+            <p>
+              You can save your favourite items in your WISHLIST and always have
+              them to hand. To use this option you must be a registered
+              customer. You can save your favourite items in your WISHLIST by
+              clicking the heart icon on each item. You can create different
+              WISHLISTS and modify them. You can make your WISHLIST public and
+              share it as a link by using the "Copy link" option. If you decide
+              to complete the purchase, you will need to add the items to the
+              basket and follow the usual payment process.
+            </p>
           </details>
           <details>
-            <summary>PAYMENTS<span><i class="fa-solid"></i>+</span></summary>
-            <h6 style="overflow-y: hidden;">PAYMENT METHODS</h6>
+            <summary>
+              PAYMENTS<span><i class="fa-solid"></i>+</span>
+            </summary>
+            <h6 style="overflow-y: hidden">PAYMENT METHODS</h6>
             <p>You can use the following payment methods:</p>
-            <div class="c1"><img src="https://static.zarahome.net/8/static4/itxwebstandard/images/payment/web/1.svg?20240222021206" alt="card">
-              <img src="https://static.zarahome.net/8/static4/itxwebstandard/images/payment/web/2.svg?20240222021206" alt="card">
-              <img src="https://static.zarahome.net/8/static4/itxwebstandard/images/payment/web/3.svg?20240222021206" alt="card">
-              <img src="https://static.zarahome.net/8/static4/itxwebstandard/images/payment/web/8.svg?20240222021206" alt="card"></div>
+            <div class="c1">
+              <img
+                src="https://static.zarahome.net/8/static4/itxwebstandard/images/payment/web/1.svg?20240222021206"
+                alt="card"
+              />
+              <img
+                src="https://static.zarahome.net/8/static4/itxwebstandard/images/payment/web/2.svg?20240222021206"
+                alt="card"
+              />
+              <img
+                src="https://static.zarahome.net/8/static4/itxwebstandard/images/payment/web/3.svg?20240222021206"
+                alt="card"
+              />
+              <img
+                src="https://static.zarahome.net/8/static4/itxwebstandard/images/payment/web/8.svg?20240222021206"
+                alt="card"
+              />
+            </div>
 
-              <p>Your purchase will be charged when your order is shipped out, but if you have paid with PayPal the payment will be charged at the moment of the purchase.
-
-                You can shop with full trust, we take great care in providing resources that guarantee the security of your purchases and your information.</p>
-              <h6 style="overflow-y: hidden;">PRICES</h6>
-              <p>The prices online are the same as in stores.
-
-                If there is a difference in the price specified online and the label, the correct price will be the one you accepted at the moment of purchase.</p>
+            <p>
+              Your purchase will be charged when your order is shipped out, but
+              if you have paid with PayPal the payment will be charged at the
+              moment of the purchase. You can shop with full trust, we take
+              great care in providing resources that guarantee the security of
+              your purchases and your information.
+            </p>
+            <h6 style="overflow-y: hidden">PRICES</h6>
+            <p>
+              The prices online are the same as in stores. If there is a
+              difference in the price specified online and the label, the
+              correct price will be the one you accepted at the moment of
+              purchase.
+            </p>
 
             <p>
               Your purchase will be charged when your order is shipped out, but
@@ -398,44 +448,80 @@
             </p>
           </details>
           <details>
-            <summary>TICKETS AND INVOICES<span><i class="fa-solid "></i>+</span></summary>
-            <h6 style="overflow-y: hidden;">PURCHASE RECEIPT</h6>
-            <p>Purchases on zarahome.com do not generate paper receipts.
-
-              You will find your purchase receipt available for download in your account.</p>
-            <h6 style="overflow-y: hidden;">INVOICE</h6>
-            <p>You can request an invoice for your order as an individual or a business. You will be able to access the invoice on your account once the order has been dispatched.</p>
-            <p>*If you have purchased as a guest, access your order history and download receipts as well as invoices.</p>
+            <summary>
+              TICKETS AND INVOICES<span><i class="fa-solid"></i>+</span>
+            </summary>
+            <h6 style="overflow-y: hidden">PURCHASE RECEIPT</h6>
+            <p>
+              Purchases on zarahome.com do not generate paper receipts. You will
+              find your purchase receipt available for download in your account.
+            </p>
+            <h6 style="overflow-y: hidden">INVOICE</h6>
+            <p>
+              You can request an invoice for your order as an individual or a
+              business. You will be able to access the invoice on your account
+              once the order has been dispatched.
+            </p>
+            <p>
+              *If you have purchased as a guest, access your order history and
+              download receipts as well as invoices.
+            </p>
           </details>
           <details>
-            <summary>SHIPPING AND COSTS<span><i class="fa-solid"></i>+</span></summary>
-            <h6 style="overflow-y: hidden;">HOME DELIVERY</h6>
-            <p>Home delivery fees are 45 EUR.<br><br>
-            
-            The estimated delivery time will be between 7-10 working days.<br><br>
-            
-            Please bear in mind that some of our deliveries may be affected by import costs out of our control. We will let you know if these costs are included in the final amount of the purchase or need to be paid when receiving the order. If the second case applies, we suggest that you get in touch with your local Customs Office for further information.<br><br>
-            
-            You will receive email updates about the status of the delivery of your order and if you have purchased as a registered customer you will be able to check its status on your account too.</p>
-        </details>
-        
-        <details>
-            <summary>Returns and Refunds<span><i class="fa-solid"></i>+</span></summary>
-            <h6 style="overflow-y: hidden;">RETURN OPTIONS</h6>
+            <summary>
+              SHIPPING AND COSTS<span><i class="fa-solid"></i>+</span>
+            </summary>
+            <h6 style="overflow-y: hidden">HOME DELIVERY</h6>
+            <p>
+              Home delivery fees are 45 EUR.<br /><br />
+
+              The estimated delivery time will be between 7-10 working days.<br /><br />
+
+              Please bear in mind that some of our deliveries may be affected by
+              import costs out of our control. We will let you know if these
+              costs are included in the final amount of the purchase or need to
+              be paid when receiving the order. If the second case applies, we
+              suggest that you get in touch with your local Customs Office for
+              further information.<br /><br />
+
+              You will receive email updates about the status of the delivery of
+              your order and if you have purchased as a registered customer you
+              will be able to check its status on your account too.
+            </p>
+          </details>
+
+          <details>
+            <summary>
+              Returns and Refunds<span><i class="fa-solid"></i>+</span>
+            </summary>
+            <h6 style="overflow-y: hidden">RETURN OPTIONS</h6>
             <p>These are the options for returning your items:</p>
-            <h6 style="overflow-y: hidden;">FROM YOUR HOME</h6>
-            <p>If you have purchased as a registered customer, you should access your order information from your account and request the return.
-            
-            You will receive email updates about the status of the delivery of your order and if you have purchased as a registered customer you will be able to check its status on your account too.</p>
-            
-            <p>The items you return must be in the same condition you received them in.</p>
-            
-            <h6 style="overflow-y: hidden;">REFUND</h6>
-            <p>The refund will be made via the same payment method used to make the purchase. If you have used more than one payment method, it will be refunded to both methods proportionally.<br><br>
-            
-            You will receive email confirmation of the return once it has been completed. If you have not received a refund in your account after more than 14 days, please show the confirmation to your bank so they can speed up the process.</p>
-        </details>
-        
+            <h6 style="overflow-y: hidden">FROM YOUR HOME</h6>
+            <p>
+              If you have purchased as a registered customer, you should access
+              your order information from your account and request the return.
+              You will receive email updates about the status of the delivery of
+              your order and if you have purchased as a registered customer you
+              will be able to check its status on your account too.
+            </p>
+
+            <p>
+              The items you return must be in the same condition you received
+              them in.
+            </p>
+
+            <h6 style="overflow-y: hidden">REFUND</h6>
+            <p>
+              The refund will be made via the same payment method used to make
+              the purchase. If you have used more than one payment method, it
+              will be refunded to both methods proportionally.<br /><br />
+
+              You will receive email confirmation of the return once it has been
+              completed. If you have not received a refund in your account after
+              more than 14 days, please show the confirmation to your bank so
+              they can speed up the process.
+            </p>
+          </details>
         </section>
       </div>
     </div>
@@ -545,6 +631,5 @@
       <span class="material-symbols-outlined"> language </span>
       <p>INDIA/ENGLISH</p>
     </div>
-
   </body>
 </html>
