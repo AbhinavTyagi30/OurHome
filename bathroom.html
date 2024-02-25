@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -162,33 +163,99 @@
     .btn btn-primary:hover{
       display: inline-block;
     }
+
+    #hamburger{
+        width: 30px;
+        height: 30px;
+        color: black;
+        /* border: 1px solid; */
+        margin-left: 10px;
+      }
+      .offcanvas-body{
+        ul>a{
+          text-decoration: none;
+          color: black;
+        }
+      }
+   
+
   </style>
 </head>
 
 <body>
-  <!-- HEADER -->
+
+ <!-- hamburger Menu -->
+ <button
+ style="border: 0px"
+ type="button"
+ data-bs-toggle="offcanvas"
+ data-bs-target="#offcanvasScrolling"
+ aria-controls="offcanvasScrolling"
+>
+ <span class="material-symbols-outlined" id="hamburger"> menu </span>
+</button>
+
+<div
+ class="offcanvas offcanvas-start"
+ data-bs-scroll="true"
+ data-bs-backdrop="false"
+ tabindex="-1"
+ id="offcanvasScrolling"
+ aria-labelledby="offcanvasScrollingLabel"
+>
+ <div class="offcanvas-header">
+   <!-- <h5 class="offcanvas-title" id="offcanvasScrollingLabel"></h5> -->
+   <button
+     type="button"
+     class="btn-close"
+     data-bs-dismiss="offcanvas"
+     aria-label="Close"
+   ></button>
+ </div>
+ <div class="offcanvas-body">
+   <ul>
+     <a href="#"><li>BED ROOM</li></a>
+     <a href="#"><li>CLOTHING_&_FOOTWEAR</li></a>
+     <a href="#"><li>LIVING ROOM</li></a>
+     <a href="#"><li>DINING</li></a>
+     <a href="#"><li>BATHROOM</li></a>
+   </ul>
+ </div>
+</div>
+  <!-- navbar -->
   <div class="d">
     <div class="Home1">
-      <a class="anchor" href="./home.html">
-
-        <img src="./Images/OurHomeLogo/3.png" alt="logo" />
-
+      <a class="anchor" href="./home.html" style="overflow-y: hidden">
+        <img src="./Images/OurHomeLogo/3.png" alt="logo" style="overflow-y: hidden" />
       </a>
 
-      <h6 id="h_tag">SHOPPING GUIDE</h6>
+      <h6 id="h_tag" style="overflow-y: hidden">SHOPPING GUIDE</h6>
 
       <div class="dd">
         <div class="d1">
-          <i class="fa-regular fa-user"></i><button style="
+          <i class="fa-regular fa-user"></i
+          ><button
+            style="
+
               text-decoration: none;
               font-size: 13px;
               transform: translateY(-2px);
               font-weight: bold;
-            " class="login_btn" data-bs-toggle="modal" data-bs-target="#ModalForm">
+            "
+            class="login_btn"
+            data-bs-toggle="modal"
+            data-bs-target="#ModalForm"
+          >
             LOG IN
           </button>
 
-          <div class="modal fade" id="ModalForm" tabindex="-1" aria-hidden="true">
+          <div
+            class="modal fade"
+            id="ModalForm"
+            tabindex="-1"
+            aria-hidden="true"
+          >
+
             <div class="modal-dialog modal-dialog-centered">
               <div class="modal-content">
                 <!-- Login Form -->
@@ -197,41 +264,84 @@
                     <h5 class="modal-title" style="font-size: 16px">
                       REGISTERED CUSTOMERS
                     </h5>
-                    <button type="button" style="font-size: medium" class="btn-close" data-bs-dismiss="modal"
-                      aria-label="Close"></button>
+
+                    <button
+                      type="button"
+                      style="font-size: medium"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
                   </div>
                   <div class="modal-body" style="color: white">
                     <div class="mb-3">
-                      <label for="Username" style="font-size: medium">Username<span class="text-danger">*</span></label>
-                      <input type="text" name="username" class="form-control" id="Username"
-                        placeholder="Enter Username" />
+                      <label for="Username" style="font-size: medium"
+                        >Username<span class="text-danger">*</span></label
+                      >
+                      <input
+                        type="text"
+                        name="username"
+                        class="form-control"
+                        id="Username"
+                        placeholder="Enter Username"
+                      />
                     </div>
 
                     <div class="mb-3">
-                      <label for="Password" style="font-size: medium">Password<span class="text-danger">*</span></label>
-                      <input type="password" name="password" class="form-control" id="Password"
-                        placeholder="Enter Password" />
+                      <label for="Password" style="font-size: medium"
+                        >Password<span class="text-danger">*</span></label
+                      >
+                      <input
+                        type="password"
+                        name="password"
+                        class="form-control"
+                        id="Password"
+                        placeholder="Enter Password"
+                      />
                     </div>
                     <div class="mb-3">
-                      <input class="form-check-input" type="checkbox" value="" id="remember" required />
-                      <label class="form-check-label" style="font-size: medium" for="remember">Remember Me</label>
-                      <a href="#" class="float-end" style="
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="remember"
+                        required
+                      />
+                      <label
+                        class="form-check-label"
+                        style="font-size: medium"
+                        for="remember"
+                        >Remember Me</label
+                      >
+                      <a
+                        href="#"
+                        class="float-end"
+                        style="
                           text-decoration: none;
                           color: white;
                           font-size: medium;
-                        ">Forgot Password</a>
+                        "
+                        >Forgot Password</a
+                      >
                     </div>
                   </div>
                   <div class="modal-footer pt-4">
-                    <button type="button" class="btn mx-auto btn-dark" style="
+                    <button
+                      type="button"
+                      class="btn mx-auto btn-dark"
+                      style="
                         color: white;
                         text-decoration: none;
                         font-size: medium;
-                      ">
+                      "
+                    >
                       LOG IN
                     </button>
                   </div>
-                  <p class="text-center" style="color: white; font-size: medium">
+                  <p
+                    class="text-center"
+                    style="color: white; font-size: medium"
+                  >
                     Not yet account, <a href="#">SIGN UP</a>
                   </p>
                 </form>
@@ -240,28 +350,41 @@
           </div>
         </div>
         <div class="d1">
-          <i class="fa-solid fa-question"></i><a style="
+
+          <i class="fa-solid fa-question"></i
+          ><a
+            style="
               font-size: 13px;
               color: black;
               transform: translateY(-2px);
               text-decoration: none;
               font-weight: bold;
-              " href="./help.html">HELP</a>
+
+            "
+            href="./help.html"
+            >HELP</a
+          >
         </div>
         <div class="d1">
-          <i class="fa-solid fa-cart-shopping"></i><a style="
+          <i class="fa-solid fa-cart-shopping"></i
+          ><a
+            style="
+
               font-weight: bold;
               font-size: 13px;
               color: black;
               transform: translateY(-2px);
               text-decoration: none;
-            " href="./basket.html">
+            "
+            href="./basket.html"
+          >
+
             BASKET
           </a>
         </div>
       </div>
     </div>
-  </div>
+
   <!-- IMAGE -->
   <div class="box">
     <div class="box1">
@@ -370,13 +493,15 @@
   </div>
 
   <!-- sidebar -->
-  <span class="material-symbols-outlined">
+
+  <!-- <span class="material-symbols-outlined">
     menu
   </span>
   <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling"
-    aria-controls="offcanvasScrolling">Enable body scrolling</button>
+    aria-controls="offcanvasScrolling">Enable body scrolling</button> -->
 
-  <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1"
+  <!-- <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1"
+
     id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
     <div class="offcanvas-header">
       <h5 class="offcanvas-title" id="offcanvasScrollingLabel"><span class="material-symbols-outlined">
@@ -403,7 +528,8 @@
       </ul>
 
     </div>
-  </div>
+  </div> -->
+
 
 
 </body>
