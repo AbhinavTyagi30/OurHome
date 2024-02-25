@@ -104,10 +104,11 @@ a{
   margin: 5px 20px 0px 20px;
 }
 .emp{
-  height: 50vh;
+  min-height: 50vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   
 }
 #socia >div>a{
@@ -147,11 +148,11 @@ a{
       </div>
       <div class="offcanvas-body">
        <ul>
-          <a href="#"><li>BED ROOM</li></a>
-          <a href="#"><li>CLOTHING_&_FOOTWEAR</li></a>
-          <a href="#"><li>LIVING ROOM</li></a>
-          <a href="#"><li>DINING</li></a>
-          <a href="#"><li>BATHROOM</li></a>
+        <a href="./bedRoom.html"><li>BED ROOM</li></a>
+        <a href="./clothing.html"><li>CLOTHING_&_FOOTWEAR</li></a>
+        <a href="./livingRoom.html"><li>LIVING ROOM</li></a>
+        <a href="./dining.html"><li>DINING</li></a>
+        <a href="./bathroom.html"><li>BATHROOM</li></a>
         </ul>
       </div>
     </div>
@@ -309,11 +310,12 @@ a{
         </div>
       </div>
       <div class="cart">
-        <a href="#">SHOPPING BASKET(0)</a>
-        <a href="#">BUY LATER(0)</a>
+        <a href="#">SHOPPING BASKET</a>
+        <a href="#">BUY LATER</a>
+        <button class="btn btn-success disabled" id="out" >CHECK OUT</button>
       </div>
       <div class="under"></div>
-      <div class="emp"><h5 style="overflow-y: hidden;">Your shopping basket is empty</h5></div>
+      <div class="emp" id="basket"><h5 style="overflow-y: hidden;">Your shopping basket is empty</h5></div>
     </div>
     <form class="search-form" action="/search" method="get">
       <input
@@ -422,3 +424,4 @@ a{
     </div>
   </body>
 </html>
+<script src="./scripts/cart.js"></script>
