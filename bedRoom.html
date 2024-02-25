@@ -71,7 +71,96 @@
         width: 50%;
         height: 100vh;
         background-position: center;
-      }
+      } 
+  .navbar {
+    background-color: transparent;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+  }
+  .navbar img {
+    height: 40px;
+    margin: 10px;
+    float: left;
+  }
+  .navbar-toggle {
+    display: none;
+    float: left;
+    margin: 10px;
+    cursor: pointer;
+  }
+  .navbar-toggle .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 5px 0;
+    transition: 1s;
+    
+  }
+  .navbar-toggle:hover .bar {
+    background-color: #f00;
+  }
+  .navbar:hover .navbar-collapse {
+    display: block;
+  }
+  .navbar-collapse {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: white;
+    width: 330px;
+    height: 100vh;
+    z-index: 999;
+  }
+  .navbar-collapse ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  .navbar-collapse li {
+    padding: 10px;
+    text-align: center;
+  }
+  .search-container {
+   background-color: transparent;
+  }
+  .search-box {
+    display: flex;
+    width: 200px;
+    margin-left: 45%;
+    background-color: transparent;
+  }
+  .search-box input[type="text"] {
+    width: 100%;
+    border: none;
+    border-radius: 4px;
+    margin-bottom: 10px;
+  }
+  .search-box button {
+    background-color: transparent;
+    color: transparent;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  .icons {
+    float: right;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .icons i {
+    margin: 0 5px;
+    font-size: 14px;
+    cursor: pointer;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+  }
     </style>
     <script
     src="https://kit.fontawesome.com/8e882b740a.js"
@@ -83,6 +172,32 @@
   />
   </head>
   <body>
+    <div class="navbar">
+      <button><i class="fa-solid fa-bars"></i></button>
+      <img src="./Images/OurHome Logo/3.png" alt="logo">
+      <div class="navbar-toggle" onclick="toggleNavbar()">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+      <div class="navbar-collapse" id="navbarCollapse">
+        <ul>
+          <li>BEDROOM</li>
+          <li>CLOTHING & FOOTWEAR</li>
+          <li>LIVING ROOM</li>
+        </ul>
+      </div>
+      <div class="search-container">
+        <div class="search-box" id="searchBox">
+          <input type="text" placeholder="Search...">
+        </div>
+      </div>
+      <div class="icons">
+        <i class="fa-regular fa-user"> Log in </i>
+        <i class="fa-regular fa-circle-question"> Help</i>
+        <i class="fa-regular fa-basket-shopping"> Basket(0)</i>
+      </div>
+    </div>
       <div class="card">
         <a href=""><p style="position: absolute; left: 47%;top: 41%; color: white;font-size: 20px;">BED LINEN</p></a>
       </div>
@@ -195,4 +310,15 @@
       </div>
     </div>
   </body>
+  <script>
+  function toggleNavbar() {
+  var navbarCollapse = document.getElementById('navbarCollapse');
+  navbarCollapse.style.display = (navbarCollapse.style.display === 'block') ? 'none' : 'block';
+}
+
+function toggleSearch() {
+  var searchBox = document.getElementById('searchBox');
+  searchBox.style.display = (searchBox.style.display === 'block') ? 'none' : 'block';
+}
+    </script>
 </html>
