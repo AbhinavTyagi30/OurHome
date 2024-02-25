@@ -30,6 +30,21 @@
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
     />
     <style>
+
+        /*Hide Login Button when user is logged in and display profile pic*/
+        .profilePic {
+        display: inline-block;
+        max-width: 30px;
+      }
+      .hideLogin {
+        display: none;
+      }
+
+      .profilePic:hover {
+        cursor: pointer;
+      }
+
+
       * {
         margin: 0px;
         padding: 0px;
@@ -176,20 +191,21 @@ overflow-y: hidden;
 
       <div class="dd">
         <div class="d1">
-          <i class="fa-regular fa-user"></i
-          ><button
-            style="
-              text-decoration: none;
-              font-size: 13px;
-              transform: translateY(-2px);
-              font-weight: bold;
-            "
-            class="login_btn"
-            data-bs-toggle="modal"
-            data-bs-target="#ModalForm"
-          >
-            LOG IN
-          </button>
+          <i id="profileIcon" class="fa-regular fa-user hideLogin"></i
+            ><button
+              style="
+                text-decoration: none;
+                font-size: 13px;
+                transform: translateY(-2px);
+                font-weight: bold;
+              "
+              id="loginBtn"
+              class="login_btn hideLogin"
+              data-bs-toggle="modal"
+              data-bs-target="#ModalForm"
+            >
+              LOG IN
+            </button>
 
           <div
             class="modal fade"
@@ -288,6 +304,9 @@ overflow-y: hidden;
               </div>
             </div>
           </div>
+        </div>
+        <div id="profile" class="profilePic">
+          <img src="./Images/userTemplate/user.png" alt="userProfile" />
         </div>
         <div class="d1">
           <i class="fa-solid fa-question"></i
@@ -441,3 +460,4 @@ overflow-y: hidden;
     </div>
   </body>
 </html>
+<script src="./scripts/front.js"></script>

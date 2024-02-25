@@ -31,6 +31,19 @@
     ></script>
 
     <style>
+      /*Hide Login Button when user is logged in and display profile pic*/
+      .profilePic {
+        display: inline-block;
+        max-width: 30px;
+      }
+      .hideLogin {
+        display: none;
+      }
+
+      .profilePic:hover {
+        cursor: pointer;
+      }
+
       * {
         margin: 0px;
         padding: 0px;
@@ -215,7 +228,7 @@
 
         <div class="dd">
           <div class="d1">
-            <i class="fa-regular fa-user"></i
+            <i id="profileIcon" class="fa-regular fa-user hideLogin"></i
             ><button
               style="
                 text-decoration: none;
@@ -223,7 +236,8 @@
                 transform: translateY(-2px);
                 font-weight: bold;
               "
-              class="login_btn"
+              id="loginBtn"
+              class="login_btn hideLogin"
               data-bs-toggle="modal"
               data-bs-target="#ModalForm"
             >
@@ -327,6 +341,9 @@
                 </div>
               </div>
             </div>
+          </div>
+          <div id="profile" class="profilePic">
+            <img src="./Images/userTemplate/user.png" alt="userProfile" />
           </div>
           <div class="d1">
             <i class="fa-solid fa-question"></i
@@ -633,3 +650,4 @@
     </div>
   </body>
 </html>
+<script src="./scripts/front.js"></script>
