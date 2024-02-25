@@ -1,4 +1,8 @@
 let loginButton = document.getElementById("login-button");
+let logoutBtn = document.getElementById("profile");
+
+logoutBtn.addEventListener("click",handleLogout);
+
 
 loginButton.addEventListener("click",()=>{
     handleLogin();
@@ -13,9 +17,6 @@ async function handleLogin(){
 
         let obj = {"email" : `${email}` , "password" : `${password}`};
 
-        console.log(obj);
-
-
         let response = await fetch(`https://ourhomeserver.onrender.com/login`,{
             method : "POST",
             headers : {
@@ -24,9 +25,25 @@ async function handleLogin(){
             body : JSON.stringify(obj)
         });
 
-        let data = response.json();
-        console.log(data);
+        let data = await response.json();
+        localStorage.setItem(`currUser`,JSON.stringify(data.user));
+
+        if(data.user.isAdmin){
+            window.location.href = "./adminDashBoard/adminDash.html";
+        }
+        else{
+            window.location.href = "./home.html"
+        }
+
     } catch (error) {
-        console.log(error);
+        let modal = document.getElementById("exampleModal");
+        modal.classList.toggle("fade");
     }
+}
+
+/* Allow User to logout */
+
+function handleLogout(){
+    localStorage.removeItem(`currUser`);
+    window.location.href = "./home.html";
 }

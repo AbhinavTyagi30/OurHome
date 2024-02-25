@@ -17,13 +17,31 @@
       crossorigin="anonymous"
     />
 
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
     <script
       src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
     <style>
+      /*Hide Login Button when user is logged in and display profile pic*/
+      .profilePic {
+        display: inline-block;
+        max-width: 30px;
+      }
+      .hideLogin {
+        display: none;
+      }
+
+      .profilePic:hover {
+        cursor: pointer;
+      }
+
+      /* Styling */
+
       * {
         /* background-position: center; */
         margin: 0px;
@@ -95,21 +113,21 @@
         }
       }
 
-      #socia >div>a{
+      #socia > div > a {
         display: block;
         color: black;
         text-decoration: none;
-        font-size: 12px;
+        font-size: 12px;
       }
-      #hamburger{
+      #hamburger {
         width: 30px;
         height: 30px;
         color: white;
         /* border: 1px solid; */
         margin-left: 10px;
       }
-      .offcanvas-body{
-        ul>a{
+      .offcanvas-body {
+        ul > a {
           text-decoration: none;
           color: black;
         }
@@ -119,29 +137,46 @@
   <body>
     <div class="d">
       <div class="Home1">
+        <button
+          style="border: 0px"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasScrolling"
+          aria-controls="offcanvasScrolling"
+        >
+          <span class="material-symbols-outlined" id="hamburger"> menu </span>
+        </button>
 
-        <button style="border: 0px;" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling"><span class="material-symbols-outlined" id="hamburger">
-          menu
-          </span></button>
-    
-    <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
-      <div class="offcanvas-header">
-        <!-- <h5 class="offcanvas-title" id="offcanvasScrollingLabel"></h5> -->
-        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close" style="font-size: 15px;"></button>
-      </div>
-      <div class="offcanvas-body">
-       <ul>
-          <a href="./bedRoom.html"><li>BED ROOM</li></a>
-          <a href="./clothing.html"><li>CLOTHING_&_FOOTWEAR</li></a>
-          <a href="./livingRoom.html"><li>LIVING ROOM</li></a>
-          <a href="./dining.html"><li>DINING</li></a>
-          <a href="./bathroom.html"><li>BATHROOM</li></a>
-        </ul>
-      </div>
-    </div>
+        <div
+          class="offcanvas offcanvas-start"
+          data-bs-scroll="true"
+          data-bs-backdrop="false"
+          tabindex="-1"
+          id="offcanvasScrolling"
+          aria-labelledby="offcanvasScrollingLabel"
+        >
+          <div class="offcanvas-header">
+            <!-- <h5 class="offcanvas-title" id="offcanvasScrollingLabel"></h5> -->
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+              style="font-size: 15px"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul>
+              <a href="./bedRoom.html"><li>BED ROOM</li></a>
+              <a href="./clothing.html"><li>CLOTHING_&_FOOTWEAR</li></a>
+              <a href="./livingRoom.html"><li>LIVING ROOM</li></a>
+              <a href="./dining.html"><li>DINING</li></a>
+              <a href="./bathroom.html"><li>BATHROOM</li></a>
+            </ul>
+          </div>
+        </div>
         <a class="anchor" href="./home.html">
-          
-          <img src="./Images/ourHome Logo/3.png" alt="logo" />
+          <img src="./Images/OurHomeLogo/3.png" alt="logo" />
         </a>
         <div class="input-group">
           <span class="input-group-text">Search</span>
@@ -156,7 +191,7 @@
 
         <div class="dd">
           <div class="d1">
-            <i class="fa-regular fa-user"></i
+            <i id="profileIcon" class="fa-regular fa-user hideLogin"></i
             ><button
               style="
                 text-decoration: none;
@@ -164,7 +199,8 @@
                 transform: translateY(-2px);
                 font-weight: bold;
               "
-              class="login_btn"
+              id="loginBtn"
+              class="login_btn hideLogin"
               data-bs-toggle="modal"
               data-bs-target="#ModalForm"
             >
@@ -261,16 +297,23 @@
                     </div>
                     <p
                       class="text-center"
-                      style="color: white; font-size: medium;"
+                      style="color: white; font-size: medium"
                     >
-
-                      Not yet account, <a href="./signin.html" class="btn btn-primary" style="text-decoration: none;">SIGN UP</a>
-
+                      Not yet account,
+                      <a
+                        href="./signin.html"
+                        class="btn btn-primary"
+                        style="text-decoration: none"
+                        >SIGN UP</a
+                      >
                     </p>
                   </form>
                 </div>
               </div>
             </div>
+          </div>
+          <div id="profile" class="profilePic">
+            <img src="./Images/userTemplate/user.png" alt="userProfile" />
           </div>
           <div class="d1">
             <i class="fa-solid fa-question"></i
@@ -411,8 +454,39 @@
       <p>INDIA/ENGLISH</p>
     </div>
 
-   
-
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">...</div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
   <script src="./scripts/login.js"></script>
+  <script src="./scripts/front.js"></script>
 </html>
