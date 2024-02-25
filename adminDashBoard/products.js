@@ -13,7 +13,8 @@ sidebarToggle.addEventListener("click",function(){
 let searchInput = document.getElementById("search-input");
 let searchButton = document.getElementById("search-button")
 
-searchButton.addEventListener("click", ()=>{
+searchButton.addEventListener("click", (e)=>{
+    e.preventDefault();
     let searchQuery = searchInput.value;
     getProductsData(`https://ourhomeserver.onrender.com/products?q=${searchQuery}&_page=1&_limit=10`,queryParam);
 });
