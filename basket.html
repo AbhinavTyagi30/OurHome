@@ -18,7 +18,10 @@
       crossorigin="anonymous"
     />
 
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
 
     <script
       src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
@@ -38,19 +41,18 @@
         margin: 30px 0px 0px 50px;
         flex-wrap: wrap;
 
+        margin: 0px;
+        padding: 0px;
+        overflow-x: hidden;
+      }
+      .Home1 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 30px 15px 0px 5px;
+        flex-wrap: wrap;
 
-margin: 0px;
-padding: 0px;
-overflow-x: hidden;
-}
-.Home1 {
-display: flex;
-justify-content: space-between;
-align-items: center;
-margin: 30px 15px 0px 5px;
-flex-wrap: wrap;
-
-.anchor{
+        .anchor {
           /* border: 1px solid; */
           width: 20%;
           /* height: 50px; */
@@ -85,83 +87,98 @@ flex-wrap: wrap;
         transition: background 2s linear; /* Increased duration */
       }
 
-
-.cart{
-  display: flex;
-  justify-content:center;
-  gap: 20%;
-  margin-top: 50px;
-  font-size: 14px;
-  font-weight: bolder;
-a{
-  color: black;
-  text-decoration: none;
-}
-}
-.under{
-  height: 1px;
-  border: 1px solid #e0e0e0;
-  margin: 5px 20px 0px 20px;
-}
-.emp{
-  min-height: 50vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  
-}
-#socia >div>a{
+      .cart {
+        display: flex;
+        justify-content: center;
+        gap: 20%;
+        margin-top: 50px;
+        font-size: 14px;
+        font-weight: bolder;
+        a {
+          color: black;
+          text-decoration: none;
+        }
+      }
+      .under {
+        height: 1px;
+        border: 1px solid #e0e0e0;
+        margin: 5px 20px 0px 20px;
+      }
+      .emp {
+        min-height: 50vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+      }
+      #socia > div > a {
         display: block;
         color: black;
         text-decoration: none;
-        font-size: 12px;
+        font-size: 12px;
       }
 
-      #hamburger{
+      #hamburger {
         width: 30px;
         height: 30px;
         color: black;
         /* border: 1px solid; */
         margin-left: 10px;
       }
-      .offcanvas-body{
-        ul>a{
+      .offcanvas-body {
+        ul > a {
           text-decoration: none;
           color: black;
         }
       }
-      </style>
+    </style>
   </head>
   <body>
     <div class="d">
       <div class="Home1">
+        <button
+          style="border: 0px"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasScrolling"
+          aria-controls="offcanvasScrolling"
+        >
+          <span class="material-symbols-outlined" id="hamburger"> menu </span>
+        </button>
 
-        <button style="border: 0px;" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling"><span class="material-symbols-outlined" id="hamburger">
-          menu
-          </span></button>
-    
-    <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
-      <div class="offcanvas-header">
-        <!-- <h5 class="offcanvas-title" id="offcanvasScrollingLabel"></h5> -->
-        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close" style="font-size: 15px;"></button>
-      </div>
-      <div class="offcanvas-body">
-       <ul>
-        <a href="./bedRoom.html"><li>BED ROOM</li></a>
-        <a href="./clothing.html"><li>CLOTHING_&_FOOTWEAR</li></a>
-        <a href="./livingRoom.html"><li>LIVING ROOM</li></a>
-        <a href="./dining.html"><li>DINING</li></a>
-        <a href="./bathroom.html"><li>BATHROOM</li></a>
-        </ul>
-      </div>
-    </div>
+        <div
+          class="offcanvas offcanvas-start"
+          data-bs-scroll="true"
+          data-bs-backdrop="false"
+          tabindex="-1"
+          id="offcanvasScrolling"
+          aria-labelledby="offcanvasScrollingLabel"
+        >
+          <div class="offcanvas-header">
+            <!-- <h5 class="offcanvas-title" id="offcanvasScrollingLabel"></h5> -->
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+              style="font-size: 15px"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul>
+              <a href="./bedRoom.html"><li>BED ROOM</li></a>
+              <a href="./clothing.html"><li>CLOTHING_&_FOOTWEAR</li></a>
+              <a href="./livingRoom.html"><li>LIVING ROOM</li></a>
+              <a href="./dining.html"><li>DINING</li></a>
+              <a href="./bathroom.html"><li>BATHROOM</li></a>
+            </ul>
+          </div>
+        </div>
 
         <a class="anchor" href="./home.html">
           <img src="./Images/OurHomeLogo/3.png" alt="logo" />
         </a>
-          <h5 style="margin: 0; overflow-y: hidden;">BASKET</h5>
-
+        <h5 style="margin: 0; overflow-y: hidden">BASKET</h5>
 
         <div class="dd">
           <div class="d1">
@@ -173,6 +190,7 @@ a{
                 transform: translateY(-2px);
                 font-weight: bold;
               "
+              id="loginBtn"
               class="login_btn"
               data-bs-toggle="modal"
               data-bs-target="#ModalForm"
@@ -312,10 +330,12 @@ a{
       <div class="cart">
         <a href="#">SHOPPING BASKET</a>
         <a href="#">BUY LATER</a>
-        <button class="btn btn-success disabled" id="out" >CHECK OUT</button>
+        <button class="btn btn-success disabled" id="out">CHECK OUT</button>
       </div>
       <div class="under"></div>
-      <div class="emp" id="basket"><h5 style="overflow-y: hidden;">Your shopping basket is empty</h5></div>
+      <div class="emp" id="basket">
+        <h5 style="overflow-y: hidden">Your shopping basket is empty</h5>
+      </div>
     </div>
     <form class="search-form" action="/search" method="get">
       <input
