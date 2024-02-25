@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -32,12 +31,14 @@
 
     .box1 {
       max-width: 100%;
-      max-height: 50%;
+      max-height: 100vh;
+      background-image: url("https://static.zarahome.net/8/contentEcom/dto_imagen/distribuidoras/mixta/desktop/1020116641/1020116646.jpg?20240223020706&imformat=chrome&imwidth=768&impolicy=zarahome-itxmediumhigh");
     }
 
     .box2 {
       max-width: 100%;
-      max-height: 50%;
+      max-height: 100vh;
+      background-image: url("https://static.zarahome.net/8/contentEcom/dto_imagen/distribuidoras/mixta/desktop/1020116641/1020116648.jpg?20240223020706&imformat=chrome&imwidth=768&impolicy=zarahome-itxmediumhigh");
     }
 
     #text1 {
@@ -50,6 +51,10 @@
       color: white;
 
     }
+    #text1>a{
+      text-decoration: none;
+      color: white;
+    }
 
     #text2 {
       font-size: 18px;
@@ -60,6 +65,10 @@
       transform: translate(10%, 50%);
       color: white;
 
+    }
+    #text2>a{
+      text-decoration: none;
+      color: white;
     }
 
     .halfbox {
@@ -74,62 +83,7 @@
       background-color: white;
     }
 
-    .Home1 {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin: 30px 0px 0px 50px;
-      flex-wrap: wrap;
-
-      .anchor {
-        /* border: 1px solid; */
-        width: 20%;
-        height: 50px;
-      }
-
-      img {
-        width: 100%;
-      }
-
-      button {
-        background-color: transparent;
-        border: 0px;
-        font-size: 25px;
-        color: black;
-        text-decoration: underline;
-      }
-    }
-
-    .d1 {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-      font-size: 20px;
-      /* color: black; */
-    }
-
-    .dd {
-      display: flex;
-      gap: 30px;
-      margin-right: 20px;
-    }
-
-    .form {
-      background-image: url(https://i.pinimg.com/originals/04/15/95/041595beadc8c220768399637f204621.gif);
-      background-size: cover;
-      background-position: center;
-      transition: background 2s linear;
-      /* Increased duration */
-    }
-
-    .form:hover {
-      cursor: pointer;
-      background-image: url(https://i.pinimg.com/originals/3f/c3/2b/3fc32b3699a73c4a172720cc51b24e19.gif);
-      background-size: cover;
-      background-position: center;
-      /* background: linear-gradient(270deg, rgba(83, 37, 69, 1) 50%, rgba(193, 148, 155, 0.7931547619047619) 93%); */
-
-    }
+    
 
     /* footer */
     #socia>div>a {
@@ -163,8 +117,68 @@
     .btn btn-primary:hover{
       display: inline-block;
     }
+    .Home1 {
+display: flex;
+justify-content: space-between;
+align-items: center;
+margin: 30px 15px 0px 5px;
+flex-wrap: wrap;
 
-    #hamburger{
+.anchor{
+  /* border: 1px solid; */
+  width: 20%;
+  /* height: 50px; */
+  margin-right: 50px;
+}
+img {
+  width: 100%;
+}
+button {
+  background-color: transparent;
+  border: 0px;
+  font-size: 25px;
+  color: black;
+  text-decoration: underline;
+}
+}
+.d1 {
+display: flex;
+flex-wrap: wrap;
+gap: 10px;
+font-size: 20px;
+/* color: black; */
+}
+.dd {
+display: flex;
+gap: 30px;
+margin-right: 20px;
+}
+.form {
+background-image: url(https://i.pinimg.com/originals/04/15/95/041595beadc8c220768399637f204621.gif);
+background-size: cover;
+background-position: center;
+transition: background 2s linear; /* Increased duration */
+}
+
+.form:hover {
+cursor: pointer;
+background-image: url(https://i.pinimg.com/originals/3f/c3/2b/3fc32b3699a73c4a172720cc51b24e19.gif);
+background-size: cover;
+background-position: center;
+/* background: linear-gradient(270deg, rgba(83, 37, 69, 1) 50%, rgba(193, 148, 155, 0.7931547619047619) 93%); */
+
+}
+
+#h_tag {
+/* text-align: center; */
+/* margin-top: 0px; */
+font-weight: bold;
+font-size: 18px;
+/* padding: 0px; */
+margin: 0px;
+overflow-y: hidden;
+}
+#hamburger{
         width: 30px;
         height: 30px;
         color: black;
@@ -177,230 +191,287 @@
           color: black;
         }
       }
-   
 
+      * {
+        margin: 0px;
+        padding: 0px;
+        overflow-x: hidden;
+      }
+      .Home1 {
+display: flex;
+justify-content: space-between;
+align-items: center;
+margin: 30px 15px 0px 5px;
+flex-wrap: wrap;
+
+.anchor{
+  /* border: 1px solid; */
+  width: 20%;
+  /* height: 50px; */
+  margin-right: 50px;
+}
+img {
+  width: 100%;
+}
+button {
+  background-color: transparent;
+  border: 0px;
+  font-size: 25px;
+  color: black;
+  text-decoration: underline;
+}
+}
+.d1 {
+display: flex;
+flex-wrap: wrap;
+gap: 10px;
+font-size: 20px;
+/* color: black; */
+}
+.dd {
+display: flex;
+gap: 30px;
+margin-right: 20px;
+}
+.form {
+background-image: url(https://i.pinimg.com/originals/04/15/95/041595beadc8c220768399637f204621.gif);
+background-size: cover;
+background-position: center;
+transition: background 2s linear; /* Increased duration */
+}
+
+.form:hover {
+cursor: pointer;
+background-image: url(https://i.pinimg.com/originals/3f/c3/2b/3fc32b3699a73c4a172720cc51b24e19.gif);
+background-size: cover;
+background-position: center;
+/* background: linear-gradient(270deg, rgba(83, 37, 69, 1) 50%, rgba(193, 148, 155, 0.7931547619047619) 93%); */
+
+}
+
+#h_tag {
+/* text-align: center; */
+/* margin-top: 0px; */
+font-weight: bold;
+font-size: 18px;
+/* padding: 0px; */
+margin: 0px;
+overflow-y: hidden;
+}
+#hamburger{
+        width: 30px;
+        height: 30px;
+        color: black;
+        /* border: 1px solid; */
+        margin-left: 10px;
+      }
+      .offcanvas-body{
+        ul>a{
+          text-decoration: none;
+          color: black;
+        }
+      }
+      
+   
   </style>
 </head>
 
 <body>
 
  <!-- hamburger Menu -->
- <button
- style="border: 0px"
- type="button"
- data-bs-toggle="offcanvas"
- data-bs-target="#offcanvasScrolling"
- aria-controls="offcanvasScrolling"
->
- <span class="material-symbols-outlined" id="hamburger"> menu </span>
-</button>
+ <div class="Home1">
 
-<div
- class="offcanvas offcanvas-start"
- data-bs-scroll="true"
- data-bs-backdrop="false"
- tabindex="-1"
- id="offcanvasScrolling"
- aria-labelledby="offcanvasScrollingLabel"
->
- <div class="offcanvas-header">
-   <!-- <h5 class="offcanvas-title" id="offcanvasScrollingLabel"></h5> -->
-   <button
-     type="button"
-     class="btn-close"
-     data-bs-dismiss="offcanvas"
-     aria-label="Close"
-   ></button>
- </div>
- <div class="offcanvas-body">
-   <ul>
-     <a href="#"><li>BED ROOM</li></a>
-     <a href="#"><li>CLOTHING_&_FOOTWEAR</li></a>
-     <a href="#"><li>LIVING ROOM</li></a>
-     <a href="#"><li>DINING</li></a>
-     <a href="#"><li>BATHROOM</li></a>
-   </ul>
- </div>
+  <button style="border: 0px;" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling"><span class="material-symbols-outlined" id="hamburger">
+    menu
+    </span></button>
+
+<div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+<div class="offcanvas-header">
+  <!-- <h5 class="offcanvas-title" id="offcanvasScrollingLabel"></h5> -->
+  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close" style="font-size: 15px;"></button>
 </div>
-  <!-- navbar -->
-  <div class="d">
-    <div class="Home1">
-      <a class="anchor" href="./home.html" style="overflow-y: hidden">
-        <img src="./Images/OurHomeLogo/3.png" alt="logo" style="overflow-y: hidden" />
-      </a>
+<div class="offcanvas-body">
+ <ul>
+    <a href="./bedRoom.html"><li>BED ROOM</li></a>
+    <a href="./clothing.html"><li>CLOTHING_&_FOOTWEAR</li></a>
+    <a href="./livingRoom.html"><li>LIVING ROOM</li></a>
+    <a href="./dining.html"><li>DINING</li></a>
+    <a href="./bathroom.html"><li>BATHROOM</li></a>
+    
+  </ul>
+</div>
+</div>
 
-      <h6 id="h_tag" style="overflow-y: hidden">SHOPPING GUIDE</h6>
+  <a class="anchor" href="./home.html">
 
-      <div class="dd">
-        <div class="d1">
-          <i class="fa-regular fa-user"></i
-          ><button
-            style="
+    <img src="./Images/ourHomeLogo/3.png" alt="logo" />
+    
+   </a>
+  
+  <h6 id="h_tag">SHOPPING GUIDE</h6>
 
-              text-decoration: none;
-              font-size: 13px;
-              transform: translateY(-2px);
-              font-weight: bold;
-            "
-            class="login_btn"
-            data-bs-toggle="modal"
-            data-bs-target="#ModalForm"
-          >
-            LOG IN
-          </button>
+  <div class="dd">
+    <div class="d1">
+      <i class="fa-regular fa-user"></i
+      ><button
+        style="
+          text-decoration: none;
+          font-size: 13px;
+          transform: translateY(-2px);
+          font-weight: bold;
+        "
+        class="login_btn"
+        data-bs-toggle="modal"
+        data-bs-target="#ModalForm"
+      >
+        LOG IN
+      </button>
 
-          <div
-            class="modal fade"
-            id="ModalForm"
-            tabindex="-1"
-            aria-hidden="true"
-          >
-
-            <div class="modal-dialog modal-dialog-centered">
-              <div class="modal-content">
-                <!-- Login Form -->
-                <form action="" class="form">
-                  <div class="modal-header">
-                    <h5 class="modal-title" style="font-size: 16px">
-                      REGISTERED CUSTOMERS
-                    </h5>
-
-                    <button
-                      type="button"
-                      style="font-size: medium"
-                      class="btn-close"
-                      data-bs-dismiss="modal"
-                      aria-label="Close"
-                    ></button>
-                  </div>
-                  <div class="modal-body" style="color: white">
-                    <div class="mb-3">
-                      <label for="Username" style="font-size: medium"
-                        >Username<span class="text-danger">*</span></label
-                      >
-                      <input
-                        type="text"
-                        name="username"
-                        class="form-control"
-                        id="Username"
-                        placeholder="Enter Username"
-                      />
-                    </div>
-
-                    <div class="mb-3">
-                      <label for="Password" style="font-size: medium"
-                        >Password<span class="text-danger">*</span></label
-                      >
-                      <input
-                        type="password"
-                        name="password"
-                        class="form-control"
-                        id="Password"
-                        placeholder="Enter Password"
-                      />
-                    </div>
-                    <div class="mb-3">
-                      <input
-                        class="form-check-input"
-                        type="checkbox"
-                        value=""
-                        id="remember"
-                        required
-                      />
-                      <label
-                        class="form-check-label"
-                        style="font-size: medium"
-                        for="remember"
-                        >Remember Me</label
-                      >
-                      <a
-                        href="#"
-                        class="float-end"
-                        style="
-                          text-decoration: none;
-                          color: white;
-                          font-size: medium;
-                        "
-                        >Forgot Password</a
-                      >
-                    </div>
-                  </div>
-                  <div class="modal-footer pt-4">
-                    <button
-                      type="button"
-                      class="btn mx-auto btn-dark"
-                      style="
-                        color: white;
-                        text-decoration: none;
-                        font-size: medium;
-                      "
-                    >
-                      LOG IN
-                    </button>
-                  </div>
-                  <p
-                    class="text-center"
-                    style="color: white; font-size: medium"
-                  >
-                    Not yet account, <a href="#">SIGN UP</a>
-                  </p>
-                </form>
+      <div
+        class="modal fade"
+        id="ModalForm"
+        tabindex="-1"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <!-- Login Form -->
+            <form action="" class="form">
+              <div class="modal-header">
+                <h5 class="modal-title" style="font-size: 16px">
+                  REGISTERED CUSTOMERS
+                </h5>
+                <button
+                  type="button"
+                  style="font-size: medium"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
               </div>
-            </div>
+              <div class="modal-body" style="color: white">
+                <div class="mb-3">
+                  <label for="Username" style="font-size: medium"
+                    >Username<span class="text-danger">*</span></label
+                  >
+                  <input
+                    type="text"
+                    name="username"
+                    class="form-control"
+                    id="Username"
+                    placeholder="Enter Username"
+                  />
+                </div>
+
+                <div class="mb-3">
+                  <label for="Password" style="font-size: medium"
+                    >Password<span class="text-danger">*</span></label
+                  >
+                  <input
+                    type="password"
+                    name="password"
+                    class="form-control"
+                    id="Password"
+                    placeholder="Enter Password"
+                  />
+                </div>
+                <div class="mb-3">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value=""
+                    id="remember"
+                    required
+                  />
+                  <label
+                    class="form-check-label"
+                    style="font-size: medium"
+                    for="remember"
+                    >Remember Me</label
+                  >
+                  <a
+                    href="#"
+                    class="float-end"
+                    style="
+                      text-decoration: none;
+                      color: white;
+                      font-size: medium;
+                    "
+                    >Forgot Password</a
+                  >
+                </div>
+              </div>
+              <div class="modal-footer pt-4">
+                <button
+                  type="button"
+                  class="btn mx-auto btn-dark"
+                  style="
+                    color: white;
+                    text-decoration: none;
+                    font-size: medium;
+                  "
+                >
+                  LOG IN
+                </button>
+              </div>
+              <p
+                class="text-center"
+                style="color: white; font-size: medium"
+              >
+                Not yet account, <a href="#">SIGN UP</a>
+              </p>
+            </form>
           </div>
-        </div>
-        <div class="d1">
-
-          <i class="fa-solid fa-question"></i
-          ><a
-            style="
-              font-size: 13px;
-              color: black;
-              transform: translateY(-2px);
-              text-decoration: none;
-              font-weight: bold;
-
-            "
-            href="./help.html"
-            >HELP</a
-          >
-        </div>
-        <div class="d1">
-          <i class="fa-solid fa-cart-shopping"></i
-          ><a
-            style="
-
-              font-weight: bold;
-              font-size: 13px;
-              color: black;
-              transform: translateY(-2px);
-              text-decoration: none;
-            "
-            href="./basket.html"
-          >
-
-            BASKET
-          </a>
         </div>
       </div>
     </div>
-
+    <div class="d1">
+      <i class="fa-solid fa-question"></i
+        
+      ><a
+        style="
+          font-size: 13px;
+          color: black;
+          transform: translateY(-2px);
+          text-decoration: none;
+          font-weight: bold;
+          "
+        href="./help.html"
+        >HELP</a
+        >
+      </div>
+      <div class="d1">
+        <i class="fa-solid fa-cart-shopping"></i
+          ><a
+          style="
+          font-weight: bold;
+          font-size: 13px;
+          color: black;
+          transform: translateY(-2px);
+          text-decoration: none;
+        "
+     href="./basket.html">
+        BASKET
+        </a>
+    </div>
+  </div>
+  </div>
   <!-- IMAGE -->
   <div class="box">
     <div class="box1">
-      <img
+      <!-- <img
         src="https://static.zarahome.net/8/contentEcom/dto_imagen/distribuidoras/mixta/desktop/1020116641/1020116646.jpg?20240223020706&imformat=chrome&imwidth=768&impolicy=zarahome-itxmediumhigh"
-        alt="">
+        alt=""> -->
       <div id="text1">
-        <p>TOWELS</p>
+        <a href="./bathroomcard.html">TOWELS</a>
       </div>
     </div>
     <div class="box2">
-      <img
+      <!-- <img
         src="https://static.zarahome.net/8/contentEcom/dto_imagen/distribuidoras/mixta/desktop/1020116641/1020116648.jpg?20240223020706&imformat=chrome&imwidth=768&impolicy=zarahome-itxmediumhigh"
-        alt="">
+        alt=""> -->
       <div id="text2">
-        <p>BATHROOM ACCESSORIES</p>
+        <a href="./bathroomcard.html">BATHROOM ACCESSORIES</a>
       </div>
     </div>
   </div>
@@ -493,7 +564,6 @@
   </div>
 
   <!-- sidebar -->
-
   <!-- <span class="material-symbols-outlined">
     menu
   </span>
@@ -501,7 +571,6 @@
     aria-controls="offcanvasScrolling">Enable body scrolling</button> -->
 
   <!-- <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1"
-
     id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
     <div class="offcanvas-header">
       <h5 class="offcanvas-title" id="offcanvasScrollingLabel"><span class="material-symbols-outlined">
@@ -529,7 +598,6 @@
 
     </div>
   </div> -->
-
 
 
 </body>
