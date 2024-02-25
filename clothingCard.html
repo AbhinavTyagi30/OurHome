@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      src="https://kit.fontawesome.com/8e882b740a.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="./node_modules/bootstrap/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+    <script
+      src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      * {
+        /* background-position: center; */
+        margin: 0px;
+        padding: 0px;
+        overflow-x: hidden;
+      }
+      .Home1 {
+display: flex;
+justify-content: space-between;
+align-items: center;
+margin: 30px 15px 0px 5px;
+flex-wrap: wrap;
+
+.anchor{
+  /* border: 1px solid; */
+  width: 20%;
+  /* height: 50px; */
+  margin-right: 50px;
+}
+img {
+  width: 100%;
+}
+button {
+  background-color: transparent;
+  border: 0px;
+  font-size: 25px;
+  color: black;
+  text-decoration: underline;
+}
+}
+.d1 {
+display: flex;
+flex-wrap: wrap;
+gap: 10px;
+font-size: 20px;
+/* color: black; */
+}
+.dd {
+display: flex;
+gap: 30px;
+margin-right: 20px;
+}
+.form {
+background-image: url(https://i.pinimg.com/originals/04/15/95/041595beadc8c220768399637f204621.gif);
+background-size: cover;
+background-position: center;
+transition: background 2s linear; /* Increased duration */
+}
+
+.form:hover {
+cursor: pointer;
+background-image: url(https://i.pinimg.com/originals/3f/c3/2b/3fc32b3699a73c4a172720cc51b24e19.gif);
+background-size: cover;
+background-position: center;
+/* background: linear-gradient(270deg, rgba(83, 37, 69, 1) 50%, rgba(193, 148, 155, 0.7931547619047619) 93%); */
+
+}
+
+#h_tag {
+/* text-align: center; */
+/* margin-top: 0px; */
+font-weight: bold;
+font-size: 18px;
+/* padding: 0px; */
+margin: 0px;
+overflow-y: hidden;
+}
+#hamburger{
+        width: 30px;
+        height: 30px;
+        color: black;
+        /* border: 1px solid; */
+        margin-left: 10px;
+      }
+      .offcanvas-body{
+        ul>a{
+          text-decoration: none;
+          color: black;
+        }
+      }
+      .offcanvas-body{
+        ul>a{
+          text-decoration: none;
+          color: black;
+        }
+      }
+      
+      
+      #price {
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="Home1">
+
+      <button style="border: 0px;" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling"><span class="material-symbols-outlined" id="hamburger">
+        menu
+        </span></button>
+  
+  <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+    <div class="offcanvas-header">
+      <!-- <h5 class="offcanvas-title" id="offcanvasScrollingLabel"></h5> -->
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close" style="font-size: 15px;"></button>
+    </div>
+    <div class="offcanvas-body">
+     <ul>
+        <a href="./bedRoom.html"><li>BED ROOM</li></a>
+        <a href="./clothing.html"><li>CLOTHING_&_FOOTWEAR</li></a>
+        <a href="./livingRoom.html"><li>LIVING ROOM</li></a>
+        <a href="./dining.html"><li>DINING</li></a>
+        <a href="./bathroom.html"><li>BATHROOM</li></a>
+      </ul>
+    </div>
+  </div>
+
+      <a class="anchor" href="./home.html">
+
+        <img src="./Images/ourHomeLogo/3.png" alt="logo" />
+        
+       </a>
+      
+      <h6 id="h_tag">SHOPPING GUIDE</h6>
+
+      <div class="dd">
+        <div class="d1">
+          <i class="fa-regular fa-user"></i
+          ><button
+            style="
+              text-decoration: none;
+              font-size: 13px;
+              transform: translateY(-2px);
+              font-weight: bold;
+            "
+            class="login_btn"
+            data-bs-toggle="modal"
+            data-bs-target="#ModalForm"
+          >
+            LOG IN
+          </button>
+
+          <div
+            class="modal fade"
+            id="ModalForm"
+            tabindex="-1"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <!-- Login Form -->
+                <form action="" class="form">
+                  <div class="modal-header">
+                    <h5 class="modal-title" style="font-size: 16px">
+                      REGISTERED CUSTOMERS
+                    </h5>
+                    <button
+                      type="button"
+                      style="font-size: medium"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body" style="color: white">
+                    <div class="mb-3">
+                      <label for="Username" style="font-size: medium"
+                        >Username<span class="text-danger">*</span></label
+                      >
+                      <input
+                        type="text"
+                        name="username"
+                        class="form-control"
+                        id="Username"
+                        placeholder="Enter Username"
+                      />
+                    </div>
+
+                    <div class="mb-3">
+                      <label for="Password" style="font-size: medium"
+                        >Password<span class="text-danger">*</span></label
+                      >
+                      <input
+                        type="password"
+                        name="password"
+                        class="form-control"
+                        id="Password"
+                        placeholder="Enter Password"
+                      />
+                    </div>
+                    <div class="mb-3">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="remember"
+                        required
+                      />
+                      <label
+                        class="form-check-label"
+                        style="font-size: medium"
+                        for="remember"
+                        >Remember Me</label
+                      >
+                      <a
+                        href="#"
+                        class="float-end"
+                        style="
+                          text-decoration: none;
+                          color: white;
+                          font-size: medium;
+                        "
+                        >Forgot Password</a
+                      >
+                    </div>
+                  </div>
+                  <div class="modal-footer pt-4">
+                    <button
+                      type="button"
+                      class="btn mx-auto btn-dark"
+                      style="
+                        color: white;
+                        text-decoration: none;
+                        font-size: medium;
+                      "
+                    >
+                      LOG IN
+                    </button>
+                  </div>
+                  <p
+                    class="text-center"
+                    style="color: white; font-size: medium"
+                  >
+                    Not yet account, <a href="#">SIGN UP</a>
+                  </p>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="d1">
+          <i class="fa-solid fa-question"></i
+            
+          ><a
+            style="
+              font-size: 13px;
+              color: black;
+              transform: translateY(-2px);
+              text-decoration: none;
+              font-weight: bold;
+              "
+            href="./help.html"
+            >HELP</a
+            >
+          </div>
+          <div class="d1">
+            <i class="fa-solid fa-cart-shopping"></i
+              ><a
+              style="
+              font-weight: bold;
+              font-size: 13px;
+              color: black;
+              transform: translateY(-2px);
+              text-decoration: none;
+            "
+         href="./basket.html">
+            BASKET
+            </a>
+        </div>
+      </div>
+    
+      
+    <div id="price">
+      <!-- <div
+        class="card"
+        style="width: 40rem; margin-top: 30px; margin-left: 20px; border: none"
+      >
+        <img src=".." class="card-img-top" alt="..." />
+       
+        <div class="card-body" style="text-align: center">
+          <a href="#"> </a>
+
+          <i class="fa-regular fa-heart"></i>
+
+          <p></p>
+        </div>
+      </div> -->
+    </div>
+  </body>
+</html>
+
+<script src="./scripts/clothing.js"></script>
