@@ -32,7 +32,7 @@ OurHome/
 
 ## Video Walkthrough of the CodeBase
 
-- A walkthrough of the codebase and the folder structure can be accessed here on YouTube: 
+- A walkthrough of the codebase and the folder structure can be accessed here on YouTube: [https://youtu.be/T1wdv-4WNZA]
 
 ## Features
 
