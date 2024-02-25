@@ -1,6 +1,6 @@
 
 let flag=false;
-  let url="https://ourhomeserver.onrender.com/products?category=dining"
+  let url="https://ourhomeserver.onrender.com/products?category=clothing and footwear"
 
   async function fetchData(page=1){
     try{
@@ -40,7 +40,7 @@ let flag=false;
     cardElement.style.border = 'none';
     cardElement.style.marginLeft = '20px';
     cardElement.style.width='250px';
-    cardElement.style.maxHeight='400px';
+    cardElement.style.maxHeight='500px';
     
    
   

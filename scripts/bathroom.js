@@ -1,6 +1,6 @@
 
 let flag=false;
-  let url="https://ourhomeserver.onrender.com/products?category=dining"
+  let url="https://ourhomeserver.onrender.com/products?category=bathroom"
 
   async function fetchData(page=1){
     try{
